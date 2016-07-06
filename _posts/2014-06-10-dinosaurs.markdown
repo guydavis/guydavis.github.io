@@ -6,7 +6,7 @@ subtitle: >-
   program.
 date: 2014-06-10T12:00:00.000Z
 author: Start Bootstrap
-header-img: null
+header-img: apostles.jpg
 published: true
 ---
 
