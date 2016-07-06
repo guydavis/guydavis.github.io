@@ -142,6 +142,7 @@ hr.small {
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 50px;
+  background-blend-mode: darken;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
