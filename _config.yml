@@ -1,14 +1,14 @@
 # Site settings
 title: Code Recollection
-header-img: img/lake_ohara.jpg
+header-img: img/ohara.jpg
 email: guydavis.ca@gmail.com
-copyright_name: Your/Project/Corporate Name
+copyright_name: Guy Davis
 description: "Write your site description here. It will be used as your sites meta description as well!"
 baseurl: ""
 url: "http://guydavis.ca"
-#twitter_username: SBootstrap
+#twitter_username: 
 github_username:  guydavis
-#facebook_username:  IronSummitMedia
+#facebook_username:  
 email_username:  guydavis.ca@gmail.com
 
 # Google Analytics
