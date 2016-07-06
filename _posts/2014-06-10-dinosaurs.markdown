@@ -6,7 +6,7 @@ subtitle: >-
   program.
 date: 2014-06-10T12:00:00.000Z
 author: Guy Davis
-header-img: apostles.jpg
+header-img: "img/apostles.jpg"
 published: true
 ---
 
