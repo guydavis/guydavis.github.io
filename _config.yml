@@ -3,13 +3,17 @@ title: Code Recollection
 header-img: img/ohara.jpg
 email: guydavis.ca@gmail.com
 copyright_name: Guy Davis
-description: "Write your site description here. It will be used as your sites meta description as well!"
+description: "Notes from my explorations in Computer Science"
 baseurl: ""
 url: "http://guydavis.ca"
 #twitter_username: 
 github_username:  guydavis
+linkedin_username: guydavis
 #facebook_username:  
 email_username:  guydavis.ca@gmail.com
+slideshare_username: guy_davis
+google_plus_username: +GuyDavisCa
+stack_overflow_userpath: 3072265/guy-davis
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
