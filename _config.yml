@@ -7,11 +7,10 @@ description: "Notes from my explorations in Computer Science"
 baseurl: ""
 url: "http://guydavis.ca"
 disqus_shortname: guydavis
-
-#twitter_username: 
+twitter_username: 
 github_username:  guydavis
 linkedin_username: guydavis
-#facebook_username:  
+facebook_username:  
 email_username:  guydavis.ca@gmail.com
 slideshare_username: guy_davis
 google_plus_username: +GuyDavisCa

@@ -1,15 +1,12 @@
-#Clean Blog by Start Bootstrap - Jekyll Version
+#Clean Blog for Jekyll from Start Bootstrap (enhanced by Guy Davis) 
 
-The official Jekyll version of the Clean Blog theme by [Start Bootstrap](http://startbootstrap.com/).
+An enhanced Jekyll version of the Clean Blog theme from [Start Bootstrap](http://startbootstrap.com/).  Enhancements include adding LinkedIn, Google+, Slideshare, StackOverflow buttons plus support for Disqus comments and background image blending to darken.
 
-###[View Live Demo &rarr;](http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/)
+###[View Live Example &rarr;](http://guydavis.github.io/)
 
-## Before You Begin
+## Using this Template
 
-In the _config.yml file, the base URL is set to /startbootstrap-clean-blog-jekyll which is this themes gh-pages preview. It's recommended that you remove the base URL before working with this theme locally!
-
-It should look like this:
-`baseurl: ""`
+First clone and rename this repo to [your_github_name].github.io, change the values in _config.yml to yours and then delete my old blog posts from the _posts folder and start adding your own. Commit & push your changes, then view the site, hosted on GitHub Pages, at https://[your_github_name].github.io.
 
 ## What's Included
 
@@ -21,4 +18,4 @@ You can run `jekyll serve --watch` and `grunt watch` at the same time to watch f
 
 ## Support
 
-Visit Clean Blog's template overview page on Start Bootstrap at http://startbootstrap.com/template-overviews/clean-blog/ and leave a comment, email feedback@startbootstrap.com, or open an issue here on GitHub for support.
+Visit Clean Blog on Start Bootstrap at http://startbootstrap.com/template-overviews/clean-blog/ for questions on the original template, email guydavis.ca@gmail.com for questions on the enhancements.
