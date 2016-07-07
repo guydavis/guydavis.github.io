@@ -2,7 +2,7 @@
 layout: post
 title: Linear Algebra
 subtitle: my old friend
-date: {}
+date: 2016-07-05T00:00:00.000Z
 author: Guy Davis
 header-img: img/apostles.jpg
 published: true
