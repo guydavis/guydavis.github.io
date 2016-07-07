@@ -17,7 +17,7 @@ stack_overflow_userpath: 3072265/guy-davis
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
-# google_tracking_id:
+google_tracking_id: UA-80423605-1
 
 # Build settings
 markdown: kramdown
@@ -25,5 +25,8 @@ highlighter: rouge
 permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+prose:
+  rooturl: '_posts'
 
 gems: [jekyll-paginate, jekyll-feed]
