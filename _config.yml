@@ -6,6 +6,8 @@ copyright_name: Guy Davis
 description: "Notes from my explorations in Computer Science"
 baseurl: ""
 url: "http://guydavis.ca"
+disqus_shortname: guydavis
+
 #twitter_username: 
 github_username:  guydavis
 linkedin_username: guydavis

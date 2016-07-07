@@ -2,10 +2,11 @@
 layout: post
 title: Linear Algebra
 subtitle: my old friend
-date: {}
+date: 2016-07-05
 author: Guy Davis
 header-img: img/apostles.jpg
 published: true
+comments: true
 ---
 
 As part of explorations into machine learning, I've been brushing up on computer science basics starting with linear algebra.  Nice to see good old [eigenvectors](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors) again after so many years.
@@ -17,6 +18,6 @@ As part of explorations into machine learning, I've been brushing up on computer
 > The scalar λ is known as the eigenvalue corresponding to this eigenvector.
 > 
 
-So, why is this of any use?  Well, eigenvectors are used in [singular value decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition), which can be applied in [principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis), which is mentioned in this interesting [podcast on machine learning fundamentals](http://www.thetalkingmachines.com/blog/2015/7/2/solving-intelligence-and-machine-learning-fundamentals).
+So, why is this of any practical use?  Well, eigenvectors are used in [singular value decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition), which can be applied in [principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis), which is mentioned in this interesting [podcast on machine learning fundamentals](http://www.thetalkingmachines.com/blog/2015/7/2/solving-intelligence-and-machine-learning-fundamentals).
 
 Excerpted from Chapter 2 of [Deep Learning](http://www.deeplearningbook.org/) by Ian Goodfellow,  Yoshua Bengio and Aaron Courville.
