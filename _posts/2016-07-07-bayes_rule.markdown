@@ -24,4 +24,4 @@ As I work through the refresher on probability and information theory, the autho
 ><p style="margin-left:100px">P(y) = &#x2211;<sub>x</sub> P(y | x) P(x)</p>
 ><p>so we do not need to begin with knowledge of P(y).</p>
 
-<cite>Excerpted from Chapter 3 of [Deep Learning](http://www.deeplearningbook.org/) by Ian Goodfellow,  Yoshua Bengio and Aaron Courville.</cite>
+<cite>Excerpted from Chapter 3 of [Deep Learning](http://www.deeplearningbook.org/) by Ian Goodfellow, Yoshua Bengio and Aaron Courville.</cite>

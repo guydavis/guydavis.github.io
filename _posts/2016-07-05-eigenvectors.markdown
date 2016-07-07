@@ -17,7 +17,7 @@ As part of explorations into machine learning, I've been brushing up on computer
 > The scalar λ is known as the eigenvalue corresponding to this eigenvector.
 > 
 
-<cite>Excerpted from Chapter 2 of [Deep Learning](http://www.deeplearningbook.org/) by Ian Goodfellow,  Yoshua Bengio and Aaron Courville.</cite>
+<cite>Excerpted from Chapter 2 of [Deep Learning](http://www.deeplearningbook.org/) by Ian Goodfellow, Yoshua Bengio and Aaron Courville.</cite>
 
 ## Practical Use?
 
