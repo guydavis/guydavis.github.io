@@ -3,7 +3,7 @@ layout: post
 title: Linear Algebra
 subtitle: my old friend
 date: 2016-07-05
-header-img: img/apostles.jpg
+header-img: img/headers/apostles.jpg
 published: true
 comments: true
 ---

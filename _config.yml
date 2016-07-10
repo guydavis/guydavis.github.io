@@ -1,12 +1,13 @@
 # Site settings
 title: Code Recollection
-header-img: img/ohara.jpg
+header-img: img/headers/ohara.jpg
 email: guydavis.ca@gmail.com
 copyright_name: Guy Davis
 description: "Notes from my explorations in Computer Science"
 baseurl: ""
 url: "http://guydavis.ca"
-disqus_shortname: guydavis
+
+# Social links
 twitter_username: 
 github_username:  guydavis
 linkedin_username: guydavis
@@ -16,8 +17,13 @@ slideshare_username: guy_davis
 google_plus_username: +GuyDavisCa
 stack_overflow_userpath: 3072265/guy-davis
 
+# Disqus comments
+enable_disqus: true
+disqus_shortname: guydavis
+
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
+enable_ga: true
 google_tracking_id: UA-80423605-1
 
 # Build settings

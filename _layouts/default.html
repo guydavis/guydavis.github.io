@@ -11,7 +11,9 @@
 
     {% include footer.html %}
 
-    {% include ga.html %}
+    {% if site.enable_ga %}
+        {% include ga.html %}
+    {% endif %}
 
 </body>
 
