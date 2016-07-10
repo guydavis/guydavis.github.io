@@ -23,3 +23,15 @@ As part of explorations into machine learning, I've been brushing up on computer
 
 So, why are eigenvectors important?  Well, they are used in [singular value decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition), which can be applied in [principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis) as mentioned in this [podcast on machine learning fundamentals](http://www.thetalkingmachines.com/blog/2015/7/2/solving-intelligence-and-machine-learning-fundamentals).
 
+## Example Code
+
+Here's a quick way of calculating eigenvalues and eigenvectors in Python using the numpy library:
+
+```python
+import numpy as np
+k = np.random.normal(size=(2,2))
+eigenvalues,eigenvectors = np.linalg.eig(k)
+```
+
+without output shown in this interactive session:
+![Python Shell]({{ site.url }}/img/posts/eigenvectors_shell.png)
