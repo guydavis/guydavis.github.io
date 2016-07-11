@@ -25,3 +25,22 @@ As I work through the refresher on probability and information theory, the autho
 ><p>so we do not need to begin with knowledge of P(y).</p>
 
 <cite>Excerpted from Chapter 3 of [Deep Learning](http://www.deeplearningbook.org/) by Ian Goodfellow, Yoshua Bengio and Aaron Courville.</cite>
+
+## Example Code
+
+Here's an example of prediction with a [Gaussian Naive Bayes algorithm](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html) using Python's scikit-learn library:
+
+```python
+import numpy as np
+X = np.array([[-1, -1], [-2, -1], [-3, -2], [1, 1], [2, 1], [3, 2]])
+Y = np.array([1, 1, 1, 2, 2, 2])
+from sklearn.naive_bayes import GaussianNB
+clf = GaussianNB()
+print(clf.predict([[-0.8, -1]]))
+clf_pf = GaussianNB()
+clf_pf.partial_fit(X, Y, np.unique(Y))
+print(clf_pf.predict([[-0.8, -1]]))
+```
+
+with output shown in this interactive session:
+![Python Shell]({{ site.url }}/img/posts/bayes_gaussiannb_scikit.png)

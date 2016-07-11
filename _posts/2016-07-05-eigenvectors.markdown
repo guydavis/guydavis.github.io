@@ -33,5 +33,5 @@ k = np.random.normal(size=(2,2))
 eigenvalues,eigenvectors = np.linalg.eig(k)
 ```
 
-without output shown in this interactive session:
+with output shown in this interactive session:
 ![Python Shell]({{ site.url }}/img/posts/eigenvectors_shell.png)
