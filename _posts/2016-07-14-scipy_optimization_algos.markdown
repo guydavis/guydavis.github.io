@@ -153,12 +153,12 @@ plt.show()
 ### Solving iteratively with scipy.optimize.leastsq
 
 Similarly, here's a good example of using <a href="http://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html">`scipy.optimize.curve_fit`</a>, a convenient wrapper around <a href="http://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.leastsq.html">`scipy.optimize.leastsq`</a>.  Here we're fitting time vs temperature data in a cooling cup of coffee.
-
+ 
+```python 
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
- 
-```python 
+
 def fitFunc(t, a, b, c):
     return a*np.exp(-b*t) + c
 
