@@ -10,11 +10,11 @@ comments: true
 
 As part of explorations into machine learning, I've been brushing up on computer science basics starting with linear algebra.  Nice to see good old [eigenvectors](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors) again after so many years.
 
-><p style="margin-top:0px;">An eigenvector of a square matrix A is a non-zero vector v such that multiplication by A alters only the scale of v:</p>
+><p style="margin-top:0px;">An eigenvector of a square matrix <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math> is a non-zero vector <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math> such that multiplication by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math> alters only the scale of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>:</p>
 >
-><p style="font-size:larger;text-align:center">Av = λv</p>
+><p style="font-size:larger;text-align:center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Av</mi> <mo>=</mo> <mi>λv</mi></math></p>
 >
-> The scalar λ is known as the eigenvalue corresponding to this eigenvector.
+> The scalar <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>λ</mi></math> is known as the eigenvalue corresponding to this eigenvector.
 > 
 
 <cite>Excerpted from Chapter 2 of [Deep Learning](http://www.deeplearningbook.org/) by Ian Goodfellow, Yoshua Bengio and Aaron Courville.</cite>

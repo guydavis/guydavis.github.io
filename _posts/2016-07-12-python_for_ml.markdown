@@ -11,7 +11,7 @@ It's been over a decade since I last worked with the Python programming language
 
 ## Windows (10 Desktop)
 1. Download and install [Anaconda](https://docs.continuum.io/anaconda/install#id5) with Python 3.5.
-2. `pip install theano` from the Anaconda shell.
+2. `pip install theano algopy` from the Anaconda shell.
 
 NOTE:  Windows is not supported for TensorFlow currently.
 
@@ -20,7 +20,7 @@ NOTE:  Windows is not supported for TensorFlow currently.
 2. `sudo easy_install3 pip`
 3. `sudo apt-get install python 3.5-dev`
 4. `sudo apt-get install python3.4-dev`
-5. `sudo pip3 install theano scikit-learn pandas https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.9.0-cp34-cp34m-linux_x86_64.whl`
+5. `sudo pip3 install theano scikit-learn algopy pandas https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.9.0-cp34-cp34m-linux_x86_64.whl`
 
 NOTE: These directions worked in June 2016, expect the versions to be different later on.
 
@@ -29,9 +29,10 @@ Following these instructions will give you an isolated install of Python 3 with 
 
 - numpy: [Numerical Python](http://www.numpy.org/) library offering linear algebra and useful matrix functions.
 - scipy: [Scientific Python](https://www.scipy.org/) library with many useful numerical routines.
+- algopy: [Algorithmic Differentiation](https://pythonhosted.org/algopy/) library for evaluation of higher-order derivatives. 
 - pandas: [Pandas](http://pandas.pydata.org/) is great for data analysis and manipulation.
 - sklearn: [Scikit Learn](http://scikit-learn.org/stable/index.html) offers machine learning algorithms.
 - theano: [Theano](http://deeplearning.net/software/theano/) offers deep learning algorithms, building on numpy.
 - tensorflow: [TensorFlow](https://www.tensorflow.org/), from Google, offers numerical computation using data flow graphs.
 
-To test out a successful install, try `import theano, numpy, scipy, sklearn, pandas, tensorflow` in the python shell.  No errors, means a successful install.  I'll be delving into the use of these tools in coming posts, so stay tuned...
+To test out a successful install, try `import theano, numpy, scipy, algopy, sklearn, pandas, tensorflow` in the python shell.  No errors, means a successful install.  I'll be delving into the use of these tools in future posts.
