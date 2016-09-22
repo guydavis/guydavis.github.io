@@ -2,7 +2,7 @@
 layout: post
 title: Loading Baby Names into PostgreSQL 
 subtitle: preparing for data analysis
-date: 2016-09-13
+date: 2016-08-13
 header-img: img/headers/venice_regatta.jpg
 comments: true
 ---

@@ -2,8 +2,8 @@
 layout: post
 title: Linear Algebra
 subtitle: my old friend
-date: 2016-07-05
-header-img: img/headers/apostles.jpg
+date: 2016-01-31
+header-img: img/headers/highwood_house.jpg
 published: true
 comments: true
 ---

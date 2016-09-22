@@ -2,12 +2,12 @@
 layout: post
 title: Predictions from US Baby Names
 subtitle: ask silly questions, get silly answers
-date: 2016-09-20
+date: 2016-08-20
 header-img: img/headers/star_trek_enterprise.jpg
 comments: true
 ---
 
-I discovered the predictive analytics tool, [RapidMiner](https://rapidminer.com/), through a [Safari tutorial](https://www.safaribooksonline.com/library/view/beginning-data-analytics/9781491969137/) and wanted to try it out.  Given my recently loaded [US baby names]({{ site.url }}/2016/09/13/loading_babyname_data/) data set, I thought I'd ask some silly questions... more to see how Rapid Miner works, than to accurately predict anything. 
+A while back, I discovered the predictive analytics tool, [RapidMiner](https://rapidminer.com/) and wanted to try it out.  Given my recently loaded [US baby names]({{ site.url }}/2016/09/13/loading_babyname_data/) data set, I thought I'd ask some silly questions... more to see how Rapid Miner models work, than to accurately predict anything. 
 
 ## Decision Tree
 

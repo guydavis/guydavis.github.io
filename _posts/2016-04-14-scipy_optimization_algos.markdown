@@ -2,7 +2,7 @@
 layout: post
 title: Optimization Algorithms 
 subtitle: a least squares example
-date: 2016-07-14
+date: 2016-04-14
 header-img: img/headers/climbing_wall.jpg
 comments: true
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Bayes' Rule
 subtitle: slayer of spam
-date: 2016-07-07
+date: 2016-02-11
 header-img: img/headers/prince_of_wales.jpg
 published: true
 comments: true
