@@ -7,42 +7,30 @@ header-img: img/headers/biking_road.jpg
 comments: true
 ---
 
-Continuing my series on data import into [PostgreSQL](https://www.postgresql.org/) database, this covers a quick way of getting Excel data into Postgres.
+Continuing on data import into [PostgreSQL](https://www.postgresql.org/) database, this covers a quick way of loading Excel data while guessing (aka "imputing") missing values.  In this case, I'll use RapidMiner's [Impute Missing Values](http://docs.rapidminer.com/studio/operators/cleansing/missing/impute_missing_values.html) operator with a [k-nearest neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) learning algorithm.
 
 ## Import Excel with RapidMiner
 
-Next, let's look at extracting Excel spreadsheet data into Postgres using RapidMiner. Here's a sample spreadsheet.
+Here's a sample sales spreadsheet to import.  Note, that some of the Region values are missing, but can be guessed at from other records.
 
 ![Excel]({{ site.url }}/img/posts/etl_spreadsheet_excel.png)
 
-The RapidMiner process looks likes this:
+The RapidMiner top-level process looks likes this:
 
 ![Process]({{ site.url }}/img/posts/etl_spreadsheet_process.png)
 
+However, the Impute Values operator takes a [sub-process](http://docs.rapidminer.com/studio/operators/utility/subprocess.html), a learning model that can make an educated guess at the missing values, based on surrounding data.  Double-click into the 'Impute Values' operator.  This will show it's sub-process area.  Drag a 'k-NN' operator over and connect the 'exa' and 'mod' ports.
+
+![Subprocess]({{ site.url }}/img/posts/etl_spreadsheet_subprocess.png)
+
 ## Export to Postgres using RapidMiner
 
-We've created a destination schema in Postgres with a table to hold the data:
-
-```
-create database excel_import;
-\connect excel_import;
-create table orders (
-        id integer primary key, 
-        orderdate timestamp, 
-        region varchar(255), 
-        rep varchar(255), 
-        item varchar(255), 
-        units integer, 
-        unitcost numeric(10,2), 
-        total money
-);
-```
-
-Creating the Postgres database connection is easy in RapidMiner:
+For the Write Database operator, creating the Postgres database connection is easy in RapidMiner:
 
 ![Connection]({{ site.url }}/img/posts/etl_spreadsheet_jdbc.png)
 
-Executing the process reads the spreadsheet and stores the data into our new Postgres table:
+Executing the process reads the spreadsheet, imputes the missing values and stores the data into a created 'orders' Postgres table:
 
 ![Orders]({{ site.url }}/img/posts/etl_spreadsheet_pg_table.png)
  
+ Most importantly, you can see the missing values have been inserted as part of the data cleansing during this load process.
