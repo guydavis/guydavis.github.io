@@ -3,7 +3,7 @@ layout: post
 title: Excel into PostgreSQL
 subtitle: sample excel with rapidminer
 date: 2016-06-29
-header-img: img/headers/biking_road.jpg
+header-img: img/headers/biking_on_road.jpg
 comments: true
 ---
 
