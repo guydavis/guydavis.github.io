@@ -5,28 +5,45 @@ subtitle: data loading with talend
 date: 2016-06-12
 header-img: img/headers/dino_sunset.jpg
 comments: true
-published: false
+published: true
 ---
 
 My preferred data management platform rests upon the [PostgreSQL](https://www.postgresql.org/) database.  The most recent releases have been truly impressive, especially when you consider that the Postgres database is [free software](https://www.postgresql.org/about/).  
 
-Using Postgres for data management means integrating disparate data sources such as other databases, spreadsheets, flat files, etc into Postgres.  There are two primary mechanisms for this: data loading and data virtualization.  I'll cover Postgres data loading in this post, including options for extraction, transformation, and loading (ETL).  
+Using Postgres for data management means integrating disparate data sources such as other databases, spreadsheets, flat files, etc into Postgres.  There are two primary mechanisms for this: data loading and data virtualization.  
 
-## Oracle to Postgres with Talend ETL
+I'll cover Postgres data loading in this post, including options for extraction, transformation, and loading (ETL).  
 
-[Talend](https://www.talend.com/) offers a [data integration product](https://www.talend.com/products/data-integration) which allows for data transfers with cleaning.  These can be created and tested in a design studio tool, then automated for regular execution on the server.  For this example, I'll be extracting data from the [Oracle HR](https://docs.oracle.com/cd/B13789_01/server.101/b10771/scripts003.htm) demo schema into Postgres.
+## Import via Talend Open Studio
 
-## SQL Server to Postgres with RapidMiner
+The tool I'll use for this data import is the free [Talend Open Studio](https://www.talend.com/products/talend-open-studio).  I'll be pulling data from an Oracle Express instance with it's Human Resources (HR) sample database.
 
-The data science platform [RapidMiner](https://rapidminer.com/) also offers ETL capabilities.  Again these can be created and tested in a design studio tool, then automated for regular execution on the server. For this example, I'll be extracting data from the [NorthWind](https://northwinddatabase.codeplex.com/) demo schema into Postgres.
-
-## MySQL to Postgres with Python
-
-Of course, one doesn't need to rely on GUI tools for ETL jobs.  Here's a short Python script that can be used to extract data from the [MySQL Sakila](https://dev.mysql.com/doc/sakila/en/) demo schema.
-
-```python 
+First trick was to launch Talend without error due to the presence of a Java 7 install on my system.  Once I figured out the cause of startup failure, I was able to create a launch.bat file to make explicit use of a Java 8 install.
 
 ```
+start /B TOS_DI-win-x86_64.exe -VM "C:\Program Files\Java\jdk1.8.0_40\bin"
+```
 
- 
+Talend OS starts up pretty empty, particularly the 'Palette' area on the right.  Once selecting 'Help &#124; Install Additional Packages...' and installing all required and optional packages, I was able to create a new Job by right-clicking the 'Job Designs' folder on left in my local project.  
 
+Once I had a populated palette, things got became quite intuitive for a simple data extraction from Oracle into Postgres.  From the palette, I dragged a 'tOracleInput' component to the project area, then a 'tPostgresqlOutput' component over and connected them together as shown:
+
+![Job]({{ site.url }}/img/posts/etl_talend1.png)
+
+Setting the parameters for Oracle input component was straight forward:
+
+![Oracle]({{ site.url }}/img/posts/etl_talend2.png)
+
+As was setting the parameters of the Postgres output component:
+
+![Postgres]({{ site.url }}/img/posts/etl_talend2.png)
+
+However, by default Talend will use column names from Oracle exactly, including them as upper-case.  Uppercase columns in Postgres will work if you quote them everywhere, but who wants to bother with that?  So instead, I changed the output schema mapping as shown:
+
+![Mapping]({{ site.url }}/img/posts/etl_talend4.png)
+
+Running the job successfully resulted in a new 'employee' table in Postgres, with records seen here:
+
+![Results]({{ site.url }}/img/posts/etl_talend5.png)
+
+Overall, once up and running, Talend's tools for data integration seem quite powerful.  In future, I'll be looking at other palette components available.
