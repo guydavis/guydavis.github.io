@@ -49,7 +49,7 @@ Running the job successfully resulted in a new 'employee' table in Postgres, wit
 Overall, once up and running, Talend's tools for data integration seem quite powerful.  In future, I'll be looking at other palette components available.
 
 ### More in this series...
-* [SQL Server into PostgreSQL with RapidMiner]({{site.url}}/2016/06/16/sqlserver_to_postgres/)
+* [SQL Server into PostgreSQL with SquirrelSQL]({{site.url}}/2016/06/16/sqlserver_to_postgres/)
 * [MySQL into PostgreSQL with Python's petl]({{site.url}}/2016/06/21/mysql_to_postgres/)
 * [Excel into PostgreSQL with RapidMiner]({{site.url}}/2016/06/29/excel_to_postgres/)
 * [Data Virtualization with PostgreSQL]({{site.url}}/2016/07/18/pg_data_virt/)
