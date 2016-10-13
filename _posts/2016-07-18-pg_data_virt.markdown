@@ -10,9 +10,9 @@ published: true
 
 Unlike [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load), [data virtualization](https://en.wikipedia.org/wiki/Data_virtualization) allows one to repurpose their data while leaving it in the original source.  Since there is no staging or warehousing, the data is always live and up to date.  
 
-The primary downside of data virtualization of disparate data sources is performance.  If, on each query at your virtualization layer, the request must go all the way back to the underlying data source, then query times will likely go up. 
+The main downside of data virtualization of disparate data sources is slower performance.  If, on each query at your virtualization layer, the request must go all the way back to the underlying data source, then query times will likely go up compared to cached solutions. 
 
-In the Postgres world, data virtualization is accomplished with [Foregin Data Wrappers](https://wiki.postgresql.org/wiki/Foreign_data_wrappers).  These connectors provide data access to various other data stores such as Oracle, SQL Server, MySQL, Redis, Mongo, etc at the level of a Postgres database.  The beauty of Postgres FDW is that your PostgreSQL database becomes the common data interface for all clients, both to real PG databases and other back-end stores.
+In the Postgres world, data virtualization is accomplished with [Foreign Data Wrappers](https://wiki.postgresql.org/wiki/Foreign_data_wrappers) (aka FDW).  These connectors provide data access to various other data stores such as Oracle, SQL Server, MySQL, Mongo, flat files, etc.  The beauty of FDW is that your PostgreSQL database becomes the common data interface for all clients.
 
 ## Postgres FDW + Multicorn
 
@@ -59,7 +59,7 @@ create foreign table mysql_staff (
   last_name varchar
 ) server MYSQL_SAKILA options (
   tablename 'staff',
-  db_url 'mysql://sakila:sakila@localhost/sakila'
+  db_url 'mysql://sakila:sakila@HOST_NAME/sakila'
 );
 ```
 
@@ -76,7 +76,7 @@ First, we need to [install the Oracle libraries](https://gist.github.com/hangtwe
     rpm -ivh /vagrant/oracle-instantclient11.2-basic-11.2.0.4.0-1.x86_64.rpm
     rpm -ivh /vagrant/oracle-instantclient11.2-devel-11.2.0.4.0-1.x86_64.rpm
 
-Then set some Oracle environment variables in /etc/profile, before installing cx_Oracle.  Add the following lines to /etc/profile:
+Then set some Oracle environment variables before installing cx_Oracle.  Add the following lines to /etc/profile:
 
 ```
 # Required for Oracle database connections
@@ -107,7 +107,7 @@ At this point you should be able to query your Oracle database from Python direc
 
 ```python
 import sqlalchemy
-engine = sqlalchemy.create_engine("oracle+cx_oracle://hr:hr@(DESCRIPTION = (LOAD_BALANCE=on) (FAILOVER=ON) (ADDRESS = (PROTOCOL = TCP)(HOST = YOUR_HOST_NAME_HERE)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = XE)))")                                          
+engine = sqlalchemy.create_engine("oracle+cx_oracle://hr:hr@(DESCRIPTION = (LOAD_BALANCE=on) (FAILOVER=ON) (ADDRESS = (PROTOCOL = TCP)(HOST = HOST_NAME)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = XE)))")                                          
 result = engine.execute("select * from employees")
 for row in result:
   print row
@@ -125,7 +125,7 @@ create foreign table oracle_employees (
   last_name varchar
 ) server ORACLE_HR options (
   tablename 'employees',
-  db_url 'oracle+cx_oracle://hr:hr@(DESCRIPTION = (LOAD_BALANCE=on) (FAILOVER=ON) (ADDRESS = (PROTOCOL = TCP)(HOST = YOUR_HOST_NAME_HERE)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = XE)))'
+  db_url 'oracle+cx_oracle://hr:hr@(DESCRIPTION = (LOAD_BALANCE=on) (FAILOVER=ON) (ADDRESS = (PROTOCOL = TCP)(HOST = HOST_NAME)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = XE)))'
 );
 ```
 
