@@ -10,9 +10,9 @@ published: true
 
 Unlike [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load), [data virtualization](https://en.wikipedia.org/wiki/Data_virtualization) allows one to repurpose their data while leaving it in the original source.  Since there is no staging or warehousing, the data is always live and up to date.  
 
-The primary downside of data virtualization of disparate data sources is performance.  If, on each query at your virtualization layer, the request must go all the way back to the underlying data source, then query times will likely go up. 
+The main downside of data virtualization of disparate data sources is slower performance.  If, on each query at your virtualization layer, the request must go all the way back to the underlying data source, then query times will likely go up compared to cached solutions. 
 
-In the Postgres world, data virtualization is accomplished with [Foregin Data Wrappers](https://wiki.postgresql.org/wiki/Foreign_data_wrappers).  These connectors provide data access to various other data stores such as Oracle, SQL Server, MySQL, Redis, Mongo, etc at the level of a Postgres database.  The beauty of Postgres FDW is that your PostgreSQL database becomes the common data interface for all clients, both to real PG databases and other back-end stores.
+In the Postgres world, data virtualization is accomplished with [Foreign Data Wrappers](https://wiki.postgresql.org/wiki/Foreign_data_wrappers) (aka FDW).  These connectors provide data access to various other data stores such as Oracle, SQL Server, MySQL, Mongo, flat files, etc.  The beauty of FDW is that your PostgreSQL database becomes the common data interface for all clients.
 
 ## Postgres FDW + Multicorn
 
@@ -59,7 +59,7 @@ create foreign table mysql_staff (
   last_name varchar
 ) server MYSQL_SAKILA options (
   tablename 'staff',
-  db_url 'mysql://sakila:sakila@localhost/sakila'
+  db_url 'mysql://sakila:sakila@HOST_NAME/sakila'
 );
 ```
 
@@ -76,7 +76,7 @@ First, we need to [install the Oracle libraries](https://gist.github.com/hangtwe
     rpm -ivh /vagrant/oracle-instantclient11.2-basic-11.2.0.4.0-1.x86_64.rpm
     rpm -ivh /vagrant/oracle-instantclient11.2-devel-11.2.0.4.0-1.x86_64.rpm
 
-Then set some Oracle environment variables in /etc/profile, before installing cx_Oracle.  Add the following lines to /etc/profile:
+Then set some Oracle environment variables before installing cx_Oracle.  Add the following lines to /etc/profile:
 
 ```
 # Required for Oracle database connections
@@ -107,7 +107,7 @@ At this point you should be able to query your Oracle database from Python direc
 
 ```python
 import sqlalchemy
-engine = sqlalchemy.create_engine("oracle+cx_oracle://hr:hr@(DESCRIPTION = (LOAD_BALANCE=on) (FAILOVER=ON) (ADDRESS = (PROTOCOL = TCP)(HOST = YOUR_HOST_NAME_HERE)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = XE)))")                                          
+engine = sqlalchemy.create_engine("oracle+cx_oracle://hr:hr@(DESCRIPTION = (LOAD_BALANCE=on) (FAILOVER=ON) (ADDRESS = (PROTOCOL = TCP)(HOST = HOST_NAME)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = XE)))")                                          
 result = engine.execute("select * from employees")
 for row in result:
   print row
@@ -125,7 +125,7 @@ create foreign table oracle_employees (
   last_name varchar
 ) server ORACLE_HR options (
   tablename 'employees',
-  db_url 'oracle+cx_oracle://hr:hr@(DESCRIPTION = (LOAD_BALANCE=on) (FAILOVER=ON) (ADDRESS = (PROTOCOL = TCP)(HOST = YOUR_HOST_NAME_HERE)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = XE)))'
+  db_url 'oracle+cx_oracle://hr:hr@(DESCRIPTION = (LOAD_BALANCE=on) (FAILOVER=ON) (ADDRESS = (PROTOCOL = TCP)(HOST = HOST_NAME)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = XE)))'
 );
 ```
 
@@ -144,7 +144,7 @@ yum install -y freetds
 pip install pymssql
 ```
 
-At this point you should be able to query your SQL Server database from Python directly.  Here's an example script, just change host name, port, and service name as needed:
+At this point you should be able to query your SQL Server database from Python directly.  Here's an example script, just change host name as needed:
 
 ```python
 import sqlalchemy
@@ -182,13 +182,20 @@ create foreign table mssql_employees (
 
 ![PG]({{ site.url }}/img/posts/data_virt_mssql_emps_in_pg.png)
 
-Exposing a single database type (PG) to apps and users, despite accessing live data from 3 different backends behind the scenes is a very powerful approach.  It opens up some interesting possibilities including:
+## In Conclusion
 
-1. further data federation with views
-2. master data management
-3. identity resolution and record deduplication
+Exposing a single database (Postgres) to apps and users, while accessing live data from 3 different backends behind the scenes is a very powerful approach.   For example, we could expose this employee data in a single view using:
 
-I hope to cover these and more topics in future posts.
+```sql
+CREATE VIEW employees AS 
+    SELECT staff_id as emp_id, first_name, last_name, 'MySQL' as source from mysql_staff
+  UNION ALL
+    SELECT employee_id as emp_id, first_name, last_name, 'Oracle' as source from oracle_employees
+  UNION ALL
+    SELECT EmployeeId as emp_id, FirstName as first_name, LastName as last_name, 'SQLServer' as source from mssql_employees;    
+``` 
+
+Using Postgres FDW also opens up some more interesting possibilities including master data management, identity resolution and record de-duplication. I hope to cover these and more topics in future posts.
 
 ### More in this series...
 * [Oracle into PostgreSQL with Talend]({{ site.url }}//2016/06/12/oracle_to_postgres/)
