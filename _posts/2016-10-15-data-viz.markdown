@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Data Visualization
-subtitle: querying and charting with re:dash
+subtitle: querying, charting and alerting with re:dash
 date: 2016-10-15
 header-img: img/headers/sylvan_lake_snowkiting.jpg
 comments: true
-published: false
+published: true
 ---
 
 I came across [re:dash](http://redash.io/) when searching for an open-source data visualization tool that could connect to many data sources and had strong support for SQL queries.  Redash provides a solid dashboard with alerting, built upon the advanced charting of [Plot.ly](https://plot.ly/) and [D3](https://d3js.org/).
@@ -16,7 +16,7 @@ I came across [re:dash](http://redash.io/) when searching for an open-source dat
 
 Though Redash offers [hosted options](http://redash.io/#get-started) along with scripts for AWS, Docker, and Heroku, I chose to deploy on two [Ubuntu](https://www.ubuntu.com/server) 16.04 VMs on [Digital Ocean](https://www.digitalocean.com/), one for [PostgreSQL](https://www.postgresql.org/) and one for Redash, [Redis](http://redis.io/), and [Nginx](https://www.nginx.com/resources/wiki/).
 
-Following the dire ctions in the [Ubuntu bootstrap.sh](https://github.com/getredash/redash/blob/master/setup/ubuntu/bootstrap.sh) script were straight-forward, requiring only minor tweaks for a remote PostgreSQL 9.6 databbase.
+Following the directions in the [Ubuntu bootstrap.sh](https://github.com/getredash/redash/blob/master/setup/ubuntu/bootstrap.sh) script were straight-forward, requiring only minor tweaks for a remote PostgreSQL 9.6 databbase.
 
 ## Data Sources
 Redash can query databases such as Oracle, SQL Server, PostgreSQL, and MySQL.  Connections to MongoDB, Presto, Vertica, Amazon Redshift, Google BigQuery among others are also available.
@@ -26,7 +26,7 @@ Redash can query databases such as Oracle, SQL Server, PostgreSQL, and MySQL.  C
 As seen above, creating a PostgreSQL data source is straight forward.  I'm connecting to the [Adventureworks sample database](https://github.com/lorint/AdventureWorks-for-Postgres) with sales, staff, and customer data.
 
 ## Queries
-Creating and editing the SQL query is an area where Redash really shines.  The query editor has an expandable list of tables and columns that can be drag and dropped into the query box.  The Execute button sends the query to the background workers, based on Celery, returning the results in a table below.
+Creating and editing the SQL query is an area where Redash really shines.  The query editor has an expandable list of tables and columns that can be drag and dropped into the query box.  The Execute button sends the query to the background workers, based on [Celery](http://www.celeryproject.org/), returning the results in a table below.
 
 <img src="{{ site.url }}/img/posts/data_viz_query_global.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
 
@@ -36,6 +36,8 @@ Notice that each query has an owner, last execution time, records found, and a R
 Even better, queries can be parameterized in SQL using HTTP query parameters.  For example, this query takes a 'p_Region' value to narrow the scope via WHERE clause.
 
 <img src="{{ site.url }}/img/posts/data_viz_query_global.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
+
+Be careful using these parameters in your SQL query to avoid possible SQL injection however.
 
 ## Charts
 Now that we have results, it's easy to add a chart to visualize the data:
@@ -47,7 +49,7 @@ Adding more charts for query results is possible, just by clicking the '+NEW VIS
 <img src="{{ site.url }}/img/posts/data_viz_chart_types.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
 
 ## Dashboards
-Once you have queries with visualizations, they can be added to a dashboard.  The order they are added in matters as I couldn't find a way of re-arranging them afterward.  However, one can always delete and re-add in the order desired.
+Once you have queries with visualizations, they can be added to a dashboard, laid out left to right, top to bottom. 
 
 <img src="{{ site.url }}/img/posts/data_viz_sales_dashboard.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
 
@@ -57,7 +59,7 @@ On a wide layout, charts can be regular or double-width.  The layout is responsi
 Depending on the data being visualized, security can be an overriding concern.  Redash offers both authentication and authorization options.
 
 ### Authentication
-Redash by default maintains its own lists of users.  For integration with external identity providers, OAuth (at least Google anyway) seems to be supported directly.  However, unfortunately LDAP (such as Microsoft Active Directory) [doesn't seem to be available yet](https://github.com/getredash/redash/issues/633).
+Redash by default maintains its own lists of users.  For integration with external identity providers, OAuth (for Google anyway) is available.  However, unfortunately LDAP (such as Microsoft Active Directory) [doesn't seem to be available yet](https://github.com/getredash/redash/issues/633).
 
 ### Authorization
 Users can be placed in groups and those groups can be granted access to Data Sources.  As well, it is possible to mark a dashboard as public (not requiring authentication) as seen here:
@@ -67,21 +69,22 @@ Users can be placed in groups and those groups can be granted access to Data Sou
 ## Alerts
 Triggers can be placed on queries to alert if a certain condition is met by the results.  Notification destinations include email, HipChat, Webhook, and Slack.  Here's an example configuration screen:
 
-<img src="{{ site.url }}/img/posts/data_viz_sales_dashboard.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
+<img src="{{ site.url }}/img/posts/data_viz_alerts.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
 
 ## Summary
 
-Overall, I'm quite impressed with the fit and finish of this open-source visualization tool.  I would definitely recommend this tool for those needing a quick solution for data reporting.  
+Overall, I'm quite impressed with the fit and finish of this open-source visualization tool.  I would definitely recommend [re:dash](http://redash.io/) for those needing a quick and powerful solution for data reporting.  
 
 ### Strengths
 As discussed above, key strengths of Redash include:
-1. SQL queries with a handy web-based editor, with optional scheduled execution.
+
+1. SQL queries in a web-based editor, with optional scheduled execution.
 2. Easy to configure charts, maps, plots, and graphs.
 3. Dashboards which are simple to create and share.
 4. Configurable alerts delivered via email, HipChat, Webhook, and Slack.
 
 ### Possible Improvements
-As just listed, Redash is already a very simple and powerful dashboarding tool.  Here are some potential enhancements that could expand it's usefulness.
+As just listed, Redash is already great dashboarding tool.  Here are some potential enhancements that could expand it's usefulness.
 
 #### Drill-Down Charts
 With the support for parameterized queries, it would really nice to see support for chart drill-down.  For example, in the pie chart shown above, with a slice showing sales totals per region, it would be nice to click down into a region and see the breakdown of sales in that region, either in a data table or another chart.
