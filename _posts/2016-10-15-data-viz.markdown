@@ -47,14 +47,27 @@ Adding more charts for query results is possible, just by clicking the '+NEW VIS
 <img src="{{ site.url }}/img/posts/data_viz_chart_types.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
 
 ## Dashboards
+Once you have queries with visualizations, they can be added to a dashboard.  The order they are added in matters as I couldn't find a way of re-arranging them afterward.  However, one can always delete and re-add in the order desired.
+
+<img src="{{ site.url }}/img/posts/data_viz_sales_dashboard.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
+
+On a wide layout, charts can be regular or double-width.  The layout is responsive however, wrapping down right-side charts as the window is narrowed.
 
 ## Security
+Depending on the data being visualized, security can be an overriding concern.  Redash offers both authentication and authorization options.
 
 ### Authentication
+Redash by default maintains its own lists of users.  For integration with external identity providers, OAuth (at least Google anyway) seems to be supported directly.  However, unfortunately LDAP (such as Microsoft Active Directory) [doesn't seem to be available yet](https://github.com/getredash/redash/issues/633).
 
 ### Authorization
+Users can be placed in groups and those groups can be granted access to Data Sources.  As well, it is possible to mark a dashboard as public (not requiring authentication) as seen here:
+
+<img src="{{ site.url }}/img/posts/data_viz_share_dashboard.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
 
 ## Alerts
+Triggers can be placed on queries to alert if a certain condition is met by the results.  Notification destinations include email, HipChat, Webhook, and Slack.  Here's an example configuration screen:
+
+<img src="{{ site.url }}/img/posts/data_viz_sales_dashboard.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
 
 ## Summary
 
@@ -85,11 +98,6 @@ Currently, redash queries results are read-only.  This makes sense for most situ
 Being able to correlate and combine records from different data sources before reporting would be a compelling feature.  For example, imagine linking sales data together with your shipping department.  Basically a simple [master data management](https://en.wikipedia.org/wiki/Master_data_management) (MDM) solution with identity resolution and record comparison.
 
 While I am a big fan of MDM, I actually think this enhancement is better done at the [data virtualization layer]({{site.url}}/2016/07/18/pg_data_virt/), rather than at the reporting layer.  So combining a Redash deployment with [Postgres FDW](https://wiki.postgresql.org/wiki/Foreign_data_wrappers) could be a nice approach.
-
-#### SQL Injection Guards
-Be careful about SQL injection in query parameters, as I was able to pass unescaped additional clauses into a single parameter as shown:
-
-<img src="{{ site.url }}/img/posts/data_viz_sql_injection.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
 
 ### Alternatives
 During my research, I looked at the open-source Kibana dashboard, which is an ["open core"](https://en.wikipedia.org/wiki/Open_core) project where advanced features are unfortunately commerical add-ons.  As well, I found Redash's SQL-based query features to be more compelling. 
