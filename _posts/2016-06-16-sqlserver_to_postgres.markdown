@@ -44,7 +44,7 @@ This loads the data into PostgreSQL:
 While this works, I wouldn't recommend this apporach except for one off jobs as it's not easily automatable or extensible.  It's a pity the DBCopy plugin which allows copy/paste of entire tables doesn't support more column type mappings.
 
 ### More in this series...
-* [Oracle into PostgreSQL with Talend]({{ site.url }}//2016/06/12/oracle_to_postgres/)
+* [Oracle into PostgreSQL with Talend]({{ site.url }}/2016/06/12/oracle_to_postgres/)
 * [MySQL into PostgreSQL with Python's petl]({{site.url}}/2016/06/21/mysql_to_postgres/)
 * [Excel into PostgreSQL with RapidMiner]({{site.url}}/2016/06/29/excel_to_postgres/)
 * [Data Virtualization with PostgreSQL]({{site.url}}/2016/07/18/pg_data_virt/)

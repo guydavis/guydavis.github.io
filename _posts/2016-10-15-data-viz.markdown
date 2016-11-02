@@ -105,4 +105,6 @@ While I am a big fan of MDM, I actually think this enhancement is better done at
 ### Alternatives
 During my research, I looked at the open-source Kibana dashboard, which is an ["open core"](https://en.wikipedia.org/wiki/Open_core) project where advanced features are unfortunately commerical add-ons.  As well, I found Redash's SQL-based query features to be more compelling. 
 
-
+### More in this series...
+* [Analyzing Data Quality]({{ site.url }}/2016/09/05/data_quality/)
+* [Data Quality Rules]({{ site.url }}/2016/09/21/data_quality_rules/)
