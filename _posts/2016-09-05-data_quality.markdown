@@ -51,7 +51,7 @@ Having analyzed completeness, timeliness, validity, and accuracy of our data, we
 
 <img src="{{ site.url }}/img/posts/data_quality_match_config.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
 
-Executing this job, gives the following summary results below.  As this table contains all people including customers and employees, some duplication is expected as the results show.  Unfortunately, only a summary is provided as I couldn't find a way to show the actual matched records in each group.
+Executing this job, gives the following summary results below.  As this table contains all people including customers and employees, some duplication is expected as the results show.  A bit of a hidden feature is to right-click on the stacked bar chart ('matching' section) to see the actual data rows that were flagged by this match rule.
 
 <img src="{{ site.url }}/img/posts/data_quality_match_results.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
 
@@ -66,7 +66,7 @@ For a tech-literate data manager, I think Talend Open Studio offers a compelling
 ### Strengths
 The out of the box jobs provided by Talend are a great way to very quickly inspect data, finding problems that are often overlooked, until they surface in your business as corrupted workflows and untrusted reporting.
 
-As well, it appears that analysis jobs can be tuned with multiple workers, allowing for concurrent execution.  Default seems to be 5 connections opened and working per analysis job.  
+As well, it appears that analysis jobs can be tuned with multiple workers, allowing for concurrent execution.  Default seems to be 5 connections opened and working per analysis job. 
 
 ### Areas for Improvement
 This data quality tool offers only analysis capabilities, without means of effecting cleansing jobs.  Depending on your data source, applying corrections directly in the source system may not be allowed for a quality tool.  However, it would be nice to have the capability for cleansing in Talend Open Studio.  As well, duplicates can be identified, but not automatically resolved.
