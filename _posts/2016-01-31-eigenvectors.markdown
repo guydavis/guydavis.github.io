@@ -8,6 +8,14 @@ published: true
 comments: true
 ---
 
+<script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        showProcessingMessages: false,
+        tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+    });
+    </script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 As part of explorations into machine learning, I've been brushing up on computer science basics starting with linear algebra.  Nice to see good old [eigenvectors](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors) again after so many years.
 
 ><p style="margin-top:0px;">An eigenvector of a square matrix <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math> is a non-zero vector <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math> such that multiplication by <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math> alters only the scale of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>:</p>

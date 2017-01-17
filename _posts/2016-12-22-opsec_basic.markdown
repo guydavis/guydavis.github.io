@@ -46,7 +46,7 @@ The next key precaution that everyone should be taking is to secure their email 
 5. Use cloud services, such as Dropbox, Google Drive, or Apple iCloud, to back-up all critical data on your phone in case it breaks, is lost, or is stolen.
 
 ## Computer Security
-Similarly, to stay secure with a laptop or desktop you must:
+Similarly, to stay secure with a laptop or desktop you should:
 
 1. Use a screen lock timeout and a secure user login for your computer.
 2. Keep up-to-date with any updates that you are prompted you to install.  Ensure they are legitimate updates from your OS vendor.
@@ -57,3 +57,5 @@ Similarly, to stay secure with a laptop or desktop you must:
 
 Be mindful for suspcious-looking dialog messages on your computer, as they may simply be scam sites or apps trying to get you to contact them.  **Don't!**  Talk to trusted family or friends before giving out any information to a random phone number.
  
+### More in this series...
+* [Advanced Digital Security]({{ site.url }}/2017/01/17/opsec_advanced/)

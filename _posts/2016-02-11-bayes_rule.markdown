@@ -8,6 +8,14 @@ published: true
 comments: true
 ---
 
+<script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        showProcessingMessages: false,
+        tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+    });
+    </script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 As I work through the refresher on probability and information theory, the authors showcase [Bayes' Rule](https://en.wikipedia.org/wiki/Bayes%27_rule) which is a key statistical technique applied to e-mail filtering.  
 
 ><p style="margin-top:0px">We often find ourselves in a situation where we know <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mfenced separators=''><mi>y</mi> <mo>|</mo> <mi>x</mi></mfenced></math> and need to know <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mfenced separators=''><mi>x</mi> <mo>|</mo> <mi>y</mi></mfenced></math>. Fortunately, if we also know <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mfenced separators=''><mi>x</mi></mfenced></math>, we can compute the desired quantity using Bayes’ rule:</p>

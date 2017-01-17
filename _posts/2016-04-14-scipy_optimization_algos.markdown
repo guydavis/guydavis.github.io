@@ -7,6 +7,14 @@ header-img: img/headers/climbing_wall.jpg
 comments: true
 ---
 
+<script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        showProcessingMessages: false,
+        tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+    });
+    </script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 I just completed the chapter on numerical computation in the [Deep Learning](http://www.deeplearningbook.org/) book by Ian Goodfellow, Yoshua Bengio and Aaron Courville. The topic of gradient-based optimization using various algorithms is explored. The example they give at the end of the chapter is using least squares to minimize a function.  This is also known as "curve-fitting", often performed when trying to tune parameters of a model function to best match the some collected data.
 
 ## Least Squares with SciPy
