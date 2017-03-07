@@ -1,0 +1,84 @@
+---
+layout: post
+title: Easy Kubernetes
+subtitle: on google container engine
+date: 2017-03-06
+header-img: img/headers/bozo_kiteboarding.jpg
+comments: true
+published: true
+---
+
+Following my earlier discussion of [enterprise orchestration]({{ site.url }}/2016/11/25/ent_orchestrators/), I decided to look closer at hosted Kubernetes clusters from [Google Cloud](https://cloud.google.com/container-engine/),  [Microsoft Azure](https://docs.microsoft.com/en-us/azure/container-service/container-service-kubernetes-walkthrough), and [AWS Cloud](https://aws.amazon.com/quickstart/architecture/heptio-kubernetes/).  To start with, I'll be trying out the free trial of Google Container Engine.
+
+## Getting Started with GCloud
+
+First off, I installed the [GCloud SDK](https://cloud.google.com/sdk/#Quick_Start) on my workstation, [Ubuntu 16.04](https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu):
+
+    export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
+    echo "deb https://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+    curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+    sudo apt-get update && sudo apt-get install google-cloud-sdk kubectl
+    gcloud init
+
+I then setup API credentials for my `gcloud` CLI.  First I [created a credential](https://console.cloud.google.com/apis/credentials/serviceaccountkey), then downloaded the key as JSON:
+
+![create]({{ site.url }}/img/posts/kube_gke_creds.png)
+
+    sudo gcloud auth activate-service-account --key-file MyProject-1234325.json
+
+## Create the Kubernetes Cluster
+
+Then in Google Cloud Console, I created the new Kubernetes cluster:
+
+![create]({{ site.url }}/img/posts/kube_gke_create.png)
+
+After creation, the console showed the newly running Kubernetes cluster (3 nodes):
+
+![mycluster]({{ site.url }}/img/posts/kube_gke_mycluster.png)
+
+I then connected from my local kubectl util:
+
+    gcloud container clusters get-credentials mykube --zone us-central1-a --project <project-id>
+    kubectl proxy
+
+This opened a local proxy to my Kubernetes cluster's Admin Dashboard:
+
+![deploy]({{ site.url }}/img/posts/kube_gke_deploy.png)
+
+Which I then scaled from one to three pods with:
+
+    kubectl scale --replicas=3 deployment/nginx-test
+
+![deployment]({{ site.url }}/img/posts/kube_gke_nginx.png)
+
+Since, I'd set the `nginx-test` deployment to be available as an external service on the Kubernetes clsuter, I could view it in a browser from my workstation:
+
+![nginx]({{ site.url }}/img/posts/kube_gke_nginx_external.png)
+
+For more useful Kubernetes commands, see the `kubectl` [documentation](https://kubernetes.io/docs/user-guide/kubectl/kubectl_completion/).
+
+## Monitoring and Logging
+
+Google Cloud makes it easy to add both [monitoring](https://cloud.google.com/monitoring/) and [logging](https://cloud.google.com/logging/) of your Kubernetes cluster.  For example, I could quickly find Nginx events from the launched pods:  
+
+![logging]({{ site.url }}/img/posts/kube_gke_logging.png)
+
+The monitoring dashboard allows one to see CPU, memory, and disk usage (example below):
+
+![monitoring]({{ site.url }}/img/posts/kube_gke_monitoring.png)
+
+Stackdriver is free for GCP VM monitoring and email alerts.  A premium tier offers combined monitoring of AWS instances as well, plus notifications in Slack, PagerDuty and more. 
+
+## Summary
+
+After evaluating various container orchestrators and cloud providers, I'm now convinced that:
+
+1. Distributed container orchestrators are the next operating system... required knowledge for software developers.
+2. As the leader in developer mind-share, [Kubernetes](https://kubernetes.io/) has become the API to deploy against, offering portability amongst cloud providers.
+3. Use managed clusters, like [GKE](https://cloud.google.com/container-engine/), rather than spending your time on bare-bones VMs.
+
+Software development best practice is now containerized deployments on an industry-standard orchestator, run by your preferred cloud platform.
+ 
+### More in this series...
+* [Apps at a Medium Pace]({{ site.url }}/2016/11/25/ent_orchestrators/)
+* [Kubernetes on CoreOS]({{ site.url }}//2017/02/21/ml_kube_setup/)
