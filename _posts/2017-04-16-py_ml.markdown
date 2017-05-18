@@ -1,0 +1,60 @@
+---
+layout: post
+title: Tensorflow and Sklearn
+subtitle: basic machine learning with python
+date: 2017-04-16
+header-img: img/headers/roman_colesium.jpg
+comments: true
+published: true
+---
+
+Getting started with a basic development environment for Python machine learning on Ubuntu can be a quick process.  This short tutorial will cover the installation of the [SciPY](https://www.scipy.org/getting-started.html), [Scikit-Learn](http://scikit-learn.org/stable/index.html), and [Tensorflow](https://www.tensorflow.org/get_started/get_started) libraries.
+
+## Getting Started
+On Ubuntu 16.04, current steps to install Tensorflow and SciPy include:
+
+    sudo apt-get install python-pip python-dev
+    sudo -H pip3 install --upgrade pip
+    sudo -H pip3 install --upgrade scipy tensorflow theano scikit-learn algopy pandas
+
+## Scipy
+Then perform [basic validation](https://github.com/guydavis/python-ml-hello-world/blob/master/scipy_hello_world.py) of your scipy install by displaying a basic Matlib plot:
+
+    """ Compute the maximum of a Bessel function and plot it. """
+    parser = argparse.ArgumentParser(usage=__doc__)
+    parser.add_argument("--order", type=int, default=3, help="order of Bessel function")
+    args = parser.parse_args()
+    f = lambda x: -special.jv(args.order, x)
+    sol = optimize.minimize(f, 1.0)
+    x = np.linspace(0, 10, 5000)
+    plt.plot(x, special.jv(args.order, x), '-', sol.x, -sol.fun, 'o')
+    plt.show() # Displays the image in matplotlib window
+
+## Scikit-learn
+To ensure sklearn is installed, here's another [basic validation](https://github.com/guydavis/python-ml-hello-world/blob/master/sklearn_hello_world.py):
+
+    """ Classification using support-vector machine. """
+    iris = datasets.load_iris()
+    digits = datasets.load_digits()
+    print(digits.data)
+    clf = svm.SVC(gamma=0.001, C=100.)
+    clf.fit(digits.data[:-1], digits.target[:-1])
+    prediction = clf.predict(digits.data[-1:])
+    print(prediction)
+
+The output of this predictor is the next digit in the series.  For more on scikit-learn, see this [tutorial](http://scikit-learn.org/stable/tutorial/basic/tutorial.html).
+
+## Tensorflow
+To verify basic functionality in Tensorflow, here's a [simple test program]((https://github.com/guydavis/python-ml-hello-world/blob/master/tensorflow_hello_world.py):
+
+    """ Tests basic functioning of Tensorflow module. """
+    import tensorflow as tf
+    hello = tf.constant('Hello, TensorFlow!')
+    sess = tf.Session()
+    print(sess.run(hello))
+
+## Next Steps
+With these useful ML tools installed, the next step is to complete many of the useful tutorials available for each.
+ 
+### More in this series...
+* [Python ML on Ubuntu 14.04]({{ site.url }}/2016/03/23/python_for_ml/)
