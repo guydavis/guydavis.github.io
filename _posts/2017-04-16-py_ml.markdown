@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tensorflow and Sklearn
+title: Tensorflow and Scikit-learn
 subtitle: basic machine learning with python
 date: 2017-04-16
 header-img: img/headers/roman_colesium.jpg
