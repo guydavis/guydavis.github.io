@@ -36,7 +36,7 @@ Setting the parameters for Oracle input component was straight forward:
 
 As was setting the parameters of the Postgres output component:
 
-![Postgres]({{ site.url }}/img/posts/etl_talend2.png)
+![Postgres]({{ site.url }}/img/posts/etl_talend3.png)
 
 However, by default Talend will use column names from Oracle exactly, including them as upper-case.  Uppercase columns in Postgres will work if you quote them everywhere, but who wants to bother with that?  So instead, I changed the output schema mapping as shown:
 
