@@ -3,7 +3,7 @@ layout: post
 title: Kubernetes on CoreOS
 subtitle: cluster setup on AWS
 date: 2017-02-21
-header-img: img/headers/steering_wheel.jpg
+header-img: img/headers/bow_river.jpg
 comments: true
 published: true
 ---
