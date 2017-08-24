@@ -8,7 +8,7 @@ comments: true
 published: true
 ---
 
-This is a follow-up to my first attempt at lane detection, based on a [KDNuggets article](http://www.kdnuggets.com/2017/07/road-lane-line-detection-using-computer-vision-models.html), that resulted in some hilarious results such as this:
+This is a follow-up to my [first attempt]({{ site.url }}/2017/05/21/py_lane_detect/) at lane detection, based on a [KDNuggets article](http://www.kdnuggets.com/2017/07/road-lane-line-detection-using-computer-vision-models.html), that resulted in some hilarious results such as this:
 ![Sad Path 1]({{ site.url }}/img/posts/lane_detect_sad_path1.gif)
 
 Armed with some new dashcam samples from [Google Images](https://www.google.ca/search?safe=active&biw=1855&bih=917&tbm=isch&sa=1&q=dashcam+roadway+lane&oq=dashcam+roadway+lane&gs_l=psy-ab.3...0.0.0.5544.0.0.0.0.0.0.0.0..0.0....0...1..64.psy-ab..0.0.0.5vmkNTvVB0Y), I discovered better work by [Naoki Shibuya](https://github.com/naokishibuya/car-finding-lane-lines) for identifying the yellow and white lines within a more reasonable area of interest.
