@@ -1,0 +1,34 @@
+---
+layout: post
+title: More Lane Detection
+subtitle: adopting a better strategy
+date: 2017-06-13
+header-img: img/headers/prince_of_wales_winter.jpg
+comments: true
+published: true
+---
+
+This is a follow-up to my first attempt at lane detection, based on a [KDNuggets article](http://www.kdnuggets.com/2017/07/road-lane-line-detection-using-computer-vision-models.html), that resulted in some hilarious results such as this:
+![Sad Path 1]({{ site.url }}/img/posts/lane_detect_sad_path1.gif)
+
+Armed with some new dashcam samples from [Google Images](https://www.google.ca/search?safe=active&biw=1855&bih=917&tbm=isch&sa=1&q=dashcam+roadway+lane&oq=dashcam+roadway+lane&gs_l=psy-ab.3...0.0.0.5544.0.0.0.0.0.0.0.0..0.0....0...1..64.psy-ab..0.0.0.5vmkNTvVB0Y), I discovered better work by [Naoki Shibuya](https://github.com/naokishibuya/car-finding-lane-lines) for identifying the yellow and white lines within a more reasonable area of interest.
+
+# Improved Codebase
+My goal in this post was to evaluate this new approach to [lane detection](https://github.com/guydavis/lane-detect/blob/master/lane_detect.py).  On the original image, lanes detected nicely again:
+![Happy Path]({{ site.url }}/img/posts/lane_detect2_happy_path.gif)
+
+The next test was to see if an image that failed with the [previous approach]({{ site.url }}/2017/05/21/py_lane_detect/), would properly detect lanes. 
+![Improved Detect]({{ site.url }}/img/posts/lane_detect2_img5_passed.gif) 
+
+Another example of successful detection, this time at night:
+![Night Detect]({{ site.url }}/img/posts/lane_detect2_img16_passed.gif) 
+
+# Conclusions
+Overall, I'm quite pleased by the improvement in lane detection offered by this approach from [Naoki Shibuya](https://github.com/naokishibuya/car-finding-lane-lines).  By better identifying the white and yellow line colors, along with improved area of interest selection, better results were obtained.
+
+## Next Steps
+However, there is still room for improvement as many of the sample images still failed to identify lines or detected lanes incorrectly.  Notable is number of lines detected at nearly horizontal, at 90 degrees to the direction of travel. 
+![Horizontal]({{ site.url }}/img/posts/lane_detect2_img13_passed.gif)  
+
+### More in this series...
+* [Lane Detection in Images]({{ site.url }}/2017/05/21/py_lane_detect/) - first in this series.

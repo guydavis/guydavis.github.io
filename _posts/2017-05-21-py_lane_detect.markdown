@@ -8,7 +8,7 @@ comments: true
 published: true
 ---
 
-Following this [GitHub project](https://github.com/naokishibuya/car-finding-lane-lines) and this [KDnuggets article](http://www.kdnuggets.com/2017/07/road-lane-line-detection-using-computer-vision-models.html), I will be trying to replicate road lane detection using the Python computer vision library, [OpenCV](http://opencv.org/).  Here's the sample image they used to detect lanes:
+Following this [KDnuggets article](http://www.kdnuggets.com/2017/07/road-lane-line-detection-using-computer-vision-models.html), I will be trying to replicate road lane detection using the Python computer vision library, [OpenCV](http://opencv.org/).  Here's the sample image they used to detect lanes:
 
 ![Input]({{ site.url }}/img/posts/lane_detect_source.jpg)
 
@@ -95,10 +95,12 @@ As you can see, identifying the region of interest (i.e. the roadway) in an imag
 Running this code against other dashcam shots from Google Images, I found some interesting results:
 ![Sad Path 1]({{ site.url }}/img/posts/lane_detect_sad_path1.gif)
 ![Sad Path 2]({{ site.url }}/img/posts/lane_detect_sad_path2.gif)
-Clearly you would not want this lane detection algorithm driving your car!  The area of interest selection seems to be a problem here as the roadway is not being identified before the attempt to overlay lane markers.
+![Sad Path 3]({{ site.url }}/img/posts/lane_detect2_img5_failed.gif)
+
+Clearly you would not want this lane detection algorithm driving your car!  The color selection of the lines is too stringent. Also the area of interest selection seems to be a problem here as the roadway is not being identified before the attempt to overlay lane markers.
 
 ## Next Steps
 Having discovered the limits of simple lane detection with naive area-of-interest determination, I hope to improve upon this approach in the future.
  
 ### More in this series...
-* Coming soon...
+* [Lane Detection Continued...]({{ site.url }}/2017/05/21/py_lane_detect/) - next in this series.
