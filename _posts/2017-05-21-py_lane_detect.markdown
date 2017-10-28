@@ -103,4 +103,5 @@ Clearly you would not want this lane detection algorithm driving your car!  The 
 Having discovered the limits of simple lane detection with naive area-of-interest determination, I hope to improve upon this approach in the future.
  
 ### More in this series...
-* [Lane Detection Continued...]({{ site.url }}/2017/05/21/py_lane_detect/) - next in this series.
+* [Improved Lane Detection]({{ site.url }}/2017/06/13/lane_detect_improved/) - improved approach.
+* [Handling Dashcam Footage]({{ site.url }}/2017/09/25/lane_detect_video/) - processing video.

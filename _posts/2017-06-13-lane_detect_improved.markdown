@@ -31,4 +31,5 @@ However, there is still room for improvement as many of the sample images still 
 ![Horizontal]({{ site.url }}/img/posts/lane_detect2_img13_passed.gif)  
 
 ### More in this series...
-* [Lane Detection in Images]({{ site.url }}/2017/05/21/py_lane_detect/) - first in this series.
+* [Lane Detection in Images]({{ site.url }}/2017/05/21/py_lane_detect/) - first attempt.
+* [Handling Dashcam Footage]({{ site.url }}/2017/09/25/lane_detect_video/) - processing video.
