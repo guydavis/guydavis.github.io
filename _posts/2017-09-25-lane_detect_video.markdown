@@ -15,7 +15,7 @@ In my case, I've pulled a variety of footage from the [DOD 460W dashcam](https:/
 # Improved Codebase
 I am applying the approach by [Naoki Shibuya](https://github.com/naokishibuya/car-finding-lane-lines), which uses [moviepy](https://zulko.github.io/moviepy/) for splitting a video file into sequential images, and then applying the lane detection algorithm.  This draws red markers over detected lanes in dashcam footage.
 
-Overall, the [Canny Edge Detection](https://github.com/guydavis/lane-detect/blob/master/lane_detect.py) algorithm worked well once I cropped out the yellow text my dashcam overlays on the footage from the area of interest.  However, it's not perfect as you see in this sample clip where:
+The [Canny Edge Detection](https://github.com/guydavis/lane-detect/blob/master/lane_detect.py) algorithm worked well once I cropped out the yellow text my dashcam overlays on the footage from the area of interest.  However, it's not perfect as you see in this sample clip where:
 
 * I change lanes and the right line detector goes wonky.
 * I pass a turn off and the left lane marker vanishes.
