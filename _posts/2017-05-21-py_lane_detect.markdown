@@ -105,3 +105,4 @@ Having discovered the limits of simple lane detection with naive area-of-interes
 ### More in this series...
 * [Improved Lane Detection]({{ site.url }}/2017/06/13/lane_detect_improved/) - improved approach.
 * [Handling Dashcam Footage]({{ site.url }}/2017/09/25/lane_detect_video/) - processing video.
+* [Deploying in Docker]({{ site.url }}/2017/10/25/lane_detect_docker/) - bundling as a Docker image.

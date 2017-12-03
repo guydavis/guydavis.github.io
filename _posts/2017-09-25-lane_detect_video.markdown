@@ -27,8 +27,11 @@ The [Canny Edge Detection](https://github.com/guydavis/lane-detect/blob/master/l
 Overall, this algorithm does a pretty good job of detecting lanes in dashcam footage, however taking 30 minutes or more to process 3 minutes of dashcam footage isn't a reasonable approach.  I would not want to drive in that vehicle!  
 
 ## Next Steps
-So, in future, I will consider ways to improve this processing rate, ideally through smarter algorithms for lane detection. 
+There are two directions I'd like to follow up on:
+* Bundling up the current lane detection algortihm as a Docker image to scale it to process more video.
+* Trying out a machine learning approach, potentially offering better detection than the static behavior of the [Canny algorithm](https://en.wikipedia.org/wiki/Canny_edge_detector).
 
 ### More in this series...
 * [Lane Detection in Images]({{ site.url }}/2017/05/21/py_lane_detect/) - first attempt.
 * [Improved Lane Detection]({{ site.url }}/2017/06/13/lane_detect_improved/) - improved approach.
+* [Deploying in Docker]({{ site.url }}/2017/10/25/lane_detect_docker/) - bundling as a Docker image.
