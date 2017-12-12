@@ -15,6 +15,48 @@ In my case, I've pulled a variety of footage from the [DOD 460W dashcam](https:/
 # Improved Codebase
 I am applying the approach by [Naoki Shibuya](https://github.com/naokishibuya/car-finding-lane-lines), which uses [moviepy](https://zulko.github.io/moviepy/) for splitting a video file into sequential images, and then applying the lane detection algorithm.  This draws red markers over detected lanes in dashcam footage.
 
+```
+QUEUE_LENGTH=50
+
+class LaneDetector:
+    def __init__(self):
+        self.left_lines  = deque(maxlen=QUEUE_LENGTH)
+        self.right_lines = deque(maxlen=QUEUE_LENGTH)
+
+    def mean_line(self, line, lines):
+        if line is not None:
+            lines.append(line)
+        if len(lines)>0:
+            line = np.mean(lines, axis=0, dtype=np.int32)
+            line = tuple(map(tuple, line))
+        return line
+
+    def process(self, image):
+        try:
+            white_yellow = select_white_yellow(image)
+            gray         = convert_gray_scale(white_yellow)
+            smooth_gray  = apply_smoothing(gray)
+            edges        = detect_edges(smooth_gray)
+            regions      = select_region(edges)
+            lines        = hough_lines(regions)
+            left_line, right_line = lane_lines(image, lines)
+            left_line  = self.mean_line(left_line,  self.left_lines)
+            right_line = self.mean_line(right_line, self.right_lines)
+            return draw_lane_lines(image, (left_line, right_line))
+        except:
+            #traceback.print_exc()
+            return image
+
+def process_video(dirpath, video_file):
+    video_outfile = os.path.splitext(video_file)[0] + '.mp4'
+    detector = LaneDetector()
+    clip = VideoFileClip(os.path.join(dirpath, video_file))
+    processed = clip.fl_image(detector.process)
+    print(os.path.join('output', video_file))
+    processed.write_videofile(os.path.join('output', video_outfile), audio=False)
+    
+```
+
 The [Canny Edge Detection](https://github.com/guydavis/lane-detect/blob/master/lane_detect.py) algorithm worked well once I cropped out the yellow text my dashcam overlays on the footage from the area of interest.  However, it's not perfect as you see in this sample clip where:
 
 * I change lanes and the right line detector goes wonky.
@@ -35,3 +77,4 @@ There are two directions I'd like to follow up on:
 * [Lane Detection in Images]({{ site.url }}/2017/05/21/py_lane_detect/) - first attempt.
 * [Improved Lane Detection]({{ site.url }}/2017/06/13/lane_detect_improved/) - improved approach.
 * [Deploying in Docker]({{ site.url }}/2017/10/25/lane_detect_docker/) - bundling as a Docker image.
+* [Running on Google Cloud]({{ site.url }}/2017/11/24/lane_detect_cloud_gke/) - scaling on GKE.
