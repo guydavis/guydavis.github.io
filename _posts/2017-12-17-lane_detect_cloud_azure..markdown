@@ -176,4 +176,5 @@ Having given the managed Kubernetes services at both Google and Microsoft I spin
 * [Lane Detection in Images]({{ site.url }}/2017/05/21/py_lane_detect/) - first attempt.
 * [Improved Lane Detection]({{ site.url }}/2017/06/13/lane_detect_improved/) - improved approach.
 * [Handling Dashcam Footage]({{ site.url }}/2017/09/25/lane_detect_video/) - processing video.
+* [Deploying in Docker]({{ site.url }}/2017/10/16/lane_detect_docker/) - bundling as a Docker image.
 * [Running on Google Cloud]({{ site.url }}/2017/11/24/lane_detect_cloud_gke/) - scaling on GKE.
