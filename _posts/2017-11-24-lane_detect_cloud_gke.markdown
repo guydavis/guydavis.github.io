@@ -110,3 +110,4 @@ While this approach demonstrated lane detection using Kubernetes to scale, there
 * [Lane Detection in Images]({{ site.url }}/2017/05/21/py_lane_detect/) - first attempt.
 * [Improved Lane Detection]({{ site.url }}/2017/06/13/lane_detect_improved/) - improved approach.
 * [Handling Dashcam Footage]({{ site.url }}/2017/09/25/lane_detect_video/) - processing video.
+* [Running on Microsoft Cloud]({{ site.url }}/2017/12/17/lane_detect_cloud_azure/) - scaling on Azure.

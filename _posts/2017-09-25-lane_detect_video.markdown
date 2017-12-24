@@ -78,3 +78,4 @@ There are two directions I'd like to follow up on:
 * [Improved Lane Detection]({{ site.url }}/2017/06/13/lane_detect_improved/) - improved approach.
 * [Deploying in Docker]({{ site.url }}/2017/10/25/lane_detect_docker/) - bundling as a Docker image.
 * [Running on Google Cloud]({{ site.url }}/2017/11/24/lane_detect_cloud_gke/) - scaling on GKE.
+* [Running on Microsoft Cloud]({{ site.url }}/2017/12/17/lane_detect_cloud_azure/) - scaling on Azure.
