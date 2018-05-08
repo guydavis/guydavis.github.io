@@ -8,7 +8,7 @@ comments: true
 published: true
 ---
 
-I recently had an opporunity to research options for extracting tabular data from scanned PDF images.  Turns out this a very challenging problem, given the widely varying layouts and scan quality of typical examples. I did find a [very good approach by Markus Konrad](https://datascience.blog.wzb.eu/2017/02/16/data-mining-ocr-pdfs-using-pdftabextract-to-liberate-tabular-data-from-scanned-documents/) that searched for table border lines using the same algorithm I recently used for finding [road lane markers in dashcam footage]({{ site.url }}/2017/06/13/lane_detect_improved/). Here's a sample input:
+I recently had an opportunity to research options for extracting tabular data from scanned PDF images.  Turns out this a very challenging problem, given the widely varying layouts and scan quality of typical examples. I did find a [very good approach by Markus Konrad](https://datascience.blog.wzb.eu/2017/02/16/data-mining-ocr-pdfs-using-pdftabextract-to-liberate-tabular-data-from-scanned-documents/) that searched for table border lines using the same algorithm I recently used for finding [road lane markers in dashcam footage]({{ site.url }}/2017/06/13/lane_detect_improved/). Here's a sample input:
 
 ![Output]({{ site.url }}/img/posts/ocr_table_sample.png)
 

@@ -8,6 +8,14 @@ comments: true
 published: false
 ---
 
+# Install Tesseract 4.0 alpha
+
+```
+sudo add-apt-repository ppa:alex-p/tesseract-ocr
+sudo apt-get update
+sudo apt install tesseract-ocr tesseract-ocr-eng
+```
+
 
 # Conclusion
 
