@@ -8,9 +8,9 @@ comments: true
 published: true
 ---
 
-Having given up cable TV a while back, I wanted a means of sharing my personal collection of home videos, photos, movies, shows, and music to other computers, TVs, tablets, and phones around my house.  Deciding on [Plex](https://www.plex.tv), I setup a private media server that automates management of all my digital content.  
+Having given up cable TV a while back, I wanted a means of sharing my personal collection of home videos, photos, movies, shows, and music to other computers, TVs, tablets, and phones around my house.  Deciding on [Plex](https://www.plex.tv), I setup a private media server that automates management of all my digital content: 
 
-<a href="http://plex.tv" target="_blank" title="Generic Image from Plex"><img src="https://www.plex.tv/wp-content/uploads/2016/06/image-block-plex-media-server-macbook-1600x984.jpg" style="size:25%"/></a>
+![Organizr]({{ site.url }}/img/posts/private_media_server_organizr.png)
 
 ## Overall Approaches
 These days, a quick way to setup a media server is to rent a virtual private server (VPS) from a cloud provider.  [Digital Ocean](http://digitalocean.com) and [Hetzner](https://www.hetzner.com) are good options, but a search for [seedbox](https://www.google.ca/search?q=seedbox) turns up many more possibilities.  [Plex Cloud](https://www.plex.tv/features/cloud/) is another option, storing files on Google Drive, OneDrive, or Dropbox.
