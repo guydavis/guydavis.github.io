@@ -14,7 +14,7 @@ As our kids are still young (<=10), we don't need the latest and greatest PC har
 
 # Build or Buy?
 
-With a great pricing matching policy, I knew I would be purchasing from our local retailer, Memory Express.  Rather than buy from their [pre-built systems], I decided to spec out my own from their parts list and save some money.
+With a great pricing matching policy, I knew I would be purchasing from our local retailer, Memory Express.  Rather than buy from their [pre-built systems](https://www.memoryexpress.com/Category/DesktopComputers?FilterID=2e413559-0182-1014-4547-d1dbca418ecd), I decided to spec out my own from their parts list and save some money.
 
 # AMD or Intel?
 In late 2018, AMD has stolen the best value for money in the budget and mid-range gaming markets.  Performance for price on AMD products just can't be beat, though Intel and Nvidia do have a lock on the most performant technology, along with insane prices for it.
