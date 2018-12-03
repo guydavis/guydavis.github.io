@@ -43,13 +43,13 @@ Here's a look at the Inwin case, as I went for a white theme:
 
 ![Inwin]({{ site.url }}/img/posts/budget_pc_gaming_inwin_101.jpg)
 
-Software was Windows 10.  AMD provided their [Store MI](https://www.amd.com/en/technologies/store-mi) tiered drive software, free with the motherboard.
+Software was Windows 10.  AMD provided their [Store MI](https://www.amd.com/en/technologies/store-mi) tiered drive software, free with the motherboard.  Additional details on this gaming PC build were published by [CPU-Z](https://valid.x86.fr/da256l)
 
 This build was aiming for longevity by getting better than average motherboard, storage, memory, case, and fans.  Still budget parts, but they should last for years.  The AMD Ryzen APU was definitely below average, but will function fine for a year or so, at which point I'll likely upgrade to the latest AMD CPU and GPU.
 
 # Conclusions
 
-The biggest benefit of a simple gaming PC was that our upgrade choices are still open in coming months and years.  For example, will we make good use of this PC or will it gather dust like our old Nintendo Wii?  By starting with a cheap system, it's not a big deal if the boys turn out to not be interested in PC gaming.
+Overall, I'm quite pleased with the final outcome of this budget gaming PC.  The biggest benefit of a simple gaming PC was that our upgrade choices are still open in coming months and years.  For example, will we make good use of this PC or will it gather dust like our old Nintendo Wii?  By starting with a cheap system, it's not a big deal if the boys turn out to not be interested in PC gaming.
 
 On the other hand, if the gaming PC gets lots of use and we want to play more challenging titles in the future, requiring a real GPU, what is our best upgrade option?
 * Buy an Nvidia GTX GPU and possibly Gamestream to the Nvida Shield?
