@@ -56,3 +56,7 @@ Another useful admin tool is [PML](http://pimpmylog.com/) for online access to m
 ## Conclusions
 While not for the average cord cutter, running a private media server has been a great learning experience for me.  I've found the online communities around these projects really helpful, which has prompted me to donate some $ to these open source projects to ensure they keep developing and invovating.  Keep up the good work!
 
+### More in this series...
+* [Nvidia Shield TV]({{ site.url }}/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
+* [Budget Gaming PC]({{ site.url }}/2018/11/09/budget_pc_gaming) - covers building an entry-level rig for PC gaming. 
+* [Retro Game Emulation]({{ site.url }}/2018/12/15/retro_game_emu) - options for emulating old games on both PC and Shield TV. 
