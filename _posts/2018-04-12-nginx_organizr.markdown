@@ -153,5 +153,5 @@ Overall, I've found Nginx and Organizr to work very well together. I particularl
  
 
 ### More in this series...
-* [Private Media Server]({{ site.url }}/2018/01/19/private-media-server/) - overview of my server.
+* [Private Media Server]({{ site.url }}/2018/01/19/private_media_server/) - overview of my server.
 * [Nginx and Organizr v2]({{ site.url }}/2019/01/03/nginx_organizr_v2/) -  updated proxying for Organizr v2.
