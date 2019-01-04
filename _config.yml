@@ -36,4 +36,4 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 prose:
   rooturl: '_posts'
 
-gems: [jekyll-paginate, jekyll-feed]
+plugins: [jekyll-paginate, jekyll-feed]
