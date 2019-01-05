@@ -60,3 +60,4 @@ Combine that uncertainty with the benefit of waiting for newer/better/cheaper te
 * [A Private Media Server]({{ site.url }}/2018/01/19/private_media_server/) - covers Plex on a cheap Linux laptop.
 * [Nvidia Shield TV]({{ site.url }}/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
 * [Retro Game Emulation]({{ site.url }}/2018/12/15/retro_game_emu) - options for emulating old games on both PC and Shield TV. 
+* [PC Game Stores]({{ site.url }}/2018/12/26/pc_game_stores) - where to find PC games. 
