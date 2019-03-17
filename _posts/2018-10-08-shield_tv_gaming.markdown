@@ -44,9 +44,11 @@ I've also been experimenting with Retroarch as an game emulator for older ROMs. 
 
 Being able to [serve Plex media]({{ site.url }}/2018/01/19/private_media_server/) up from the Shield itself, freed up my budget laptop to roam about the house again.  Overall, we've found the Shield is able to handle a few concurrent transcodes which is more than enough for our families usage.  I'm still using an old Ubuntu tower for media storage, shared to the Shield via Samba.
 
+UPDATE: Running Plex server on the Shield worked great in October and November.  Then in December an update was pushed to the Shield which introduced bugs around SMB file share handling which made playback unwatchable, with disconnects every few minutes for Plex devices.  After searching for solutions, I ended up installing Plex Server on a Windows 10 PC which works great, no playback issues and supports many more concurrent viewers.  Therefore, I can't recommend using the Shield as a Plex Server anymore.
+
 # Conclusions
 
-Overall, the Shield is a fantastic device, particularly due to recent software and service upgrades, most notably the re-vamped GeForce Now service.  My boys and I really enjoy playing Android, PC, and classic games on this system.  It's ability to serve up Plex throughout the house and stream Netflix is also great.
+Overall, the Shield is a fantastic device, particularly due to recent software and service upgrades, most notably the re-vamped GeForce Now service.  My boys and I really enjoy playing Android, PC, and classic games on this system.  It's ability to watch Plex and stream Netflix is also great.
 
 However, the Shield is not a perfect device.  In particular, it's integration with the Google Assistant eco-system is not great.  I specifically disabled the 'always-on' Assistant listening of the Shield remotes, instead preferring to click the button remote or controller to bring up the Shield's assistant when needed.  This prevented the Shield from competing with our Google Home Mini in that room as the Mini is simply better at handling voice commands.
 
