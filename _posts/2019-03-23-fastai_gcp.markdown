@@ -8,7 +8,7 @@ comments: true
 published: false
 ---
 
- After confirming that my old Windows laptop was not a [machine-learning powerhouse]({{ site.url }}/2019/03/21/anaconda_navigator/), I decided to return to [Google Cloud Platform](https://cloud.google.com/) (GCP) to rent access to a GPU-powered server.  I also wanted to see how GCP had evolved since I'd last used [GKE in 2017]({{ site.url }}/2017/11/24/lane_detect_cloud_gke/).  For this, I followed the [Server setup](https://course.fast.ai/start_gcp.html) tutorial at [Fast AI](https://www.fast.ai/).
+ After confirming that my old laptop was not a [machine-learning powerhouse]({{ site.url }}/2019/03/21/anaconda_navigator/), I decided to return to [Google Cloud Platform](https://cloud.google.com/) (GCP) to rent access to a GPU-powered server.  I also wanted to see how GCP had evolved since I'd last used [GKE in 2017]({{ site.url }}/2017/11/24/lane_detect_cloud_gke/).  For this, I followed the [Server setup](https://course.fast.ai/start_gcp.html) tutorial at [Fast AI](https://www.fast.ai/).
 
 ## GCloud CLI on Windows
 
@@ -67,10 +67,28 @@ By default, GPU instances are limited to 0, so you'll probably need to increase 
 ![Quota Error]({{ site.url }}/img/posts/fastai_gcp_gpu_quota.png)
 
 If so, you can request an increase in the [GCP Console](https://console.cloud.google.com/iam-admin/quotas) as shown by filtering for:
-
+ 
 ![Quota Filter]({{ site.url }}/img/posts/fastai_gcp_gpu_quota_filter.png)
 
 Then increasing on the right:
 ![Quota Increase]({{ site.url }}/img/posts/fastai_gcp_gpu_quota_increase.png)
 
-You'll be told to wait a couple of days for the request to be approved.
+In my case, the request was approved via GCP Support in a few hours.  I was then 
+
+![Instance Created]({{ site.url }}/img/posts/fastai_gcp_create_instance.png)
+
+Once the instance is running, I can login (SSH keypair created if needed):
+
+![Instance Login]({{ site.url }}/img/posts/fastai_gcp_ssh_login.png)
+
+After a few pulling a few updates via `git` and `conda`, I was able to view the Jupyter Notebook in my browser, via the port forward to the GPU instance:
+
+![Notebook Access]({{ site.url }}/img/posts/fastai_gcp_notebook_start.png)
+
+## Pytorch CPU/GPU Test
+
+Following my previous test on the [laptop]({{ site.url }}/2019/03/21/anaconda_navigator/), I reran the CPU/GPU Pytorch test on this cloud instance:
+
+![Pytorch GPU Test]({{ site.url }}/img/posts/fastai_gcp_pytorch_test.png)
+
+Clearly, the CPU performance of this cloud instance (389 ms) destroys my old laptop (10.3 sec).  As well, this GCP instance has does not error out when the CUDA GPU routines are tested.  Even better, I can stop the instance when not in use.  Very nice!
