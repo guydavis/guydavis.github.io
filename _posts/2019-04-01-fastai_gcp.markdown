@@ -2,10 +2,10 @@
 layout: post
 title: Cloud GPUs
 subtitle: machine learning by the hour
-date: 2019-03-23
+date: 2019-04-01
 header-img: img/headers/cactus_flower.jpg
 comments: true
-published: false
+published: true
 ---
 
  After confirming that my old laptop was not a [machine-learning powerhouse]({{ site.url }}/2019/03/21/anaconda_navigator/), I decided to return to [Google Cloud Platform](https://cloud.google.com/) (GCP) to rent access to a GPU-powered server.  I also wanted to see how GCP had evolved since I'd last used [GKE in 2017]({{ site.url }}/2017/11/24/lane_detect_cloud_gke/).  For this, I followed the [Server setup](https://course.fast.ai/start_gcp.html) tutorial at [Fast AI](https://www.fast.ai/).
