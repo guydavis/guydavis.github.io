@@ -5,7 +5,7 @@ subtitle: fastai - lesson one
 date: 2019-05-04
 header-img: img/headers/cactus_flower.jpg
 comments: true
-published: false
+published: true
 ---
 
 This covers my work on the first lesson of the [Fast AI course](https://course.fast.ai/).

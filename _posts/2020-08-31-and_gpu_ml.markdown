@@ -2,10 +2,8 @@
 layout: post
 title: Machine Learning on the Cheap
 subtitle: with amd radeon gpus
-date: 2019-06-02
+date: 2019-06-23
 header-img: img/headers/iceline_trail.jpg
 comments: true
 published: false
 ---
-
-
