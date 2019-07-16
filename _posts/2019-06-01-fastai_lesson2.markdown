@@ -33,3 +33,6 @@ The beauty of [stochastic gradient descent](https://en.wikipedia.org/wiki/Stocha
 ## Takeaways
 
 In this lesson, we then extended from the simple function example, to a classifying function for teddy bears, using mini-batches to ensure a performant search.  At the end, we had a decent machine learning algorithm (aka a function) that could pretty reasonably identify teddy bears in an image.
+
+### Next in this series...
+* [Lesson 3]({{ site.url }}/2019/07/16/fastai_lesson3/)

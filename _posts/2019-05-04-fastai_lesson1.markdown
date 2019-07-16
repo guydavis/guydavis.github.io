@@ -43,3 +43,5 @@ Another interesting tidbit was the instructor's discussion of GPU VRAM size for 
 
 While this supervised approach to image classification is interesting, I wonder how well an unsupervised approach works.  I'm guessing that the labelled training set provided to the supervised learner gives it a leg up over unsupervised alternatives.
 
+### Next in this series...
+* [Lesson 2]({{ site.url }}/2019/06/01/fastai_lesson2/)
