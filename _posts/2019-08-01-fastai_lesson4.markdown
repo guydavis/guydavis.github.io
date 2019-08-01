@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Machine Learning on the Cheap
-subtitle: with amd radeon gpus
-date: 2019-06-23
+title: Natural Language Processing
+subtitle: fastai - lesson four
+date: 2019-08-01
 header-img: img/headers/iceline_trail.jpg
 comments: true
 published: false

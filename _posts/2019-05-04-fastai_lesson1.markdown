@@ -19,6 +19,10 @@ Launching my Ubuntu shell on Windows 10, I can proxy the Juypter notebook to my 
 export ZONE='us-west2-b'
 export INSTANCE_NAME='my-fastai-instance'
 gcloud compute ssh --zone=$ZONE jupyter@$INSTANCE_NAME -- -L 8080:localhost:8080
+
+cd tutorials/fastai/course-v3
+git pull
+sudo /opt/anaconda3/bin/conda install -c fastai fastai
 ```
 
 ## FastAI - Lesson 1
