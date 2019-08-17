@@ -35,4 +35,4 @@ Moving onto the next image set, the instructor showed that labels can actually b
 This class provided some good approaches to classification, re-iterating the importance of carefully selecting a workable learning rate during training.  In particular, he emphasized how initially selecting a high learning rates, followed by lowering of the rate during later training results in better model generalizations.
 
 ### Next in this series...
-* [Lesson 4]({{ site.url }}/2019/09/01/fastai_lesson4/)
+* [Lesson 4]({{ site.url }}/2019/08/14/fastai_lesson4/)
