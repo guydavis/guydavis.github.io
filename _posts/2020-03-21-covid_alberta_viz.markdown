@@ -16,7 +16,7 @@ Here in the province of Alberta, we've now had the kids home from school for a f
 
 Overall, I understand that our provincial health agency is doing a good job with testing, at least compared to other jurisdictions in North America.  They've been [publishing daily stats](https://www.alberta.ca/covid-19-alberta-data.aspx) showing total number of positive cases.  
 
-As you can see, in this snapshot, taken today - March 21st, we're definitely in the first stages of exponential spread.  Keep in mind, this count reflects a multi-day lag in processing test samples, and obscures the likely fact that many more very mild cases in the community are never tested/counted.
+As you can see, in this snapshot, taken today - March 22nd, we're definitely in the first stages of exponential spread.  Keep in mind, this count reflects a multi-day lag in processing test samples, and obscures the likely fact that many more very mild cases in the community are never tested/counted.
 
 ![2020-03-21]({{ site.url }}/img/posts/covid_alberta_2020-03-21.png)
 
