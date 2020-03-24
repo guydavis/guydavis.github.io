@@ -45,3 +45,7 @@ Here's a good visualization of the spread since mid-January, available from Wiki
 ## More Challenges
 
 There are some interesting [data science challenges](https://www.kaggle.com/covid19) being worked on at Kaggle which I may try if I find some time.  However, with both working and schooling duties at home right now, things are pretty busy.  We'll see how it goes.  Stay safe everyone!
+
+## Updates
+
+Shortly after posting this, the Alberta government announced it would [shift testing towards only serious cases](https://edmontonjournal.com/news/local-news/covid-19-alberta-shifts-testing-high-risk-cases-prioritized/).  This acknowledgment of community spread, often by a large asymptomatic group of infected, means that the curves above are simply not reflective of true case counts.  
