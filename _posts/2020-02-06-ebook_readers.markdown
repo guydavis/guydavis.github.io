@@ -48,7 +48,7 @@ Unfortunately, I couldn't disable the Ubooquity admin login, in favor of Organiz
 
 Arguably the most important piece is the ebook reader software running on our tablets and phones.  I selected [Moon+ Reader](https://play.google.com/store/apps/details?id=com.flyersoft.moonreader) on our Android phones and tablets.  Downloads are quick, it's easy on the eyes, and it remembers your place when you come back to a book.
 
-<img src="{{ site.url }}/img/posts/ebook_readers_moon_reader.png" width=200 />
+<img src="{{ site.url }}/img/posts/ebook_readers_moon_reader.png" style="width:50%" />
 
 For my wife's iOS tablet, I found [Marvin3](https://apps.apple.com/us/app/marvin-3/id1086482858) to also work well with OPDS libraries, including authentication.
 
@@ -56,4 +56,4 @@ For my wife's iOS tablet, I found [Marvin3](https://apps.apple.com/us/app/marvin
 
 While I'm reasonably happy with the ebook readers and catalog servers described above, I have to admit I'm a fan of old-school paper books.  There's just something about a real book when reading.  Even my sons prefer to read Harry Potter in paper form on the couch, but they don't mind the digital options too.
 
-*Update in March*: Well I never thought I'd see our local library closed indefinitely, but COVID-19 has changed everything.  Turns out having a good ebook reader is rather important now, at least for the foreseeable future.
+**Update in March**: Well I never thought I'd see our local library closed indefinitely, but COVID-19 has changed everything.  Turns out having a good ebook reader is rather important now, at least for the foreseeable future.
