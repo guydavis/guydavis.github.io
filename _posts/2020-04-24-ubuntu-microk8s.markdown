@@ -100,3 +100,6 @@ http://{IP_address}:8001/api/v1/namespaces/kube-system/services/https:kubernetes
 ```
 
 Using the proxy this way, also avoids the SSL certificate error due to self-signed certificate.  Obviously this is not reasonable for production, but a token-less, proxied dashboard is simple to use for the homelabber looking to experiment with microk8s.
+
+### More in this series...
+* [k9s CLI]({{ site.url }}/2020/06/03/microk8s-k9scli) - An improvement on kubectl
