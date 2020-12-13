@@ -61,4 +61,5 @@ Back in business with a fresh install of microk8s 1.19.
 ### More in this series...
 * [microk8s on ubuntu]({{ site.url }}/2020/04/24/ubuntu-microk8s) - Single instance cluster
 * [kubeflow setup]({{ site.url }}/2020/10/18/microk8s-kubeflow-setup) - Enabling ML workflows
-* [MNIST workflow]({{ site.url }}/2020/11/14/microk8s-kubeflow-mnist) - A first time ML workflow
+* [MNIST notebook]({{ site.url }}/2020/11/14/microk8s-kubeflow-mnist) - Using Jupyter notebooks on Kubeflow
+* [kubeflow pipelines]({{ site.url }}/2020/12/09/microk8s-kubeflow-pipelines) - Deploying pipelines on Kubeflow

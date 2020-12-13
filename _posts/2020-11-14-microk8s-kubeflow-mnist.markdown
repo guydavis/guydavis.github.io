@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MNIST with Kubeflow
-subtitle: first time workflow
+subtitle: first time notebook
 date: 2020-11-14
 header-img: img/headers/maligne_lake1.jpg
 comments: true
@@ -37,3 +37,4 @@ Ignoring the deprecation errors, this sample downloaded a MNIST data set and ran
 * [microk8s on ubuntu]({{ site.url }}/2020/04/24/ubuntu-microk8s) - Single instance cluster
 * [microk8s upgraded]({{ site.url }}/2020/09/28/microk8s-upgrade) - Upgrading to k8s 1.19
 * [kubeflow setup]({{ site.url }}/2020/10/18/microk8s-kubeflow-setup) - Enabling ML workflows
+* [kubeflow pipelines]({{ site.url }}/2020/12/09/microk8s-kubeflow-pipelines) - Deploying pipelines on Kubeflow

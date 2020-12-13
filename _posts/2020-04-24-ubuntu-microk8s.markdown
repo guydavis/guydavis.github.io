@@ -104,4 +104,5 @@ Using the proxy this way, also avoids the SSL certificate error due to self-sign
 ### More in this series...
 * [microk8s upgraded]({{ site.url }}/2020/09/28/microk8s-upgrade) - Upgrading to k8s 1.19
 * [kubeflow setup]({{ site.url }}/2020/10/18/microk8s-kubeflow-setup) - Enabling ML workflows
-* [MNIST workflow]({{ site.url }}/2020/11/14/microk8s-kubeflow-mnist) - A first time ML workflow
+* [MNIST notebook]({{ site.url }}/2020/11/14/microk8s-kubeflow-mnist) - Using Jupyter notebooks on Kubeflow
+* [kubeflow pipelines]({{ site.url }}/2020/12/09/microk8s-kubeflow-pipelines) - Deploying pipelines on Kubeflow

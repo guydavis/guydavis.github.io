@@ -38,4 +38,5 @@ Up next is a [first training session]({{ site.url }}/2020/11/14/microk8s-kubeflo
 ### More in this series...
 * [microk8s on ubuntu]({{ site.url }}/2020/04/24/ubuntu-microk8s) - Single instance cluster
 * [microk8s upgraded]({{ site.url }}/2020/09/28/microk8s-upgrade) - Upgrading to k8s 1.19
-* [MNIST workflow]({{ site.url }}/2020/11/14/microk8s-kubeflow-mnist) - A first time ML workflow
+* [MNIST notebook]({{ site.url }}/2020/11/14/microk8s-kubeflow-mnist) - Using Jupyter notebooks on Kubeflow
+* [kubeflow pipelines]({{ site.url }}/2020/12/09/microk8s-kubeflow-pipelines) - Deploying pipelines on Kubeflow
