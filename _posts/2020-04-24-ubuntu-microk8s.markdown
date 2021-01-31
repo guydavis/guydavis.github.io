@@ -10,7 +10,7 @@ published: true
 
 Well, it's been four years since I last posted about [container orchestration in the enterprise]({{ site.url }}/2016/11/25/ent_orchestrators/) and took a deep dive on [executing ML tasks]({{ site.url }}/2017/11/24/lane_detect_cloud_gke/) on each cloud's Kubernetes.  
 
-With that history in mind, when an older tower became available, I slapped [Ubuntu Server](https://ubuntu.com/server) 20.04 on it and started playing around with [Microk8s](https://microk8s.io/), a simple k8s deployment meant for a single machine.  The tower is a 7-year old HP Z820, but with 48 GB of RAM, and an adequate 2 TB of spinning rust storage, though sadly without SSD.
+With that history in mind, when an older tower became available, I slapped [Ubuntu Server](https://ubuntu.com/server) 20.04 on it and started playing around with [Microk8s](https://microk8s.io/), a simple k8s deployment meant for a single machine.  The tower is a 7-year old HP workstation, but with 48 GB of RAM, and an adequate 2 TB of spinning rust storage, though sadly without SSD.
 
 But Kubernetes is *an enterprise platform, built for enterpise problems* right?  Of course, but deploying a single-instance cluster (yes, that's an oxymoron) onto a laptop or workstation provides a great entry for learning more about k8s.
 

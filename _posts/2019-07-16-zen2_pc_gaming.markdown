@@ -28,6 +28,10 @@ Plan is to get a partner AIB card of the Radeon 5700xt once available in August.
 
 Also with emulators such as Cemu and Yuzu moving to the Vulcan graphics engine from the legacy OpenGL library, performance with Radeon GPUs should be much better soon.
 
+*Update in August 2019*: Well, the plan had been to get 5700xt but I gave up waiting and bought an Sapphire Pulse RX 590 instead when it dropped to an excellent sale price.  AMD's 5700 looks neat but seems nearly unavailable and has some flakiness to be ironed out of the drivers.
+
+*Update in January 2021*: Wow, what a year!  We're still running the venerable RX 590 over 18 months later.  The games the kids play never really needed more than that so we never did pick up a RX 5700.  Now the RX 6000 series has been announced, but is very expensive and also difficult to find.  Still waiting for a good replacement for the RX 590.  Maybe a RX 6700 or similar sometime in later spring... No rush, we're happy with what we have.
+
 # Final Parts List
 Here's the [parts list](https://ca.pcpartpicker.com/list/NJrszY), purchased at [Memory Express](https://www.memoryexpress.com) and [Amazon](https://amazon.ca).
 
