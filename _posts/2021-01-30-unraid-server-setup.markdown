@@ -63,9 +63,11 @@ Unraid makes it really easy to run and update all sorts of Docker containers.  F
 
 ![Containers]({{ site.url }}/img/posts/unraid_server_setup_docker.png)
 
-Swag provides reverse-proxy and Organizr tabs it all together. I've also added [Urbackup](https://www.urbackup.org/) to backup computers on my network, and [AMP](https://cubecoders.com/AMP) to run Minecraft servers.
+Swag provides reverse-proxy and Organizr tabs it all together. I've also added [Urbackup](https://www.urbackup.org/) to backup computers on my network, and [AMP](https://cubecoders.com/AMP) to [run Minecraft servers]({{ site.url }}/2020/06/03/minecraft-servers/).
 
 # Conclusions
 
 Overall, I'm really impressed with Unraid.  It's been on my list to try for years, but I kept putting it off.  We'll see how it holds up in the coming months and years, but for the price, it seems to offer a lot of value.  It's done an excellent job of taking over as my media server.  I hope to explore additional projects my adding more containers and VMs in the future.
 
+### More in this series...
+* [Unraid GPU Passthru]({{ site.url }}/2021/02/02/unraid-gpu-passthru) - what not to do
