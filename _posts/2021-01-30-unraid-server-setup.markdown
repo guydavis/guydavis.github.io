@@ -14,7 +14,7 @@ Building upon a solid Linux core, Unraid is a network-attached storage (NAS) pro
 
 # Hardware 
 
-As this storage device is not a [gaming PC]({{ site.url }}/2019/07/16/zen2_pc_gaming/), you're better to run Unraid on many CPU cores with lots of drives, neither of which need to be blazing fast.  In my case, I had a spare tower with dual CPUs (48 cores). 
+As this storage device is not a [gaming PC]({{ site.url }}/2019/07/16/zen2_pc_gaming/), you're better to run Unraid on many CPU cores with lots of drives, neither of which need to be blazing fast.  In my case, I had a spare tower with dual CPUs (24 cores). 
 ![CPU]({{ site.url }}/img/posts/unraid_server_setup_processor.png)
 
 To allow for many Docker containers and a few VMs, its got 48 GB of ECC RAM:
@@ -25,7 +25,7 @@ I added a UPS to deal with brown-outs and black-outs, monitored by Unraid:
 
 ![UPS]({{ site.url }}/img/posts/unraid_server_setup_power.png)
 
-It also has an old Quadro GPU, but that's another story.
+It also has an old Quadro GPU, but that's [another story]({{ site.url }}/2021/02/02/unraid-gpu-passthru).
 
 # Array Setup
 
@@ -47,7 +47,7 @@ While Unraid excels at growing a heterogenous storage array over time, these mis
 
 As a storage array, Unraid comes with a few file shares already setup:
 * appdata: resides solely on the Cache and is used by Docker containers for databases etc.
-* domains: also on the fsat Cache, holds the disks of virtual machines 
+* domains: also on the fast Cache, holds the disks of virtual machines 
 * isos: good spot for holding ISO images
 * system: used by Unraid itself, though most of Unraid runs in RAM for speed.
 
