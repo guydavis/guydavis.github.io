@@ -14,7 +14,7 @@ Building upon a solid Linux core, Unraid is a network-attached storage (NAS) pro
 
 # Hardware 
 
-As this storage device is not a [gaming PC]({{ site.url }}/2019/07/16/zen2_pc_gaming/), you're better to run Unraid on many CPU cores with lots of drives, neither of which need to be blazing fast.  In my case, I had a spare tower with dual CPUs (24 cores). 
+As this storage device is not a [gaming PC]({{ site.url }}/2019/07/16/zen2_pc_gaming/), you're better to run Unraid on many CPU cores with lots of drives, neither of which need to be blazing fast.  In my case, I had a spare tower with dual CPUs (12 cores with 24 threads). 
 ![CPU]({{ site.url }}/img/posts/unraid_server_setup_processor.png)
 
 To allow for many Docker containers and a few VMs, its got 48 GB of ECC RAM:
