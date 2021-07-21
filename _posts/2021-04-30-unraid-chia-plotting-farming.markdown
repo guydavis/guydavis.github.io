@@ -71,7 +71,7 @@ Many times each day, a challenge is issued to all Chia farmers online.  The Chia
 In the grand scheme of things, my 4 plots a day, which should fill my ~14 TB of free space, makes me a very small fish in the ocean.  Here's a handy guide:
 * Petabytes of plots -> you're a "whale".
 * Hundreds of terabytes -> you're a farmer.
-* Tens of terabytes -> you're gardener.
+* Tens of terabytes -> you're a gardener.
 * Handful of terabytes -> you're urban gardening on your apartment balcony.  
 
 ![Gardener]({{ site.url }}/img/posts/unraid_chia_urban_gardener.jpg)
@@ -88,3 +88,5 @@ It will be interesting to see how the Chia platform develops over time, particul
 * [Unraid Server Setup]({{ site.url }}/2021/01/30/unraid-server-setup) - media and storage
 * [Unraid GPU Passthrough]({{ site.url }}/2021/02/unraid-gpu-passthru) - failed attempt
 * [Unraid Urbackup]({{ site.url }}/2021/03/15/unraid-urbackup) - household backups
+* [Machinaris]({{site.url}}/2021/05/21/unraid-chia-machinaris/) - a new WebUI for Chia on Unraid
+* [Machinaris Workers]({{site.url}}/2021/06/29/machinaris-distributed/) - controlling Chia workers across your LAN
