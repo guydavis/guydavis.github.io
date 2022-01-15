@@ -44,7 +44,9 @@ I've also been experimenting with Retroarch as an game emulator for older ROMs. 
 
 Being able to [serve Plex media]({{ site.url }}/2018/01/19/private_media_server/) up from the Shield itself, freed up my budget laptop to roam about the house again.  Overall, we've found the Shield is able to handle a few concurrent transcodes which is more than enough for our families usage.  I'm still using an old Ubuntu tower for media storage, shared to the Shield via Samba.
 
-UPDATE: Running Plex server on the Shield worked great in October and November.  Then in December an update was pushed to the Shield which introduced bugs around SMB file share handling which made playback unwatchable, with disconnects every few minutes for Plex devices.  After searching for solutions, I ended up installing Plex Server on a Windows 10 PC which works great, no playback issues and supports many more concurrent viewers.  Therefore, I can't recommend using the Shield as a Plex Server anymore.
+*Update in 2019*: Running Plex server on the Shield worked great in October and November.  Then in December an update was pushed to the Shield which introduced bugs around SMB file share handling which made playback unwatchable, with disconnects every few minutes for Plex devices.  After searching for solutions, I ended up installing Plex Server on a Windows 10 PC which works great, no playback issues and supports many more concurrent viewers.  Therefore, I can't recommend using the Shield as a Plex Server anymore.
+
+*Update in 2021*: I moved to an [Unraid server]({{ site.url }}/2021/01/30/unraid-server-setup), hosting all applications in Docker containers including Plex.
 
 # Conclusions
 
@@ -56,3 +58,4 @@ However, the Shield is not a perfect device.  In particular, it's integration wi
 * [A Private Media Server]({{ site.url }}/2018/01/19/private_media_server/) - covers Plex on a cheap Linux laptop.
 * [Budget Gaming PC]({{ site.url }}/2018/11/09/budget_pc_gaming) - covers building an entry-level rig for PC gaming. 
 * [Retro Game Emulation]({{ site.url }}/2018/12/15/retro_game_emu) - options for emulating old games on both PC and Shield TV. 
+* [Unraid Server Setup]({{ site.url }}/2021/01/30/unraid-server-setup) - now running Plex in a Docker container.

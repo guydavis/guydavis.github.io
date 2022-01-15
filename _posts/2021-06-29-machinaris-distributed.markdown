@@ -29,8 +29,8 @@ With many great contributions from users all over the world, Machinaris has real
 The hype surrounding the Chia cryptocurrency has faded since the spring, but I've learned a lot coding Machinaris.  I'll keep at it as I have lots more good ideas to try out...
 
 ### More in this series...
-* [Unraid Server Setup]({{ site.url }}/2021/01/30/unraid-server-setup) - media and storage
-* [Unraid GPU Passthrough]({{ site.url }}/2021/02/unraid-gpu-passthru) - failed attempt
-* [Unraid Urbackup]({{ site.url }}/2021/03/15/unraid-urbackup) - household backups
 * [Chia on Unraid]({{site.url}}/2021/04/30/unraid-chia-plotting-farming/) - Chia CLI on Unraid with Docker
 * [Machinaris]({{site.url}}/2021/05/21/unraid-chia-machinaris/) - a new WebUI for Chia on Unraid
+* [Chia Tools]({{site.url}}/2021/09/04/chia-tools/) - open-source Chia projects
+* [Chia Forks]({{site.url}}/2021/10/13/chia-forks/) - running forks of Chia with Machinaris
+* [MMX Blockchain]({{site.url}}/2021/12/31/mmx-blockchain/) - MMX blockchain on Machinaris

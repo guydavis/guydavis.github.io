@@ -1,0 +1,37 @@
+---
+layout: post
+title: Desk Chairs
+subtitle: still working from home
+date: 2022-01-12
+header-img: img/headers/chester_lake_valley2.jpg
+comments: true
+published: true
+---
+
+# Office Chair
+
+Recently, my younger son and I were lucky enough to find an old Herman Miller Aeron chair when dumpster diving at a local school after we'd been playing some basketball.  However, the seat pan had been cracked, so it wasn't really useful.
+
+<img src="{{ site.url }}/img/posts/chair_aeron_cracked_seat.jpg" class="img-responsive" style="width:350px;float:right"/>
+![Aeron]({{ site.url }}/img/posts/chair_aeron_2004.jpg)
+
+Luckily, Calgary has a Herman Miller dealer - [Contemporary Office Interiors](https://coi.bz/) and I was able to source a replacement seat pan.  Pretty good service considering the chair dates back to at least 2004, based on the model properties.
+
+So, for a small cost, I was able to rehabilitate this discarded Aeron and am now using it as my primary office chair.  Very adjustable and comfortable, with great back support!
+
+# Gaming Chairs
+
+With the latest waves of COVID, we're still splitting time between the exploring the great outdoors and cocooning in our house.  All the previous indoor activities like malls, theatres, sports, etc are either not open or not safe.  So while we're stuck in the house, particularly during cold snaps, having comfortable furniture is particularly important. 
+
+With the two boys both using their PCs a fair amount during evenings and weekends, I am on the lookout for new chairs to complete their desks.  
+
+<img src="{{ site.url }}/img/posts/chair_ikea2.jpg" class="img-responsive" style="float:right"/>
+![Matchspel]({{ site.url }}/img/posts/chair_ikea.jpg)
+
+Ikea recently launched a new line of chairs, but due to high demand and supply chain issues, the Matchspel has been out of stock for months now.  Its quite difficult to find a reasonably priced desk chair, so we'll wait a bit longer for stock to come in.
+
+### More in this series...
+* [A Private Media Server]({{ site.url }}/2018/01/19/private_media_server/) - covers Plex on a cheap Linux laptop.
+* [Nvidia Shield TV]({{ site.url }}/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
+* [Budget Gaming PC]({{ site.url }}/2018/11/09/budget_pc_gaming) - covers building an entry-level rig for PC gaming. 
+* [Zen2 Gaming PC]({{ site.url }}/2019/07/16/budget_pc_gaming) - building another gaming PC. 

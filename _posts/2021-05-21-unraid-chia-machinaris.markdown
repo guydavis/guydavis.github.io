@@ -27,8 +27,10 @@ Building upon the Flask web-server for Python, I tied all these tools together i
 As my day-job is exlusively devops backend, it's fun to dabble in front-end coding again.  Not sure where this project will go, but I've submitted Machinaris to the [Unraid repository](https://forums.unraid.net/topic/108896-support-machinaris-chia-cryptocurrency-farming-plotman-plotting-unraid-webui/). As well, some interest has been generated on the [Github project](https://github.com/guydavis/machinaris).
 
 ### More in this series...
-* [Unraid Server Setup]({{ site.url }}/2021/01/30/unraid-server-setup) - media and storage
-* [Unraid GPU Passthrough]({{ site.url }}/2021/02/unraid-gpu-passthru) - failed attempt
-* [Unraid Urbackup]({{ site.url }}/2021/03/15/unraid-urbackup) - household backups
 * [Chia on Unraid]({{site.url}}/2021/04/30/unraid-chia-plotting-farming/) - Chia CLI on Unraid with Docker
-* [Machinaris Workers]({{site.url}}/2021/06/29/machinaris-distributed/) - controlling Chia workers across your LAN
+* [Machinaris]({{site.url}}/2021/05/21/unraid-chia-machinaris/) - a new WebUI for Chia on Unraid
+* [Distributed Farming]({{site.url}}/2021/06/29/machinaris-distributed/) - Machinaris on many worker systems
+* [Chia Tools]({{site.url}}/2021/09/04/chia-tools/) - open-source Chia projects
+* [Chia Forks]({{site.url}}/2021/10/13/chia-forks/) - running forks of Chia with Machinaris
+* [MMX Blockchain]({{site.url}}/2021/12/31/mmx-blockchain/) - MMX blockchain on Machinaris
+

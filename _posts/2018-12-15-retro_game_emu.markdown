@@ -77,3 +77,4 @@ With all these various emulators floating around for both Windows PC and Shield 
 * [Nvidia Shield TV]({{ site.url }}/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
 * [Budget Gaming PC]({{ site.url }}/2018/11/09/budget_pc_gaming) - covers building an entry-level rig for PC gaming. 
 * [PC Game Stores]({{ site.url }}/2018/12/26/pc_game_stores) - where to find PC games. 
+* [Zen2 Gaming PC]({{ site.url }}/2019/07/16/budget_pc_gaming) - building another gaming PC. 
