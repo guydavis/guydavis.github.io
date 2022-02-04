@@ -70,6 +70,6 @@ Swag provides reverse-proxy and Organizr tabs it all together. I've also added [
 Overall, I'm really impressed with Unraid.  It's been on my list to try for years, but I kept putting it off.  We'll see how it holds up in the coming months and years, but for the price, it seems to offer a lot of value.  It's done an excellent job of taking over as my media server.  I hope to explore additional projects my adding more containers and VMs in the future.
 
 ### More in this series...
-* [Unraid GPU Passthrough]({{ site.url }}/2021/02/unraid-gpu-passthru) - failed attempt
+* [Unraid GPU Passthrough]({{ site.url }}/2021/02/02/unraid-gpu-passthru) - failed attempt
 * [Unraid Urbackup]({{ site.url }}/2021/03/15/unraid-urbackup) - household backups
 * [Unraid Chia]({{ site.url }}/2021/04/30/unraid-chia-plotting-farming) - plotting and farming

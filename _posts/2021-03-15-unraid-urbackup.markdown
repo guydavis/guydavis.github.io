@@ -56,5 +56,5 @@ Initially, I attempted both image and file backups, but I found that image backu
 
 ### More in this series...
 * [Unraid Server Setup]({{ site.url }}/2021/01/30/unraid-server-setup) - media and storage
-* [Unraid GPU Passthrough]({{ site.url }}/2021/02/unraid-gpu-passthru) - failed attempt
+* [Unraid GPU Passthrough]({{ site.url }}/2021/02/02/unraid-gpu-passthru) - failed attempt
 * [Unraid Chia]({{ site.url }}/2021/04/30/unraid-chia-plotting-farming) - plotting and farming

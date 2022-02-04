@@ -86,7 +86,7 @@ It will be interesting to see how the Chia platform develops over time, particul
 
 ### More in this series...
 * [Unraid Server Setup]({{ site.url }}/2021/01/30/unraid-server-setup) - media and storage
-* [Unraid GPU Passthrough]({{ site.url }}/2021/02/unraid-gpu-passthru) - failed attempt
+* [Unraid GPU Passthrough]({{ site.url }}/2021/02/02/unraid-gpu-passthru) - failed attempt
 * [Unraid Urbackup]({{ site.url }}/2021/03/15/unraid-urbackup) - household backups
 * [Machinaris]({{site.url}}/2021/05/21/unraid-chia-machinaris/) - a new WebUI for Chia on Unraid
 * [Machinaris Workers]({{site.url}}/2021/06/29/machinaris-distributed/) - controlling Chia workers across your LAN
