@@ -41,3 +41,4 @@ While I am still a big booster of Chia, particularly as compared to proof-of-wor
 * [Distributed Farming]({{site.url}}/2021/06/29/machinaris-distributed/) - Machinaris on many worker systems
 * [Chia Tools]({{site.url}}/2021/09/04/chia-tools/) - open-source Chia projects
 * [Chia Forks]({{site.url}}/2021/10/13/chia-forks/) - running forks of Chia with Machinaris
+* [MMX on GPUs]({{site.url}}/2022/02/09/mmx-gpu/) - Enabling GPU support for MMX in Machinaris

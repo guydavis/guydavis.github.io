@@ -3,7 +3,7 @@ layout: post
 title: Zen2 Battlestation 
 subtitle: building a more powerful rig 
 date: 2019-07-16
-header-img: img/headers/vision_quest_west.jpg
+header-img: img/headers/nose_hill_south.jpg
 comments: true
 published: true
 ---
@@ -59,4 +59,5 @@ While, the original plan had been to upgrade the APU on the MSI B450 Tomahawk bo
 * [Nvidia Shield TV]({{ site.url }}/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
 * [Retro Game Emulation]({{ site.url }}/2018/12/15/retro_game_emu) - options for emulating old games on both PC and Shield TV. 
 * [Budget Gaming PC]({{ site.url }}/2018/11/09/budget_pc_gaming) - covers building an entry-level rig for PC gaming. 
-* [PC Game Stores]({{ site.url }}/2018/12/26/pc_game_stores) - where to find PC games. 
+* [PC Game Stores]({{ site.url }}/2018/12/26/pc_game_stores) - where to find PC games.
+* [GPU Availability]({{ site.url }}/2021/12/12/xmas-gifts) - finding a GPU during the shortage.

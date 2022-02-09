@@ -3,7 +3,7 @@ layout: post
 title: Desk Chairs
 subtitle: still working from home
 date: 2022-01-12
-header-img: img/headers/chester_lake_valley2.jpg
+header-img: img/headers/bow_valley_parkway.jpg
 comments: true
 published: true
 ---
@@ -34,4 +34,4 @@ Ikea recently launched a new line of chairs, but due to high demand and supply c
 * [A Private Media Server]({{ site.url }}/2018/01/19/private_media_server/) - covers Plex on a cheap Linux laptop.
 * [Nvidia Shield TV]({{ site.url }}/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
 * [Budget Gaming PC]({{ site.url }}/2018/11/09/budget_pc_gaming) - covers building an entry-level rig for PC gaming. 
-* [Zen2 Gaming PC]({{ site.url }}/2019/07/16/budget_pc_gaming) - building another gaming PC. 
+* [Zen2 Gaming PC]({{ site.url }}/2019/07/16/zen2_pc_gaming) - building another gaming PC. 

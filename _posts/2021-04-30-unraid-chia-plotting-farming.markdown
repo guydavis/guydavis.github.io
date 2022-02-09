@@ -90,3 +90,4 @@ It will be interesting to see how the Chia platform develops over time, particul
 * [Unraid Urbackup]({{ site.url }}/2021/03/15/unraid-urbackup) - household backups
 * [Machinaris]({{site.url}}/2021/05/21/unraid-chia-machinaris/) - a new WebUI for Chia on Unraid
 * [Machinaris Workers]({{site.url}}/2021/06/29/machinaris-distributed/) - controlling Chia workers across your LAN
+* [MMX on GPUs]({{site.url}}/2022/02/09/mmx-gpu/) - Enabling GPU support for MMX in Machinaris

@@ -19,3 +19,4 @@ I've incorporated these utilities into the startup of each Machinaris container 
 * [Chia Tools]({{site.url}}/2021/09/04/chia-tools/) - open-source Chia projects
 * [Chia Forks]({{site.url}}/2021/10/13/chia-forks/) - running forks of Chia with Machinaris
 * [MMX Blockchain]({{site.url}}/2021/12/31/mmx-blockchain/) - MMX blockchain on Machinaris
+* [MMX on GPUs]({{site.url}}/2022/02/09/mmx-gpu/) - Enabling GPU support for MMX in Machinaris

@@ -95,3 +95,4 @@ While it was interesting to attempt this config, it's clear that a newer card wi
 * [Unraid Server Setup]({{ site.url }}/2021/01/30/unraid-server-setup) - media and storage
 * [Unraid Urbackup]({{ site.url }}/2021/03/15/unraid-urbackup) - household backups
 * [Unraid Chia]({{ site.url }}/2021/04/30/unraid-chia-plotting-farming) - plotting and farming
+* [MMX on GPUs]({{site.url}}/2022/02/09/mmx-gpu/) - Enabling GPU support for MMX in Machinaris

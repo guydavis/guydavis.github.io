@@ -1,0 +1,80 @@
+---
+layout: post
+title: MMX on GPUs
+subtitle: enabling opencl acceleration
+date: 2022-02-09
+header-img: img/headers/nose_hill_autumn.jpg
+comments: true
+published: true
+---
+
+On my Machinaris cryptocurrency platoform, I added initial support for the [MMX blockchain]({{site.url}}/2021/12/31/mmx-blockchain/) within a week of the blockchain's test release last year. However, that initial support ran exclusively on CPU resources.  MMX will run much better if provided a GPU for performing certain blockchain validations.  
+
+To that end, support for GPU pass-through into the Machinaris Docker container was added in our [version 0.6.9 release](https://github.com/guydavis/machinaris/releases/tag/0.6.9).  Due to an [ancient GPU]({{ site.url }}/2021/02/02/unraid-gpu-passthru) in my Unraid tower, I was very grateful to Machinaris users for testing with their newer hardware.
+
+# MMX VDF Validation
+
+Similar to [Solana](https://solana.com/), the MMX blockchain uses a SHA-256 verifiable delay function (VDF).  These VDFs are a [proof-of-history](https://docs.solana.com/cluster/synchronization#relationship-to-vdfs) for the blockchain which can be computed very quickly on GPUs, allowing faster transactions per second than older blockchains such as Bitcoin.
+
+In particular, MMX employs the [OpenCL](https://en.wikipedia.org/wiki/OpenCL) library for verifying the Verifiable Delay Function (VDF) that is associated with each block.
+
+# GPU Support
+
+Keeping in mind that [Machinaris](https://www.machinaris.app) runs within a Docker container, one challenge of enabling GPU support is handling the pass-through from the host OS into Docker.  While [docker-compose](https://docs.docker.com/compose/gpu-support/) supports a `runtime` directive, full support is somewhat more complicated.
+
+## Nvidia
+
+For those with an Nvidia GPU, you'll need the [Nvidia Driver Runtime](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/user-guide.html#adding-the-nvidia-runtime).  If running Unraid, just install the Nvidia Driver plugin for this.
+
+Then add the following to your [docker-compose.yml](https://docs.docker.com/compose/gpu-support/).
+Extend the existing `environment` section  
+```
+    environment:
+        - OPENCL_GPU=nvidia
+        - NVIDIA_VISIBLE_DEVICES=0
+        - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+```
+
+Then add a new runtime line, (at same level as `environment`):
+```
+    runtime: nvidia
+```
+
+OR for Unraid, using the Docker admin tab, edit the Machinaris-MMX config, create 3 new Variables (shown) and add `--runtime=nvidia` to the "Extra Parameters" field.
+
+Ideally you can target the device by position or GUID, which you can later override in Unraid Docker Configuration or compose ENVs, 
+```
+-e NVIDIA_VISIBLE_DEVICES=0 or -e NVIDIA_VISIBLE_DEVICES=GPU-a8b96998-xxxx-xxxx
+```
+Further explained [here](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/user-guide.html#gpu-enumeration).
+
+Big thanks @tjb_altf who verified this approach with his GPU.
+
+## AMD
+
+For AMD GPUs, as per this [tutorial](https://linuxhandbook.com/setup-opencl-linux-docker/) (AMD section part-way down), add the following to your [docker-compose.yml](https://docs.docker.com/compose/gpu-support/). Extend the existing `environment` section  
+```
+    environment:
+        - OPENCL_GPU=amd
+```
+and add the following `devices` section at the same level as `environment`:
+
+```
+    devices:
+        - "/dev/kfd:/dev/kfd"
+        - "/dev/dri/:/dev/dri/"
+```
+
+Big thanks @yamen who verified this approach with his GPU.
+
+# Conclusion
+
+While MMX is still months away from their mainnet launch, I'll probably just start up my Machinaris-MMX container every few weeks to verify continued support for the integration.  Once mainnet is near, I may invest in a cheap GPU, [if ever available]({{ site.url }}/2021/12/12/xmas-gifts/), to take the load of my old CPU if running MMX 24/7.
+
+### More in this series...
+* [Chia on Unraid]({{site.url}}/2021/04/30/unraid-chia-plotting-farming/) - Chia CLI on Unraid with Docker
+* [Machinaris]({{site.url}}/2021/05/21/unraid-chia-machinaris/) - a new WebUI for Chia on Unraid
+* [Distributed Farming]({{site.url}}/2021/06/29/machinaris-distributed/) - Machinaris on many worker systems
+* [Chia Tools]({{site.url}}/2021/09/04/chia-tools/) - open-source Chia projects
+* [Chia Forks]({{site.url}}/2021/10/13/chia-forks/) - running forks of Chia with Machinaris
+* [MMX Blockchain]({{site.url}}/2021/12/31/mmx-blockchain/) - MMX blockchain on Machinaris
