@@ -8,7 +8,7 @@ comments: true
 published: true
 ---
 
-On my Machinaris cryptocurrency platoform, I added initial support for the [MMX blockchain]({{site.url}}/2021/12/31/mmx-blockchain/) within a week of the blockchain's test release last year. However, that initial support ran exclusively on CPU resources.  MMX will run much better if provided a GPU for performing certain blockchain validations.  
+On my Machinaris cryptocurrency platform, I added initial support for the [MMX blockchain]({{site.url}}/2021/12/31/mmx-blockchain/) within a week of the blockchain's test release last year. However, that initial support ran exclusively on CPU resources.  MMX will run much better if provided a GPU for performing certain blockchain validations.  
 
 To that end, support for GPU pass-through into the Machinaris Docker container was added in our [version 0.6.9 release](https://github.com/guydavis/machinaris/releases/tag/0.6.9).  Due to an [ancient GPU]({{ site.url }}/2021/02/02/unraid-gpu-passthru) in my Unraid tower, I was very grateful to Machinaris users for testing with their newer hardware.
 

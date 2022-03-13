@@ -30,6 +30,8 @@ With the two boys both using their PCs a fair amount during evenings and weekend
 
 Ikea recently launched a new line of chairs, but due to high demand and supply chain issues, the Matchspel has been out of stock for months now.  Its quite difficult to find a reasonably priced desk chair, so we'll wait a bit longer for stock to come in.
 
+Update: late February of 2022, a site watcher script notified me that the local Ikea finally had some in stock, picked them up that afternoon.  So far, the boys like the new Matchspel chairs!
+
 ### More in this series...
 * [A Private Media Server]({{ site.url }}/2018/01/19/private_media_server/) - covers Plex on a cheap Linux laptop.
 * [Nvidia Shield TV]({{ site.url }}/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
