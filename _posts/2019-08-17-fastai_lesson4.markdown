@@ -3,7 +3,7 @@ layout: post
 title: Natural Language Processing
 subtitle: fastai - lesson four
 date: 2019-08-17
-header-img: img/headers/iceline_trail.jpg
+background: /img/headers/iceline_trail.jpg
 comments: true
 published: true
 ---
@@ -14,7 +14,7 @@ This covers my work on the fourth lesson of the [Fast AI course](https://course.
 
 The model used was initially trained on the Wikipedia test set (WT103).  Very interesting to hear that what was state of the art last year, has been bundled into the base FastAI library this year.  Fast-moving field...
 
-![Lesson 4 - Tedious Copy Pasta]({{ site.url }}/img/posts/fastai_lesson4_nlp_approach.png)
+<img src="/img/posts/fastai_lesson4_nlp_approach.png" class="img-fluid" />
 
 Steps involved:
 1. Train model on a large corpus of text, in this case the Wikipedia archive.
@@ -29,4 +29,4 @@ Obviously, one needs to stick to the same language between steps 1 and 2 above. 
 Interesting coverage of other types of data such as tabular (aka spreadsheet/database) and collaborative filtering as well.
 
 ### Next in this series...
-* [Lesson 5]({{ site.url }}/2019/08/31/fastai_lesson5/)
+* [Lesson 5](/2019/09/12/fastai_lesson5/)

@@ -3,11 +3,11 @@ layout: post
 title: Predictions from US Baby Names
 subtitle: ask silly questions, get silly answers
 date: 2016-08-20
-header-img: img/headers/star_trek_enterprise.jpg
+background: /img/headers/star_trek_enterprise.jpg
 comments: true
 ---
 
-A while back, I discovered the predictive analytics tool, [RapidMiner](https://rapidminer.com/) and wanted to try it out.  Given my recently loaded [US baby names]({{ site.url }}/2016/08/13/loading_babyname_data/) data set, I thought I'd ask some silly questions... more to see how Rapid Miner models work, than to accurately predict anything. 
+A while back, I discovered the predictive analytics tool, [RapidMiner](https://rapidminer.com/) and wanted to try it out.  Given my recently loaded [US baby names](/2016/08/13/loading_babyname_data/) data set, I thought I'd ask some silly questions... more to see how Rapid Miner models work, than to accurately predict anything. 
 
 ## Decision Tree
 
@@ -17,15 +17,15 @@ I wondered if one could predict a US person's most likely birth state given thei
 * Loads a test set of 20 records: ```SELECT "name", "gender", "year", "state" as "actual_state" FROM "public"."statenames" ORDER BY RANDOM() LIMIT 20```
 * Set attribute roles as needed to binomial (gender) etc.
 
-![Process]({{ site.url }}/img/posts/rm_predict_state_process.png)
+<img src="/img/posts/rm_predict_state_process.png" class="img-fluid" />
 
 * Then trained a decision tree model on the training data set.  Interestingly, the decision tree ignored name and started to split solely on birth year, occasionally considering gender, in order to predict birth state.
 
-![Tree]({{ site.url }}/img/posts/rm_predict_state_decision_tree.png)
+<img src="/img/posts/rm_predict_state_decision_tree.png" class="img-fluid" />
 
 * Applied the model to the test data set to predict a name/gender/year record's birth state.  As you can probably guess, a decision tree model based solely on year and gender does a horrible job of predicting birth state.  See the two green columns in the results below (actual vs predicted).
 
-![Results]({{ site.url }}/img/posts/rm_predict_state_results.png)
+<img src="/img/posts/rm_predict_state_results.png" class="img-fluid" />
 
 So this use of decision tree was clearly [a mis-applicaton for this data set and question](http://community.rapidminer.com/t5/RapidMiner-Studio/Predictions-based-on-US-baby-names-data/m-p/33430/highlight/true#M23651).
 
@@ -36,15 +36,15 @@ So let's narrow the solution space by seeing if we can predict gender, a binomia
 
 ```select year, count from nationalnames where name = 'Guy' and gender = 'F' order by year desc```
 
-![Query]({{ site.url }}/img/posts/rm_predict_gender_girls_guy.png)
+<img src="/img/posts/rm_predict_gender_girls_guy.png" class="img-fluid" />
 
 So, I created a RapidMiner process with Naive Bayes model, increased the training set size to 10,000 records, and added a Performance (Binomial Classification) operator as shown:
 
-![Process]({{ site.url }}/img/posts/rm_predict_gender_process.png)
+<img src="/img/posts/rm_predict_gender_process.png" class="img-fluid" />
 
 Repeated runs generated results approximating a coin flip, so not great.  Here's an example:
 
-![Performance]({{ site.url }}/img/posts/rm_predict_gender_performance.png)
+<img src="/img/posts/rm_predict_gender_performance.png" class="img-fluid" />
 
 
 ## Better Results

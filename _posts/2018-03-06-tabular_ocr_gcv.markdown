@@ -3,7 +3,7 @@ layout: post
 title: Tabular Data Extraction 
 subtitle: with cloud vision
 date: 2018-03-06
-header-img: img/headers/zoo_xmas_tree.jpg
+background: /img/headers/zoo_xmas_tree.jpg
 comments: true
 published: true
 ---
@@ -18,21 +18,21 @@ The following are some additional tabular data tables in PNG format, with result
 
 The first sample is a fairly clear inventory table with readable text.
 
-![Input]({{ site.url }}/img/posts/ocr_table2_inventory.png)
+<img src="/img/posts/ocr_table2_inventory.png" class="img-fluid" />
 
-![Result]({{ site.url }}/img/posts/ocr_table2_inventory_result.png)
+<img src="/img/posts/ocr_table2_inventory_result.png" class="img-fluid" />
 
-![Result]({{ site.url }}/img/posts/ocr_table2_inventory_doc.png)
+<img src="/img/posts/ocr_table2_inventory_doc.png" class="img-fluid" />
 
 # Sample 2
 
 The second sample is a less clear extract from an old book.
 
-![Input]({{ site.url }}/img/posts/ocr_table2_names.png)
+<img src="/img/posts/ocr_table2_names.png" class="img-fluid" />
 
-![Result]({{ site.url }}/img/posts/ocr_table2_names_result.png)
+<img src="/img/posts/ocr_table2_names_result.png" class="img-fluid" />
 
-![Result]({{ site.url }}/img/posts/ocr_table2_names_doc.png)
+<img src="/img/posts/ocr_table2_names_doc.png" class="img-fluid" />
 
 
 # Conclusion
@@ -42,4 +42,4 @@ Overall, Google Cloud Vision seems like a very capable approach for quickly solv
 Next, I'm going to give Tesseract's new LSTM support another try.  Hopefully, they've made some progress towards a final release in the past few months. 
 
 ### More in this series...
-* [Optical Character Recognition]({{ site.url }}/2018/02/28/tabular-ocr-options) - first attempt, investigating options.
+* [Optical Character Recognition](/2018/02/28/tabular-ocr-options) - first attempt, investigating options.

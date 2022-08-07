@@ -3,14 +3,14 @@ layout: post
 title: MMX on GPUs
 subtitle: enabling opencl acceleration
 date: 2022-02-09
-header-img: img/headers/nose_hill_autumn.jpg
+background: /img/headers/nose_hill_autumn.jpg
 comments: true
 published: true
 ---
 
-On my Machinaris cryptocurrency platform, I added initial support for the [MMX blockchain]({{site.url}}/2021/12/31/mmx-blockchain/) within a week of the blockchain's test release last year. However, that initial support ran exclusively on CPU resources.  MMX will run much better if provided a GPU for performing certain blockchain validations.  
+On my Machinaris cryptocurrency platform, I added initial support for the [MMX blockchain](/2021/12/31/mmx-blockchain/) within a week of the blockchain's test release last year. However, that initial support ran exclusively on CPU resources.  MMX will run much better if provided a GPU for performing certain blockchain validations.  
 
-To that end, support for GPU pass-through into the Machinaris Docker container was added in our [version 0.6.9 release](https://github.com/guydavis/machinaris/releases/tag/0.6.9).  Due to an [ancient GPU]({{ site.url }}/2021/02/02/unraid-gpu-passthru) in my Unraid tower, I was very grateful to Machinaris users for testing with their newer hardware.
+To that end, support for GPU pass-through into the Machinaris Docker container was added in our [version 0.6.9 release](https://github.com/guydavis/machinaris/releases/tag/0.6.9).  Due to an [ancient GPU](/2021/02/02/unraid-gpu-passthru) in my Unraid tower, I was very grateful to Machinaris users for testing with their newer hardware.
 
 # MMX VDF Validation
 
@@ -69,12 +69,12 @@ Big thanks @yamen who verified this approach with his GPU.
 
 # Conclusion
 
-While MMX is still months away from their mainnet launch, I'll probably just start up my Machinaris-MMX container every few weeks to verify continued support for the integration.  Once mainnet is near, I may invest in a cheap GPU, [if ever available]({{ site.url }}/2021/12/12/xmas-gifts/), to take the load of my old CPU if running MMX 24/7.
+While MMX is still months away from their mainnet launch, I'll probably just start up my Machinaris-MMX container every few weeks to verify continued support for the integration.  Once mainnet is near, I may invest in a cheap GPU, [if ever available](/2021/12/12/xmas-gifts/), to take the load of my old CPU if running MMX 24/7.
 
 ### More in this series...
-* [Chia on Unraid]({{site.url}}/2021/04/30/unraid-chia-plotting-farming/) - Chia CLI on Unraid with Docker
-* [Machinaris]({{site.url}}/2021/05/21/unraid-chia-machinaris/) - a new WebUI for Chia on Unraid
-* [Distributed Farming]({{site.url}}/2021/06/29/machinaris-distributed/) - Machinaris on many worker systems
-* [Chia Tools]({{site.url}}/2021/09/04/chia-tools/) - open-source Chia projects
-* [Chia Forks]({{site.url}}/2021/10/13/chia-forks/) - running forks of Chia with Machinaris
-* [MMX Blockchain]({{site.url}}/2021/12/31/mmx-blockchain/) - MMX blockchain on Machinaris
+* [Chia on Unraid](/2021/04/30/unraid-chia-plotting-farming/) - Chia CLI on Unraid with Docker
+* [Machinaris](/2021/05/21/unraid-chia-machinaris/) - a new WebUI for Chia on Unraid
+* [Distributed Farming](/2021/06/29/machinaris-distributed/) - Machinaris on many worker systems
+* [Chia Tools](/2021/09/04/chia-tools/) - open-source Chia projects
+* [Chia Forks](/2021/10/13/chia-forks/) - running forks of Chia with Machinaris
+* [MMX Blockchain](/2021/12/31/mmx-blockchain/) - MMX blockchain on Machinaris

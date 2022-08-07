@@ -3,7 +3,7 @@ layout: post
 title: Loading Baby Names into PostgreSQL 
 subtitle: preparing for data analysis
 date: 2016-08-13
-header-img: img/headers/venice_regatta.jpg
+background: /img/headers/venice_regatta.jpg
 comments: true
 ---
 
@@ -40,7 +40,7 @@ plt.plot(df['year'], df['count'])
 plt.show()
 ```
 
-![Plotted]({{ site.url }}/img/posts/us_baby_names_guy_plot.png)
+<img src="/img/posts/us_baby_names_guy_plot.png" class="img-fluid" />
 
 Interesting that my name's popularity peaked in the 1957 at over 2300 babies.  By the time I was born in 1976 though, only about 500 babies shared that name in the US, with the popularity falling precipitously.  
 

@@ -3,7 +3,7 @@ layout: post
 title: GPU Passthru on Unraid
 subtitle: what not to do...
 date: 2021-02-02
-header-img: img/headers/maligne_lake5.jpg
+background: /img/headers/maligne_lake5.jpg
 comments: true
 published: true
 ---
@@ -12,7 +12,7 @@ published: true
 
 # Background
 
-After successfully [setting up Unraid]({{ site.url }}/2021/01/30/unraid-server-setup) on an old workstation, I thought it would be interesting to passthrough a GPU into a Ubuntu VM and run some ML pipelines.
+After successfully [setting up Unraid](/2021/01/30/unraid-server-setup) on an old workstation, I thought it would be interesting to passthrough a GPU into a Ubuntu VM and run some ML pipelines.
 
 Unraid offers [support for GPU passthrough](https://wiki.unraid.net/UnRAID_6/VM_Management#Assigning_Graphics_Devices_to_Virtual_Machines_.28GPU_Pass_Through.29) to VMs (and Docker containers) but it is notoriously finicky, often due to idiosyncrasies with motherboards, BIOSes, and GPUs.  In general, newer hardware is more likely to work, but AMD cards have [known issues](https://www.reddit.com/r/unRAID/comments/jfg0vr/passing_through_single_amd_gpu_vega_56/) and older hardware is really hit or miss.
 
@@ -92,7 +92,7 @@ Unfortunately, this where the adventure ended as more searching revealed this [o
 While it was interesting to attempt this config, it's clear that a newer card will be required.  However, at the start of 2021 Etherium miners are snapping up every 8GB+ GPU, driving prices to silly levels.  So, I think patience is called for.  No rush and lots of other experiments to run...
 
 ### More in this series...
-* [Unraid Server Setup]({{ site.url }}/2021/01/30/unraid-server-setup) - media and storage
-* [Unraid Urbackup]({{ site.url }}/2021/03/15/unraid-urbackup) - household backups
-* [Unraid Chia]({{ site.url }}/2021/04/30/unraid-chia-plotting-farming) - plotting and farming
-* [MMX on GPUs]({{site.url}}/2022/02/09/mmx-gpu/) - Enabling GPU support for MMX in Machinaris
+* [Unraid Server Setup](/2021/01/30/unraid-server-setup) - media and storage
+* [Unraid Urbackup](/2021/03/15/unraid-urbackup) - household backups
+* [Unraid Chia](/2021/04/30/unraid-chia-plotting-farming) - plotting and farming
+* [MMX on GPUs](/2022/02/09/mmx-gpu/) - Enabling GPU support for MMX in Machinaris

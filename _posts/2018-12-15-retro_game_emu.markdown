@@ -3,12 +3,12 @@ layout: post
 title: Retro Gaming
 subtitle: emulating games of yore
 date: 2018-12-15
-header-img: img/headers/west_coast_beach.jpg
+background: /img/headers/west_coast_beach.jpg
 comments: true
 published: true
 ---
 
-After setting up a [budget gaming PC]({{ site.url }}/2018/11/09/budget_pc_gaming) last month, I've been investigating emulation for retro console games.
+After setting up a [budget gaming PC](/2018/11/09/budget_pc_gaming) last month, I've been investigating emulation for retro console games.
 
 # Emulators on Windows 10
 
@@ -16,19 +16,19 @@ There are a number of different emulators available on Windows 10 for all sorts 
 
 ## Retroarch
 
-![Retroarch]({{ site.url }}/img/posts/retro_game_emu_dc.png)
+<img src="/img/posts/retro_game_emu_dc.png" class="img-fluid" />
 
 On the PC, I'm using the [Retroarch](https://www.retroarch.com/) frontend for older ROMs such as Nintendo Gamecube and Sega Genesis.  The default Retroarch UI is built for set-top boxes and is fairly non-intuitive on the PC.  There is a secondary UI for PC, but it is limited.  Keyboard controls often take quite a lot of trial and error to discover.
 
 ## Citra
 
-![Citra]({{ site.url }}/img/posts/retro_game_emu_citra.jpg)
+<img src="/img/posts/retro_game_emu_citra.jpg" class="img-fluid" />
 
 Given the importance my kids put on Pokemon games, the [Citra emulator](https://citra-emu.org/) for Nintendo DS/3DS is a great.  Controls work well out of the box and the ability to scale up from native resolution with still decent framerates is very nice.  
 
 ## Dolphin
 
-![Dolphin]({{ site.url }}/img/posts/retro_game_emu_zld.png)
+<img src="/img/posts/retro_game_emu_zld.png" class="img-fluid" />
 
 The[Dolphin emulator](https://dolphin-emu.org/) for Wii games seems to work pretty well.  As always, the first few minutes of playing a game is spent randomly typing keys to determine the control mapping.   
 
@@ -38,19 +38,19 @@ While I have lots of hope for this one day supporting AMD GPUs, right now I am u
 
 ## ppspp 
 
-![PPSPP]({{ site.url }}/img/posts/retro_game_emu_msh.png)
+<img src="/img/posts/retro_game_emu_msh.png" class="img-fluid" />
 
 [PPSPP](https://www.ppsspp.org/) is a good emulator for PSP games. 
 
 ## espxe
 
-![PPSPP]({{ site.url }}/img/posts/retro_game_emu_ctr.png)
+<img src="/img/posts/retro_game_emu_ctr.png" class="img-fluid" />
 
 [eSPXe](http://www.epsxe.com/) is a good emulator for PSX games.
 
 ## pcsx2
 
-![PPSPP]({{ site.url }}/img/posts/retro_game_emu_gow.png)
+<img src="/img/posts/retro_game_emu_gow.png" class="img-fluid" />
 
 [PCSX2](https://pcsx2.net/) is a good emulator for PS2 games.
 
@@ -73,9 +73,9 @@ Another emulator frontend is the [ARC Browser](https://play.google.com/store/app
 With all these various emulators floating around for both Windows PC and Shield TV, it's handy to find a nice game browser (aka launcher) that lists them in a single view.  On the Windows PC, my preferred launcher is [LaunchBox](https://www.launchbox-app.com/).  It offers a nice means of launching into each game directly by invoking the correct emulator command. 
 
 ### More in this series...
-* [A Private Media Server]({{ site.url }}/2018/01/19/private_media_server/) - covers Plex on a cheap Linux laptop.
-* [Nvidia Shield TV]({{ site.url }}/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
-* [Budget Gaming PC]({{ site.url }}/2018/11/09/budget_pc_gaming) - covers building an entry-level rig for PC gaming. 
-* [PC Game Stores]({{ site.url }}/2018/12/26/pc_game_stores) - where to find PC games. 
-* [Zen2 Gaming PC]({{ site.url }}/2019/07/16/zen2_pc_gaming) - building another gaming PC. 
-* [GPU Availability]({{ site.url }}/2021/12/12/xmas-gifts) - finding a GPU during the shortage.
+* [A Private Media Server](/2018/01/19/private_media_server/) - covers Plex on a cheap Linux laptop.
+* [Nvidia Shield TV](/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
+* [Budget Gaming PC](/2018/11/09/budget_pc_gaming) - covers building an entry-level rig for PC gaming. 
+* [PC Game Stores](/2018/12/26/pc_game_stores) - where to find PC games. 
+* [Zen2 Gaming PC](/2019/07/16/zen2_pc_gaming) - building another gaming PC. 
+* [GPU Availability](/2021/12/12/xmas-gifts) - finding a GPU during the shortage.

@@ -3,7 +3,7 @@ layout: post
 title: Data Visualization
 subtitle: querying, charting and alerting with re:dash
 date: 2016-10-15
-header-img: img/headers/sylvan_lake_snowkiting.jpg
+background: /img/headers/sylvan_lake_snowkiting.jpg
 comments: true
 published: true
 ---
@@ -21,37 +21,37 @@ Following the directions in the [Ubuntu bootstrap.sh](https://github.com/getreda
 ## Data Sources
 Redash can query databases such as Oracle, SQL Server, PostgreSQL, and MySQL.  Connections to MongoDB, Presto, Vertica, Amazon Redshift, Google BigQuery among others are also available.
 
-<img src="{{ site.url }}/img/posts/data_viz_pg_ds.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
+<img src="/img/posts/data_viz_pg_ds.png" class="img-fluid" style="border: 1px solid gray; padding:10px"/>
 
 As seen above, creating a PostgreSQL data source is straight forward.  I'm connecting to the [Adventureworks sample database](https://github.com/lorint/AdventureWorks-for-Postgres) with sales, staff, and customer data.
 
 ## Queries
 Creating and editing the SQL query is an area where Redash really shines.  The query editor has an expandable list of tables and columns that can be drag and dropped into the query box.  The Execute button sends the query to the background workers, based on [Celery](http://www.celeryproject.org/), returning the results in a table below.
 
-<img src="{{ site.url }}/img/posts/data_viz_query_global.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
+<img src="/img/posts/data_viz_query_global.png" class="img-fluid" style="border: 1px solid gray; padding:10px"/>
 
 Notice that each query has an owner, last execution time, records found, and a Refresh link.
 
 ### Query Parameters
 Even better, queries can be parameterized in SQL using HTTP query parameters.  For example, this query takes a 'p_Region' value to narrow the scope via WHERE clause.
 
-<img src="{{ site.url }}/img/posts/data_viz_query_global.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
+<img src="/img/posts/data_viz_query_global.png" class="img-fluid" style="border: 1px solid gray; padding:10px"/>
 
 Be careful using these parameters in your SQL query to avoid possible SQL injection however.
 
 ## Charts
 Now that we have results, it's easy to add a chart to visualize the data:
 
-<img src="{{ site.url }}/img/posts/data_viz_pie_chart.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
+<img src="/img/posts/data_viz_pie_chart.png" class="img-fluid" style="border: 1px solid gray; padding:10px"/>
 
 Adding more charts for query results is possible, just by clicking the '+NEW VISUALIZATION' link.  Here's the current choices for chart types:
 
-<img src="{{ site.url }}/img/posts/data_viz_chart_types.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
+<img src="/img/posts/data_viz_chart_types.png" class="img-fluid" style="border: 1px solid gray; padding:10px"/>
 
 ## Dashboards
 Once you have queries with visualizations, they can be added to a dashboard, laid out left to right, top to bottom. 
 
-<img src="{{ site.url }}/img/posts/data_viz_sales_dashboard.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
+<img src="/img/posts/data_viz_sales_dashboard.png" class="img-fluid" style="border: 1px solid gray; padding:10px"/>
 
 On a wide layout, charts can be regular or double-width.  The layout is responsive however, wrapping down right-side charts as the window is narrowed.
 
@@ -64,12 +64,12 @@ Redash by default maintains its own lists of users.  For integration with extern
 ### Authorization
 Users can be placed in groups and those groups can be granted access to Data Sources.  As well, it is possible to mark a dashboard as public (not requiring authentication) as seen here:
 
-<img src="{{ site.url }}/img/posts/data_viz_share_dashboard.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
+<img src="/img/posts/data_viz_share_dashboard.png" class="img-fluid" style="border: 1px solid gray; padding:10px"/>
 
 ## Alerts
 Triggers can be placed on queries to alert if a certain condition is met by the results.  Notification destinations include email, HipChat, Webhook, and Slack.  Here's an example configuration screen:
 
-<img src="{{ site.url }}/img/posts/data_viz_alerts.png" class="img-responsive" style="border: 1px solid gray; padding:10px"/>
+<img src="/img/posts/data_viz_alerts.png" class="img-fluid" style="border: 1px solid gray; padding:10px"/>
 
 ## Summary
 
@@ -100,11 +100,11 @@ Currently, redash queries results are read-only.  This makes sense for most situ
 #### Cross Data Source Joins
 Being able to correlate and combine records from different data sources before reporting would be a compelling feature.  For example, imagine linking sales data together with your shipping department.  Basically a simple [master data management](https://en.wikipedia.org/wiki/Master_data_management) (MDM) solution with identity resolution and record comparison.
 
-While I am a big fan of MDM, I actually think this enhancement is better done at the [data virtualization layer]({{site.url}}/2016/07/18/pg_data_virt/), rather than at the reporting layer.  So combining a Redash deployment with [Postgres FDW](https://wiki.postgresql.org/wiki/Foreign_data_wrappers) could be a nice approach.
+While I am a big fan of MDM, I actually think this enhancement is better done at the [data virtualization layer](/2016/07/18/pg_data_virt/), rather than at the reporting layer.  So combining a Redash deployment with [Postgres FDW](https://wiki.postgresql.org/wiki/Foreign_data_wrappers) could be a nice approach.
 
 ### Alternatives
 During my research, I looked at the open-source Kibana dashboard, which is an ["open core"](https://en.wikipedia.org/wiki/Open_core) project where advanced features are unfortunately commerical add-ons.  As well, I found Redash's SQL-based query features to be more compelling. 
 
 ### More in this series...
-* [Analyzing Data Quality]({{ site.url }}/2016/09/05/data_quality/)
-* [Data Quality Rules]({{ site.url }}/2016/09/21/data_quality_rules/)
+* [Analyzing Data Quality](/2016/09/05/data_quality/)
+* [Data Quality Rules](/2016/09/21/data_quality_rules/)

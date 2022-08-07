@@ -3,12 +3,12 @@ layout: post
 title: Easy Kubernetes
 subtitle: on google container engine
 date: 2017-03-06
-header-img: img/headers/bozo_kiteboarding.jpg
+background: /img/headers/bozo_kiteboarding.jpg
 comments: true
 published: true
 ---
 
-Following my earlier discussion of [enterprise orchestration]({{ site.url }}/2016/11/25/ent_orchestrators/), I decided to look closer at hosted Kubernetes clusters from [Google Cloud](https://cloud.google.com/container-engine/),  [Microsoft Azure](https://docs.microsoft.com/en-us/azure/container-service/container-service-kubernetes-walkthrough), and [AWS Cloud](https://aws.amazon.com/quickstart/architecture/heptio-kubernetes/).  To start with, I'll be trying out the free trial of Google Container Engine.
+Following my earlier discussion of [enterprise orchestration](/2016/11/25/ent_orchestrators/), I decided to look closer at hosted Kubernetes clusters from [Google Cloud](https://cloud.google.com/container-engine/),  [Microsoft Azure](https://docs.microsoft.com/en-us/azure/container-service/container-service-kubernetes-walkthrough), and [AWS Cloud](https://aws.amazon.com/quickstart/architecture/heptio-kubernetes/).  To start with, I'll be trying out the free trial of Google Container Engine.
 
 ## Getting Started with GCloud
 
@@ -22,7 +22,7 @@ First off, I installed the [GCloud SDK](https://cloud.google.com/sdk/#Quick_Star
 
 I then setup API credentials for my `gcloud` CLI.  First I [created a credential](https://console.cloud.google.com/apis/credentials/serviceaccountkey), then downloaded the key as JSON:
 
-![create]({{ site.url }}/img/posts/kube_gke_creds.png)
+<img src="/img/posts/kube_gke_creds.png" class="img-fluid" />
 
     sudo gcloud auth activate-service-account --key-file MyProject-1234325.json
 
@@ -30,11 +30,11 @@ I then setup API credentials for my `gcloud` CLI.  First I [created a credential
 
 Then in Google Cloud Console, I created the new Kubernetes cluster:
 
-![create]({{ site.url }}/img/posts/kube_gke_create.png)
+<img src="/img/posts/kube_gke_create.png" class="img-fluid" />
 
 After creation, the console showed the newly running Kubernetes cluster (3 nodes):
 
-![mycluster]({{ site.url }}/img/posts/kube_gke_mycluster.png)
+<img src="/img/posts/kube_gke_mycluster.png" class="img-fluid" />
 
 I then connected from my local kubectl util:
 
@@ -43,17 +43,17 @@ I then connected from my local kubectl util:
 
 This opened a local proxy to my Kubernetes cluster's Admin Dashboard:
 
-![deploy]({{ site.url }}/img/posts/kube_gke_deploy.png)
+<img src="/img/posts/kube_gke_deploy.png" class="img-fluid" />
 
 Which I then scaled from one to three pods with:
 
     kubectl scale --replicas=3 deployment/nginx-test
 
-![deployment]({{ site.url }}/img/posts/kube_gke_nginx.png)
+<img src="/img/posts/kube_gke_nginx.png" class="img-fluid" />
 
 Since, I'd set the `nginx-test` deployment to be available as an external service on the Kubernetes clsuter, I could view it in a browser from my workstation:
 
-![nginx]({{ site.url }}/img/posts/kube_gke_nginx_external.png)
+<img src="/img/posts/kube_gke_nginx_external.png" class="img-fluid" />
 
 For more useful Kubernetes commands, see the `kubectl` [documentation](https://kubernetes.io/docs/user-guide/kubectl/kubectl_completion/).
 
@@ -61,11 +61,11 @@ For more useful Kubernetes commands, see the `kubectl` [documentation](https://k
 
 Google Cloud makes it easy to add both [monitoring](https://cloud.google.com/monitoring/) and [logging](https://cloud.google.com/logging/) of your Kubernetes cluster.  For example, I could quickly find Nginx events from the launched pods:  
 
-![logging]({{ site.url }}/img/posts/kube_gke_logging.png)
+<img src="/img/posts/kube_gke_logging.png" class="img-fluid" />
 
 The monitoring dashboard allows one to see CPU, memory, and disk usage (example below):
 
-![monitoring]({{ site.url }}/img/posts/kube_gke_monitoring.png)
+<img src="/img/posts/kube_gke_monitoring.png" class="img-fluid" />
 
 Stackdriver is free for GCP VM monitoring and email alerts.  A premium tier offers combined monitoring of AWS instances as well, plus notifications in Slack, PagerDuty and more. 
 
@@ -80,5 +80,5 @@ After evaluating various container orchestrators and cloud providers, I'm now co
 Software development best practice is now containerized deployments on an industry-standard orchestator, run by your preferred cloud platform.
  
 ### More in this series...
-* [Apps at a Medium Pace]({{ site.url }}/2016/11/25/ent_orchestrators/)
-* [Kubernetes on CoreOS]({{ site.url }}//2017/02/21/ml_kube_setup/)
+* [Apps at a Medium Pace](/2016/11/25/ent_orchestrators/)
+* [Kubernetes on CoreOS](//2017/02/21/ml_kube_setup/)

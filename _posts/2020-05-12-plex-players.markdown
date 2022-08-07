@@ -3,7 +3,7 @@ layout: post
 title: Plex Players
 subtitle: tweaking and tuning
 date: 2020-05-12
-header-img: img/headers/maligne_canyon1.jpg
+background: /img/headers/maligne_canyon1.jpg
 comments: true
 published: true
 ---
@@ -23,9 +23,9 @@ There are two ways to view Plex within a web-browser, either directly off your s
 
 ## Local Plex Server
 
-As shown below, one can reach their Plex server in their house at http://LOCAL_COMPUTER:32400, or in my case, proxied to remote users via [Nginx and Organizr v1]({{ site.url }}/2018/04/12/nginx_organizr/):
+As shown below, one can reach their Plex server in their house at http://LOCAL_COMPUTER:32400, or in my case, proxied to remote users via [Nginx and Organizr v1](/2018/04/12/nginx_organizr/):
 
-![Organizr]({{ site.url }}/img/posts/private_media_server_organizr.png)
+<img src="/img/posts/private_media_server_organizr.png" class="img-fluid" />
 
 While this is the simplest approach for my users, I actually discourage it for viewing due to the poor performance they see on their end.  Remote streams regularly get stuck (never-ending pause) despite my server having no trouble transcoding or uploading fast enough.  Often closing their browser and restarting the stream gets things going again, but you don't have to do that with Netflix.
 
@@ -75,7 +75,7 @@ While a separate download, I have begun encouraging this for everyone who is wat
 
 When not watching on my phone, I now use the Windows desktop client on an old laptop, connected to an old Samsung TV, perched above my desk:
 
-![Desktop]({{ site.url }}/img/posts/plex_players_windows_desktop_to_tv.jpg)
+<img src="/img/posts/plex_players_windows_desktop_to_tv.jpg" class="img-fluid" />
 
 I've found less stuttering and better stream resolution than using Google Chrome to play in the web client.
 
@@ -88,6 +88,6 @@ Much of my extended family are Macintosh aficionados so I recommend the Macintos
 I keep reading that Plex alternatives such as [Jellyfin](https://jellyfin.org/) and [Emby](https://emby.media/) are worth considering, particularly given Plex's drawbacks.  However, I haven't found Plex broken enough to move... yet.  Honestly, once I get new hardware for the server and am rebuilding from scratch, I'll likely test to see if I can leave Plex and its hassles behind.
 
 ### More in this series...
-* [Private Media Server]({{ site.url }}/2018/01/19/private_media_server/) - overview of my server.
-* [Nginx and Organizr v1]({{ site.url }}/2018/04/12/nginx_organizr/) - proxying Organizr v1.
-* [Nginx and Organizr v2]({{ site.url }}/2019/01/03/nginx_organizr_v2/) - proxying Organizr v2.
+* [Private Media Server](/2018/01/19/private_media_server/) - overview of my server.
+* [Nginx and Organizr v1](/2018/04/12/nginx_organizr/) - proxying Organizr v1.
+* [Nginx and Organizr v2](/2019/01/03/nginx_organizr_v2/) - proxying Organizr v2.

@@ -3,12 +3,12 @@ layout: post
 title: Microk8s Setup
 subtitle: on ubuntu 20.04
 date: 2020-04-24
-header-img: img/headers/icefields3.jpg
+background: /img/headers/icefields3.jpg
 comments: true
 published: true
 ---
 
-Well, it's been four years since I last posted about [container orchestration in the enterprise]({{ site.url }}/2016/11/25/ent_orchestrators/) and took a deep dive on [executing ML tasks]({{ site.url }}/2017/11/24/lane_detect_cloud_gke/) on each cloud's Kubernetes.  
+Well, it's been four years since I last posted about [container orchestration in the enterprise](/2016/11/25/ent_orchestrators/) and took a deep dive on [executing ML tasks](/2017/11/24/lane_detect_cloud_gke/) on each cloud's Kubernetes.  
 
 With that history in mind, when an older tower became available, I slapped [Ubuntu Server](https://ubuntu.com/server) 20.04 on it and started playing around with [Microk8s](https://microk8s.io/), a simple k8s deployment meant for a single machine.  The tower is a 7-year old HP workstation, but with 48 GB of RAM, and an adequate 2 TB of spinning rust storage, though sadly without SSD.
 
@@ -55,11 +55,11 @@ InfluxDB is running at https://127.0.0.1:16443/api/v1/namespaces/kube-system/ser
 
 As I was already SSH'd into the host from my Windows desktop, using MobaXterm, I set up an SSH tunnel as shown:
 
-![Tunnel]({{ site.url }}/img/posts/ubuntu-microk8s-tunnel.png)
+<img src="/img/posts/ubuntu-microk8s-tunnel.png" class="img-fluid" />
 
 However on browsing to `https://127.0.0.1:16443/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#/` on my local Windows system, and reaching the dashboard via the SSH tunnel, I received a basic auth prompt in browser. 
 
-![Auth]({{ site.url }}/img/posts/ubuntu-microk8s-basic-auth.png)
+<img src="/img/posts/ubuntu-microk8s-basic-auth.png" class="img-fluid" />
 
 Searching I found this [StackExchange answer](https://stackoverflow.com/a/57299046) which led me to create this script:
 ```
@@ -74,11 +74,11 @@ microk8s kubectl -n kube-system describe secret $token | grep "^token" | xargs |
 ```
 On inputting the token:
 
-![Token]({{ site.url }}/img/posts/ubuntu-microk8s-token.png)
+<img src="/img/posts/ubuntu-microk8s-token.png" class="img-fluid" />
 
 Then was able to view the dashboard:
 
-![Dashboard]({{ site.url }}/img/posts/ubuntu-microk8s-dashboard.png)
+<img src="/img/posts/ubuntu-microk8s-dashboard.png" class="img-fluid" />
 
 Honestly, that's not the best experience for a home labber who is used to immediate gratification on a new software install.
 
@@ -102,7 +102,7 @@ http://{IP_address}:8001/api/v1/namespaces/kube-system/services/https:kubernetes
 Using the proxy this way, also avoids the SSL certificate error due to self-signed certificate.  Obviously this is not reasonable for production, but a token-less, proxied dashboard is simple to use for the homelabber looking to experiment with microk8s.
 
 ### More in this series...
-* [microk8s upgraded]({{ site.url }}/2020/09/28/microk8s-upgrade) - Upgrading to k8s 1.19
-* [kubeflow setup]({{ site.url }}/2020/10/18/microk8s-kubeflow-setup) - Enabling ML workflows
-* [MNIST notebook]({{ site.url }}/2020/11/14/microk8s-kubeflow-mnist) - Using Jupyter notebooks on Kubeflow
-* [kubeflow pipelines]({{ site.url }}/2020/12/09/microk8s-kubeflow-pipelines) - Deploying pipelines on Kubeflow
+* [microk8s upgraded](/2020/09/28/microk8s-upgrade) - Upgrading to k8s 1.19
+* [kubeflow setup](/2020/10/18/microk8s-kubeflow-setup) - Enabling ML workflows
+* [MNIST notebook](/2020/11/14/microk8s-kubeflow-mnist) - Using Jupyter notebooks on Kubeflow
+* [kubeflow pipelines](/2020/12/09/microk8s-kubeflow-pipelines) - Deploying pipelines on Kubeflow

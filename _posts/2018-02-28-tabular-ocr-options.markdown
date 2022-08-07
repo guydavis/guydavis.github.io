@@ -3,14 +3,14 @@ layout: post
 title: Optical Character Recognition  
 subtitle: of scanned tabular images
 date: 2018-02-28
-header-img: img/headers/x-country.jpg
+background: /img/headers/x-country.jpg
 comments: true
 published: true
 ---
 
-I recently had an opportunity to research options for extracting tabular data from scanned PDF images.  Turns out this a very challenging problem, given the widely varying layouts and scan quality of typical examples. I did find a [very good approach by Markus Konrad](https://datascience.blog.wzb.eu/2017/02/16/data-mining-ocr-pdfs-using-pdftabextract-to-liberate-tabular-data-from-scanned-documents/) that searched for table border lines using the same algorithm I recently used for finding [road lane markers in dashcam footage]({{ site.url }}/2017/06/13/lane_detect_improved/). Here's a sample input:
+I recently had an opportunity to research options for extracting tabular data from scanned PDF images.  Turns out this a very challenging problem, given the widely varying layouts and scan quality of typical examples. I did find a [very good approach by Markus Konrad](https://datascience.blog.wzb.eu/2017/02/16/data-mining-ocr-pdfs-using-pdftabextract-to-liberate-tabular-data-from-scanned-documents/) that searched for table border lines using the same algorithm I recently used for finding [road lane markers in dashcam footage](/2017/06/13/lane_detect_improved/). Here's a sample input:
 
-![Output]({{ site.url }}/img/posts/ocr_table_sample.png)
+<img src="/img/posts/ocr_table_sample.png" class="img-fluid" />
 
 Clearly a challenge!
 
@@ -45,9 +45,9 @@ Next up I tried the new alpha version of Tesseract that uses an [LSTM neural net
 
 Next, I gave Google's online API for image analysis, named [Cloud Vision](https://cloud.google.com/vision/) a try.  Within a few seconds of uploading the PNG image, I was shown the following results:
 
-![Output]({{ site.url }}/img/posts/ocr_table_gcv_labels.png)
+<img src="/img/posts/ocr_table_gcv_labels.png" class="img-fluid" />
 
-![Output]({{ site.url }}/img/posts/ocr_table_gcv_doc.png)
+<img src="/img/posts/ocr_table_gcv_doc.png" class="img-fluid" />
 
 # Conclusion
 
@@ -58,4 +58,4 @@ So for 'off-the-shelf' options Google Cloud Vision seems a promising alternative
 I'd like to try more test images with Google Cloud Vision to see how it performs overall.  As well, I hope to revisit Tesseract LSTM as it moves to a full release. 
 
 ### More in this series...
-* [Tabular Data Extraction with GCV]({{ site.url }}/2018/03/06/tabular_ocr_gcv) - further testing of Google Cloud Vision.
+* [Tabular Data Extraction with GCV](/2018/03/06/tabular_ocr_gcv) - further testing of Google Cloud Vision.

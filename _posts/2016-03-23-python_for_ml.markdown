@@ -3,7 +3,7 @@ layout: post
 title: Installing Python
 subtitle: for machine learning and data science
 date: 2016-03-23
-header-img: img/headers/maui_kiteboarder.jpg
+background: /img/headers/maui_kiteboarder.jpg
 comments: true
 ---
 

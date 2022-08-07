@@ -3,7 +3,7 @@ layout: post
 title: OCR with LSTM
 subtitle: trying tesseract 4
 date: 2018-06-30
-header-img: img/headers/zoo_xmas_tree.jpg
+background: /img/headers/zoo_xmas_tree.jpg
 comments: true
 published: true
 ---
@@ -48,15 +48,15 @@ if __name__ == '__main__':
 
 ## OCR Results
 First test with a fairly clear scan went well:
- ![Inventory]({{ site.url }}/img/posts/ocr_lstm_inventory.png)
+ <img src="/img/posts/ocr_lstm_inventory.png" class="img-fluid" />
 
 Second test with a much poorer scan had a lot more trouble:
- ![Names]({{ site.url }}/img/posts/ocr_lstm_names.png)
+ <img src="/img/posts/ocr_lstm_names.png" class="img-fluid" />
 
 # Conclusions
 
  Overall, I'm quite impressed with the improvements made in Tesseract's new LSTM mode.  Definitely a worthwhile tool for those doing OCR these days.
 
 ### More in this series...
-* [Optical Character Recognition]({{ site.url }}/2018/02/28/tabular-ocr-options) - first attempt, investigating options.
-* [Tabular Data Extraction with GCV]({{ site.url }}/2018/03/06/tabular_ocr_gcv) - further testing of Google Cloud Vision.
+* [Optical Character Recognition](/2018/02/28/tabular-ocr-options) - first attempt, investigating options.
+* [Tabular Data Extraction with GCV](/2018/03/06/tabular_ocr_gcv) - further testing of Google Cloud Vision.

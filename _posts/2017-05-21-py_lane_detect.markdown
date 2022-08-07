@@ -3,14 +3,14 @@ layout: post
 title: Lane Detection in Images
 subtitle: computer vision processing with python
 date: 2017-05-21
-header-img: img/headers/steering_wheel.jpg
+background: /img/headers/steering_wheel.jpg
 comments: true
 published: true
 ---
 
 Following this [KDnuggets article](http://www.kdnuggets.com/2017/07/road-lane-line-detection-using-computer-vision-models.html), I will be trying to replicate road lane detection using the Python computer vision library, [OpenCV](http://opencv.org/).  Here's the sample image they used to detect lanes:
 
-![Input]({{ site.url }}/img/posts/lane_detect_source.jpg)
+<img src="/img/posts/lane_detect_source.jpg" class="img-fluid" />
 
 # Setup OpenCV on Ubuntu
 First off, I'm using [OpenCV on Ubuntu 16.04](http://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/) in Python 3, installed as follows:
@@ -91,11 +91,11 @@ def process_image(dirpath, image_file):
 
 # Evaluating Results
 As you can see, identifying the region of interest (i.e. the roadway) in an image is basically hard-coded in the above initial code.  This worked great for the one "happy path" image as shown here:
-![Happy Path]({{ site.url }}/img/posts/lane_detect_happy_path.gif)
+<img src="/img/posts/lane_detect_happy_path.gif" class="img-fluid" />
 Running this code against other dashcam shots from Google Images, I found some interesting results:
-![Sad Path 1]({{ site.url }}/img/posts/lane_detect_sad_path1.gif)
-![Sad Path 2]({{ site.url }}/img/posts/lane_detect_sad_path2.gif)
-![Sad Path 3]({{ site.url }}/img/posts/lane_detect2_img5_failed.gif)
+<img src="/img/posts/lane_detect_sad_path1.gif" class="img-fluid" />
+<img src="/img/posts/lane_detect_sad_path2.gif" class="img-fluid" />
+<img src="/img/posts/lane_detect2_img5_failed.gif" class="img-fluid" />
 
 Clearly you would not want this lane detection algorithm driving your car!  The color selection of the lines is too stringent. Also the area of interest selection seems to be a problem here as the roadway is not being identified before the attempt to overlay lane markers.
 
@@ -103,8 +103,8 @@ Clearly you would not want this lane detection algorithm driving your car!  The 
 Having discovered the limits of simple lane detection with naive area-of-interest determination, I hope to improve upon this approach in the future.
  
 ### More in this series...
-* [Improved Lane Detection]({{ site.url }}/2017/06/13/lane_detect_improved/) - improved approach.
-* [Handling Dashcam Footage]({{ site.url }}/2017/09/25/lane_detect_video/) - processing video.
-* [Deploying in Docker]({{ site.url }}/2017/10/16/lane_detect_docker/) - bundling as a Docker image.
-* [Running on Google Cloud]({{ site.url }}/2017/11/24/lane_detect_cloud_gke/) - scaling on GKE.
-* [Running on Microsoft Cloud]({{ site.url }}/2017/12/17/lane_detect_cloud_azure/) - scaling on Azure.
+* [Improved Lane Detection](/2017/06/13/lane_detect_improved/) - improved approach.
+* [Handling Dashcam Footage](/2017/09/25/lane_detect_video/) - processing video.
+* [Deploying in Docker](/2017/10/16/lane_detect_docker/) - bundling as a Docker image.
+* [Running on Google Cloud](/2017/11/24/lane_detect_cloud_gke/) - scaling on GKE.
+* [Running on Microsoft Cloud](/2017/12/17/lane_detect_cloud_azure/) - scaling on Azure.

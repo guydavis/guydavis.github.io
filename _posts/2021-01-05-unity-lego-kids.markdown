@@ -3,7 +3,7 @@ layout: post
 title: Unity Lego Microgame
 subtitle: game dev for kids
 date: 2021-01-05
-header-img: img/headers/maligne_lake3.jpg
+background: /img/headers/maligne_lake3.jpg
 comments: true
 published: true
 ---
@@ -14,7 +14,7 @@ With all the isolation imposed over past months due to the pandemic, our family 
 
 Started 15 years ago on the Mac platform, Unity is primarily a game engine with a large ecosystem of development tools, both for the industry and hobbyists.  Beyond games, it is used as a 3D modelling tool for diverse industries such as film and construction. 
 
-![Logo]({{ site.url }}/img/posts/unity_lego_logo.png)
+<img src="/img/posts/unity_lego_logo.png" class="img-fluid" />
 
 We're interested in its capabilities as a game engine however, so we started with the [Unity tutorials](https://learn.unity.com/).
 
@@ -26,7 +26,7 @@ Covering the basics of model navigation, hierachy, and palette, the tutorial is 
 
 In my son's case, he quickly found jump moves that allowed him to avoid the elevator and electric fence altogether.  Once he felt he'd "beaten" the game, he was much more interested in how to enhance the underlying game itself as shown here:
 
-![Space Pirates]({{ site.url }}/img/posts/unity_lego_kids.png)
+<img src="/img/posts/unity_lego_kids.png" class="img-fluid" />
 
 On the whole, he found the tutorials straight-forward and easy to follow.  He quickly became focused on increasing the stages in the level and making it more challenging.
 

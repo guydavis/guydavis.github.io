@@ -3,14 +3,14 @@ layout: post
 title: A Private Media Server
 subtitle: sharing with friends and family
 date: 2018-01-19
-header-img: img/headers/rhodes_acropolis.jpg
+background: /img/headers/rhodes_acropolis.jpg
 comments: true
 published: true
 ---
 
 Having given up cable TV a while back, I wanted a means of sharing my personal collection of home videos, photos, movies, shows, and music to other computers, TVs, tablets, and phones around my house.  Deciding on [Plex](https://www.plex.tv), I setup a private media server that automates management of all my digital content: 
 
-![Organizr]({{ site.url }}/img/posts/private_media_server_organizr.png)
+<img src="/img/posts/private_media_server_organizr.png" class="img-fluid" />
 
 ## Overall Approaches
 These days, a quick way to setup a media server is to rent a virtual private server (VPS) from a cloud provider.  [Digital Ocean](http://digitalocean.com) and [Hetzner](https://www.hetzner.com) are good options, but a search for [seedbox](https://www.google.ca/search?q=seedbox) turns up many more possibilities.  [Plex Cloud](https://www.plex.tv/features/cloud/) is another option, storing files on Google Drive, OneDrive, or Dropbox.
@@ -28,7 +28,7 @@ Family members in the same household can easily be granted access.  As well, Ple
 ### Organizr &amp; Ombi
 Next up is a slick web UI named [Organizr](https://organizr.us/) for combining multiple web tools together in a nice tabbed interface, all authenticated by your Plex server.  In my case, this let's me offer straightforward buttons to friends and family titled:  Home, Watch, Request, and Stats.  Here's the `Request` view, provided by Ombi, with Organizr links along the left side:
 
-![Ombi]({{ site.url }}/img/posts/private_media_server_ombi.png)
+<img src="/img/posts/private_media_server_ombi.png" class="img-fluid" />
 
 [Ombi](https://www.ombi.io/) is a easy request tool for users to search for new movies and shows to add to the collection.  It is a simple frontend end to automated tools for query online [movie](http://www.imdb.com/) and [show](https://www.thetvdb.com/) databases.  The simplicity is paramount as family members using Ombi may not be the most technically savy.  For what it does, Ombi excels!
 
@@ -36,7 +36,7 @@ Next up is a slick web UI named [Organizr](https://organizr.us/) for combining m
 
 To catalogue and manage the movies and shows in my collection, I use [Radarr](https://radarr.video/) and [Sonarr](https://sonarr.tv/) respectively.  These [excellent tools](https://www.htpcguides.com/install-nzbdrone-ubuntu/) can also monitor ongoing series for new episodes as well as upgrade the quality of a particular video as better versions are indexed.  Below is a screenshot of Radarr displaying a movie I encoded from the original DVD I purchased years ago.  I may no longer have a DVD player, but I can still watch the movie!
 
-![Radarr]({{ site.url }}/img/posts/private_media_server_radarr.png)
+<img src="/img/posts/private_media_server_radarr.png" class="img-fluid" />
 
 ### Jackett
 
@@ -46,7 +46,7 @@ Sonarr and Radarr can both search for new content via [Jackett](https://github.c
 
 To keep tabs on the collection and my users, I monitor Plex using [Tautulli](http://tautulli.com/).  This nice Python app provides ongoing reports and statistics that are useful for both myself as administrator, as well as my users to see what others have been enjoying.
 
-![Tautulli]({{ site.url }}/img/posts/private_media_server_tautulli.png)
+<img src="/img/posts/private_media_server_tautulli.png" class="img-fluid" />
 
 ### Nginx and PML
 Since all my media services only connect out to the Internet for IMDB queries and such via my VPN, to allow users to access them I've set up [Nginx](https://www.nginx.com/resources/admin-guide/reverse-proxy/) as a reverse proxy.  I've rolled my own setup but [Organizr's installer](https://github.com/causefx/Organizr/wiki/Linux-Installation#auto-installer-for-linux-debianubuntu-only) will create a nice default config.  External access to my site is SSL-encrypted through the great [Let's Encrypt](https://letsencrypt.org/) project.
@@ -57,6 +57,6 @@ Another useful admin tool is [PML](http://pimpmylog.com/) for online access to m
 While not for the average cord cutter, running a private media server has been a great learning experience for me.  I've found the online communities around these projects really helpful, which has prompted me to donate some $ to these open source projects to ensure they keep developing and invovating.  Keep up the good work!
 
 ### More in this series...
-* [Nvidia Shield TV]({{ site.url }}/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
-* [Budget Gaming PC]({{ site.url }}/2018/11/09/budget_pc_gaming) - covers building an entry-level rig for PC gaming. 
-* [Retro Game Emulation]({{ site.url }}/2018/12/15/retro_game_emu) - options for emulating old games on both PC and Shield TV. 
+* [Nvidia Shield TV](/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
+* [Budget Gaming PC](/2018/11/09/budget_pc_gaming) - covers building an entry-level rig for PC gaming. 
+* [Retro Game Emulation](/2018/12/15/retro_game_emu) - options for emulating old games on both PC and Shield TV. 

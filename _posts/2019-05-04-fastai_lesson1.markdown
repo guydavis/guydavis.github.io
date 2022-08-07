@@ -3,7 +3,7 @@ layout: post
 title: Image Classification
 subtitle: fastai - lesson one
 date: 2019-05-04
-header-img: img/headers/cactus_flower.jpg
+background: /img/headers/cactus_flower.jpg
 comments: true
 published: true
 ---
@@ -12,7 +12,7 @@ This covers my work on the first lesson of the [Fast AI course](https://course.f
 
 ## Relaunching Cloud GPU System
 
-Following the FastAI guide on [returning to work](https://course.fast.ai/update_gcp.html), I can easily relaunch the [GCP instance created last month]({{ site.url }}/2019/04/01/fastai_gcp/).  Since it's been awhile, I perform some [basic updates](https://course.fast.ai/start_gcp.html#step-4-access-fastai-materials-and-update-packages).
+Following the FastAI guide on [returning to work](https://course.fast.ai/update_gcp.html), I can easily relaunch the [GCP instance created last month](/2019/04/01/fastai_gcp/).  Since it's been awhile, I perform some [basic updates](https://course.fast.ai/start_gcp.html#step-4-access-fastai-materials-and-update-packages).
 
 Launching my Ubuntu shell on Windows 10, I can proxy the Juypter notebook to my local browser:
 ```
@@ -29,7 +29,7 @@ sudo /opt/anaconda3/bin/conda install -c fastai fastai
 
 Getting started with the lessons, I was quite impressed by the power of dynamic Jupyter notebooks.  The interactive browser view was great for quickly working with data and training models. 
 
-![Lesson 1 - Show Batch]({{ site.url }}/img/posts/fastai_lesson1_show_batch.png)
+<img src="/img/posts/fastai_lesson1_show_batch.png" class="img-fluid" />
 
 The code editor even offered code completion via keyboard shortcut.  Very slick! 
 
@@ -48,4 +48,4 @@ Another interesting tidbit was the instructor's discussion of GPU VRAM size for 
 While this supervised approach to image classification is interesting, I wonder how well an unsupervised approach works.  I'm guessing that the labelled training set provided to the supervised learner gives it a leg up over unsupervised alternatives.
 
 ### Next in this series...
-* [Lesson 2]({{ site.url }}/2019/06/01/fastai_lesson2/)
+* [Lesson 2](/2019/06/01/fastai_lesson2/)

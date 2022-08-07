@@ -3,7 +3,7 @@ layout: post
 title: Covid-19 Visualizations
 subtitle: spread through alberta
 date: 2020-03-21
-header-img: img/headers/icefields5.jpg
+background: /img/headers/icefields5.jpg
 comments: true
 published: true
 ---
@@ -18,7 +18,7 @@ Overall, I understand that our provincial health agency is doing a good job with
 
 As you can see, in this snapshot, taken today - March 22nd, we're definitely in the first stages of exponential spread.  Keep in mind, this count reflects a multi-day lag in processing test samples, and obscures the likely fact that many more very mild cases in the community are never tested/counted.
 
-![2020-03-21]({{ site.url }}/img/posts/covid_alberta_2020-03-21.png)
+<img src="/img/posts/covid_alberta_2020-03-21.png" class="img-fluid" />
 
 Below is an interactive chart of the latest data, which will be interesting to compare to the early snapshot above in the coming weeks and months:
 
@@ -28,7 +28,7 @@ Below is an interactive chart of the latest data, which will be interesting to c
 
 Some have started to make future predictions on infection spread, such as [this spreadsheet](https://docs.google.com/spreadsheets/d/1DAQ8_YJKdczjhFms9e8Hb0eVKX_GL5Et5CWvVcPKogM/edit#gid=0) I saw posted on [/r/calgary](https://www.reddit.com/r/Calgary/comments/fmbh59/link_to_the_covid_alberta_spreadsheet/), whch uses a doubling-rate of 3.  I'm worried that they're likely going to be accurate...
 
-![Predictions]({{ site.url }}/img/posts/covid_alberta_predictions.png)
+<img src="/img/posts/covid_alberta_predictions.png" class="img-fluid" />
 
 However I am hopeful that all the citizens of Alberta work together, while maintaining physical distance, to avoid the worst impacts from this new disease in the coming months.
 
@@ -36,7 +36,7 @@ However I am hopeful that all the citizens of Alberta work together, while maint
 
 A good resource for monitoring the spread around the world has been this [dashboard from Johns Hopkins University](https://coronavirus.jhu.edu/map.html), snapshotted today:
 
-![Worldwide]({{ site.url }}/img/posts/covid_alberta_worldwide.png)
+<img src="/img/posts/covid_alberta_worldwide.png" class="img-fluid" />
 
 Here's a good visualization of the spread since mid-January, available from Wikimedia:
 

@@ -3,16 +3,16 @@ layout: post
 title: Nginx and Organizr v2
 subtitle: proxying access to media server
 date: 2019-01-03
-header-img: img/headers/canmore_from_benchlands.jpg
+background: /img/headers/canmore_from_benchlands.jpg
 comments: true
 published: true
 ---
 
-Following up on my earlier post about hosting my own [private media server]({{ site.url }}/2018/01/19/private-media-server) this will cover the details of proxying web access from Nginx through to backend services.  Interfaces are managed via Organizr v2. 
+Following up on my earlier post about hosting my own [private media server](/2018/01/19/private-media-server) this will cover the details of proxying web access from Nginx through to backend services.  Interfaces are managed via Organizr v2. 
  
-I strongly recommend using v2 of Organizr, but I have an [older post](({{ site.url }}/2018/04/12/nginx-organizr)) covering this with version 1 however.
+I strongly recommend using v2 of Organizr, but I have an [older post]((/2018/04/12/nginx-organizr)) covering this with version 1 however.
 
-![Organizr]({{ site.url }}/img/posts/private_media_server_organizr_v2.png)
+<img src="/img/posts/private_media_server_organizr_v2.png" class="img-fluid" />
 
 This uses the Plex single sign-on (SSO) available from Organizr for authentication of all users.  All my backend services (Ombi, Tautulli, Sonarr, Radarr, Jackett, NzbHydra, Nzbget, Transmission, etc) are proxied by Nginx.
 
@@ -186,6 +186,6 @@ Overall, I've found Nginx and Organizr to work very well together. I particularl
  
 
 ### More in this series...
-* [Private Media Server]({{ site.url }}/2018/01/19/private_media_server/) - overview of my server.
-* [Nginx and Organizr v1]({{ site.url }}/2018/04/12/nginx_organizr/) - proxying Organizr v1.
-* [Plex Clients]({{ site.url }}/2020/05/12/plex-clients) - tweaking and tuning clients.
+* [Private Media Server](/2018/01/19/private_media_server/) - overview of my server.
+* [Nginx and Organizr v1](/2018/04/12/nginx_organizr/) - proxying Organizr v1.
+* [Plex Clients](/2020/05/12/plex-clients) - tweaking and tuning clients.

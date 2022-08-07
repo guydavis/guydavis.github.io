@@ -3,14 +3,14 @@ layout: post
 title: MMX
 subtitle: a new blockchain
 date: 2021-12-31
-header-img: img/headers/glenmore_reservoir_pano.jpg
+background: /img/headers/glenmore_reservoir_pano.jpg
 comments: true
 published: true
 ---
 
-<img src="{{ site.url }}/img/posts/mmx_madmax_road.jpg" class="img-responsive" style="margin-left:10px; float:right"/>
+<img src="/img/posts/mmx_madmax_road.jpg" class="img-fluid" style="margin-left:10px; float:right"/>
 
-Following up my earlier article on the blossoming of many [Chia forks]({{site.url}}/2021/10/04/chia-forks/), a new proof-of-space-and-time (PoST) blockchain was announced this month.  [MMX](https://github.com/madMAx43v3r/mmx-node) is from the [developer](https://github.com/madMAx43v3r) of the popular Madmax [Chia Plotter](https://github.com/madMAx43v3r/chia-plotter) which revolutionized plotting last summer.
+Following up my earlier article on the blossoming of many [Chia forks](/2021/10/04/chia-forks/), a new proof-of-space-and-time (PoST) blockchain was announced this month.  [MMX](https://github.com/madMAx43v3r/mmx-node) is from the [developer](https://github.com/madMAx43v3r) of the popular Madmax [Chia Plotter](https://github.com/madMAx43v3r/chia-plotter) which revolutionized plotting last summer.
 
 # Why MMX?
 
@@ -36,9 +36,9 @@ From Github, the main features of MMX are as follows:
 While I am still a big booster of Chia, particularly as compared to proof-of-work cryptos such as Bitcoin and Ethereum, I am happy to see truly new development of other PoST blockchains.  The true measure of any software project is its community however.  Applies to Chia, to Machinaris, and will apply to MMX as well.  We'll see how much uptake it has and how well it innovates with improvements users want.
 
 ### More in this series...
-* [Chia on Unraid]({{site.url}}/2021/04/30/unraid-chia-plotting-farming/) - Chia CLI on Unraid with Docker
-* [Machinaris]({{site.url}}/2021/05/21/unraid-chia-machinaris/) - a new WebUI for Chia on Unraid
-* [Distributed Farming]({{site.url}}/2021/06/29/machinaris-distributed/) - Machinaris on many worker systems
-* [Chia Tools]({{site.url}}/2021/09/04/chia-tools/) - open-source Chia projects
-* [Chia Forks]({{site.url}}/2021/10/13/chia-forks/) - running forks of Chia with Machinaris
-* [MMX on GPUs]({{site.url}}/2022/02/09/mmx-gpu/) - Enabling GPU support for MMX in Machinaris
+* [Chia on Unraid](/2021/04/30/unraid-chia-plotting-farming/) - Chia CLI on Unraid with Docker
+* [Machinaris](/2021/05/21/unraid-chia-machinaris/) - a new WebUI for Chia on Unraid
+* [Distributed Farming](/2021/06/29/machinaris-distributed/) - Machinaris on many worker systems
+* [Chia Tools](/2021/09/04/chia-tools/) - open-source Chia projects
+* [Chia Forks](/2021/10/13/chia-forks/) - running forks of Chia with Machinaris
+* [MMX on GPUs](/2022/02/09/mmx-gpu/) - Enabling GPU support for MMX in Machinaris

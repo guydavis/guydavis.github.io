@@ -3,12 +3,12 @@ layout: post
 title: Kubernetes on CoreOS
 subtitle: cluster setup on AWS
 date: 2017-02-21
-header-img: img/headers/bow_river.jpg
+background: /img/headers/bow_river.jpg
 comments: true
 published: true
 ---
 
-This is a follow-on post to my earlier [orchestration overview]({{ site.url }}/2016/11/25/ent_orchestrators/).  I'll be exploring container management in a [Kubernetes](https://kubernetes.io/) cluster running on [Container Linux](https://coreos.com/os/docs/latest) (aka CoreOS) within [AWS](https://aws.amazon.com/).  
+This is a follow-on post to my earlier [orchestration overview](/2016/11/25/ent_orchestrators/).  I'll be exploring container management in a [Kubernetes](https://kubernetes.io/) cluster running on [Container Linux](https://coreos.com/os/docs/latest) (aka CoreOS) within [AWS](https://aws.amazon.com/).  
 
 ## Creating a Kubernetes Cluster
 While there a lot of different ways to launch a cluster, I decided to get my hands dirty with this [guide from CoreOS](https://coreos.com/kubernetes/docs/latest/kubernetes-on-aws.html).  As all the computing horsepower will be in the cloud, I was using an old laptop running Ubuntu 16.04 to build and control the cluster with these local tools:
@@ -44,15 +44,15 @@ When ready, the basic cluster of 3 t2.medium nodes can be created with:
 
     kube-aws up --s3-uri=s3://kube-adm
 
-![up]({{ site.url }}/img/posts/kube_coreos_start.png)
+<img src="/img/posts/kube_coreos_start.png" class="img-fluid" />
 
 This will result in 3 new instances appearing in your AWS Console:
 
-![aws]({{ site.url }}/img/posts/kube_coreos_aws.png)
+<img src="/img/posts/kube_coreos_aws.png" class="img-fluid" />
 
 Be sure to set the public IP of the controller node to the DNS name you set earlier.  I did this in the admin console of my DNS provider:
 
-![dns]({{ site.url }}/img/posts/kube_coreos_dns.png)
+<img src="/img/posts/kube_coreos_dns.png" class="img-fluid" />
 
 ## Using the Cluster
 
@@ -77,4 +77,4 @@ While this [kube-aws tool](https://coreos.com/kubernetes/docs/latest/kubernetes-
 With the availability of fully-hosted Kubernetes clusters from [Google Cloud](https://cloud.google.com/container-engine/),  [Microsoft Azure](https://docs.microsoft.com/en-us/azure/container-service/container-service-kubernetes-walkthrough), and [AWS Cloud](https://aws.amazon.com/quickstart/architecture/heptio-kubernetes/), it seems much easier to side-step all this setup and just use a pre-configured cluster.  In fact, that's what I'll be trying next...
  
 ### More in this series...
-* [Apps at a Medium Pace]({{ site.url }}/2016/11/25/ent_orchestrators/)
+* [Apps at a Medium Pace](/2016/11/25/ent_orchestrators/)

@@ -27,10 +27,9 @@ layout: default
       </div>
     </div>
   </header>
-
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+    <div id="post_row" class="row">
+      <div class="col-lg-12 col-md-10 mx-auto">
 
         {{ content }}
 
@@ -48,6 +47,12 @@ layout: default
           {% endif %}
 
         </div>
+
+        <hr>
+        {% if site.enable_disqus and page.comments == true %}
+        <div id="disqus_thread"></div>
+          {% include disqus.html %}
+        {% endif %}
 
       </div>
     </div>

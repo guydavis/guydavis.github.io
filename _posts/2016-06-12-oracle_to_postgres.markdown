@@ -3,7 +3,7 @@ layout: post
 title: Oracle into PostgreSQL
 subtitle: data loading with talend
 date: 2016-06-12
-header-img: img/headers/dino_sunset.jpg
+background: /img/headers/dino_sunset.jpg
 comments: true
 published: true
 ---
@@ -28,28 +28,28 @@ Talend OS starts up pretty empty, particularly the 'Palette' area on the right. 
 
 Once I had a populated palette, things got became quite intuitive for a simple data extraction from Oracle into Postgres.  From the palette, I dragged a 'tOracleInput' component to the project area, then a 'tPostgresqlOutput' component over and connected them together as shown:
 
-![Job]({{ site.url }}/img/posts/etl_talend1.png)
+<img src="/img/posts/etl_talend1.png" class="img-fluid" />
 
 Setting the parameters for Oracle input component was straight forward:
 
-![Oracle]({{ site.url }}/img/posts/etl_talend2.png)
+<img src="/img/posts/etl_talend2.png" class="img-fluid" />
 
 As was setting the parameters of the Postgres output component:
 
-![Postgres]({{ site.url }}/img/posts/etl_talend3.png)
+<img src="/img/posts/etl_talend3.png" class="img-fluid" />
 
 However, by default Talend will use column names from Oracle exactly, including them as upper-case.  Uppercase columns in Postgres will work if you quote them everywhere, but who wants to bother with that?  So instead, I changed the output schema mapping as shown:
 
-![Mapping]({{ site.url }}/img/posts/etl_talend4.png)
+<img src="/img/posts/etl_talend4.png" class="img-fluid" />
 
 Running the job successfully resulted in a new 'employee' table in Postgres, with records seen here:
 
-![Results]({{ site.url }}/img/posts/etl_talend5.png)
+<img src="/img/posts/etl_talend5.png" class="img-fluid" />
 
 Overall, once up and running, Talend's tools for data integration seem quite powerful.  In future, I'll be looking at other palette components available.
 
 ### More in this series...
-* [SQL Server into PostgreSQL with SquirrelSQL]({{site.url}}/2016/06/16/sqlserver_to_postgres/)
-* [MySQL into PostgreSQL with Python's petl]({{site.url}}/2016/06/21/mysql_to_postgres/)
-* [Excel into PostgreSQL with RapidMiner]({{site.url}}/2016/06/29/excel_to_postgres/)
-* [Data Virtualization with PostgreSQL]({{site.url}}/2016/07/18/pg_data_virt/)
+* [SQL Server into PostgreSQL with SquirrelSQL](/2016/06/16/sqlserver_to_postgres/)
+* [MySQL into PostgreSQL with Python's petl](/2016/06/21/mysql_to_postgres/)
+* [Excel into PostgreSQL with RapidMiner](/2016/06/29/excel_to_postgres/)
+* [Data Virtualization with PostgreSQL](/2016/07/18/pg_data_virt/)
