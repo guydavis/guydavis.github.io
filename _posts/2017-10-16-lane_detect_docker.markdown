@@ -3,12 +3,12 @@ layout: post
 title: Lane Detection in Docker
 subtitle: publishing an image
 date: 2017-10-16
-header-img: img/headers/sydney_opera.jpg
+background: /img/headers/sydney_opera.jpg
 comments: true
 published: true
 ---
 
-To scale up the [lane-detection algorithm]({{ site.url }}/2017/09/25/lane_detect_video/) to handle more video, it first needs to be published as a Docker image for easy deployment to cloud environments.  This post covers bundling a Python microservice by building it on [Docker Cloud](https://cloud.docker.com/swarm/guydavis/) from its [repo on Github](https://github.com/guydavis/lane-detect).
+To scale up the [lane-detection algorithm](/2017/09/25/lane_detect_video/) to handle more video, it first needs to be published as a Docker image for easy deployment to cloud environments.  This post covers bundling a Python microservice by building it on [Docker Cloud](https://cloud.docker.com/swarm/guydavis/) from its [repo on Github](https://github.com/guydavis/lane-detect).
 
 Drawing on [OpenCV](http://opencv.org/) and [moviepy](https://zulko.github.io/moviepy/), this algorithm from [Naoki Shibuya](https://github.com/naokishibuya/car-finding-lane-lines) draws red markers over detected lanes in dashcam footage as shown below:
 
@@ -58,13 +58,13 @@ With some local image data mounted for the Docker container, output was saved in
         guydavis/lane-detect images/mysnapshot.jpg
 ```
 
-[![Image Processed]({{ site.url }}/img/posts/lane_detect_docker_img.png)]({{ site.url }}/img/posts/lane_detect_docker_img.png)
+[<img src="/img/posts/lane_detect_docker_img.png" class="img-fluid" />
 
 ```
     docker run -v $PWD/videos:/opt/videos -v $PWD/output:/opt/output \
         guydavis/lane-detect videos/mydashcam.mov
 ```
-[![Video Processed]({{ site.url }}/img/posts/lane_detect_docker_vid.png)]({{ site.url }}/img/posts/lane_detect_docker_vid.png)
+[<img src="/img/posts/lane_detect_docker_vid.png" class="img-fluid" />
 
 The first time I ran this, the Python Tkinter library complained about lack of a DISPLAY environment.  This worked when I ran Python directly on my Ubuntu laptop, but fails when running headless in a Docker container.  The trick was to add this line beginning of the Python script to avoid the DISPLAY error:
 
@@ -75,7 +75,7 @@ The first time I ran this, the Python Tkinter library complained about lack of a
 
 ## Docker Cloud Build
 Once I'd tested on my local machine, I pushed to Github and a Docker Cloud build kicked off automatically:
-[![Cloud Build]({{ site.url }}/img/posts/lane_detect_docker_cloud_build.png)]({{ site.url }}/img/posts/lane_detect_docker_cloud_build.png)
+[<img src="/img/posts/lane_detect_docker_cloud_build.png" class="img-fluid" />
 
 # Conclusions
 Moving the lane detection algorithm to a Docker image makes for a repeatable and immutable deployment.  By encapsulating the various Python, OpenCV, and Imagemagick libraries the entire package is more portable now.
@@ -84,8 +84,8 @@ Moving the lane detection algorithm to a Docker image makes for a repeatable and
 Now that the lane detection algorithm is containerized, I'll next deploy it to cloud providers to process more video in a cluster of workers. 
 
 ### More in this series...
-* [Lane Detection in Images]({{ site.url }}/2017/05/21/py_lane_detect/) - first attempt.
-* [Improved Lane Detection]({{ site.url }}/2017/06/13/lane_detect_improved/) - improved approach.
-* [Handling Dashcam Footage]({{ site.url }}/2017/09/25/lane_detect_video/) - processing video.
-* [Running on Google Cloud]({{ site.url }}/2017/11/24/lane_detect_cloud_gke/) - scaling on GKE.
-* [Running on Microsoft Cloud]({{ site.url }}/2017/12/17/lane_detect_cloud_azure/) - scaling on Azure.
+* [Lane Detection in Images](/2017/05/21/py_lane_detect/) - first attempt.
+* [Improved Lane Detection](/2017/06/13/lane_detect_improved/) - improved approach.
+* [Handling Dashcam Footage](/2017/09/25/lane_detect_video/) - processing video.
+* [Running on Google Cloud](/2017/11/24/lane_detect_cloud_gke/) - scaling on GKE.
+* [Running on Microsoft Cloud](/2017/12/17/lane_detect_cloud_azure/) - scaling on Azure.

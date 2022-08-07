@@ -3,7 +3,7 @@ layout: post
 title: Linear Algebra
 subtitle: my old friend
 date: 2016-01-31
-header-img: img/headers/highwood_house.jpg
+background: /img/headers/highwood_house.jpg
 published: true
 comments: true
 ---
@@ -42,4 +42,4 @@ eigenvalues,eigenvectors = np.linalg.eig(k)
 ```
 
 with output shown in this interactive session:
-![Python Shell]({{ site.url }}/img/posts/eigenvectors_shell.png)
+<img src="/img/posts/eigenvectors_shell.png" class="img-fluid" />

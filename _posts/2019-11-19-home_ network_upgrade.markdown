@@ -3,7 +3,7 @@ layout: post
 title: Home Network Upgrade
 subtitle: deploying unifi gear
 date: 2019-11-19
-header-img: img/headers/lillian_lake.jpg
+background: /img/headers/lillian_lake.jpg
 comments: true
 published: true
 ---
@@ -16,11 +16,11 @@ After looking at options, I selected equipment from [Unifi](https://www.ui.com/)
 
 The Unifi controller software was the primary deciding factor for me.  The dashboard provides a good status overview:
 
-![Dashboard]({{ site.url }}/img/posts/home_network_upgrade_unifi_thruput.png)
+<img src="/img/posts/home_network_upgrade_unifi_thruput.png" class="img-fluid" />
 
 and tracks throughput and latency over time:
 
-![Throughput]({{ site.url }}/img/posts/home_network_upgrade_unifi_status.png)
+<img src="/img/posts/home_network_upgrade_unifi_status.png" class="img-fluid" />
 
 In terms of setup and configuration, it was pretty simple, though I did need to make a couple of changes:
 
@@ -29,7 +29,7 @@ In terms of setup and configuration, it was pretty simple, though I did need to 
 
 As our house contains aluminum in the flooring (heat transfer), I wanted multiple APs throughout for a strong 5 GHz signal.  One nice feature in the controller software is map layout, where one can import a floor plan, drag APs and visualize projected signals strength.
 
-![Upper Floor]({{ site.url }}/img/posts/home_network_upgrade_upper_flr.png)
+<img src="/img/posts/home_network_upgrade_upper_flr.png" class="img-fluid" />
 
 ## Internet Connection
 
@@ -43,4 +43,4 @@ Even at only 150 Mbps, we haven't had any complaints about speed, despite regula
 * VOIP phones and security camera streaming.
 
 # Conclusions
-Overall, I've been pleasantly surprised with the improved network features and wifi speeds from this upgrade.  I'm looking forward to [trying out the security features soon]({{ site.url }}/2020/01/22/home_-network_security/).
+Overall, I've been pleasantly surprised with the improved network features and wifi speeds from this upgrade.  I'm looking forward to [trying out the security features soon](/2020/01/22/home_-network_security/).

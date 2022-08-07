@@ -3,7 +3,7 @@ layout: post
 title: MySQL into PostgreSQL
 subtitle: moving data with python's petl
 date: 2016-06-21
-header-img: img/headers/colored_pillars.jpg
+background: /img/headers/colored_pillars.jpg
 comments: true
 published: true
 ---
@@ -72,12 +72,12 @@ my_cnx.close()
 
 I did try the automatic table creation feature of sqlalchemy, but found it was creating columns too small to hold the records. I also messed around with sqlalchemy's MetaData object, but was not overly impressed. As such, the CREATE TABLE above provides more explicit control over the target table schema. 
 
-![Results]({{ site.url }}/img/posts/petl_pg.png)
+<img src="/img/posts/petl_pg.png" class="img-fluid" />
 
 So, with just a few lines of code, one can easily setup an ETL process for moving data between MySQL and Postgres databases using Python's petl library.
 
 ### More in this series...
-* [Oracle into PostgreSQL with Talend]({{ site.url }}/2016/06/12/oracle_to_postgres/)
-* [SQL Server into PostgreSQL with SquirrelSQL]({{site.url}}/2016/06/16/sqlserver_to_postgres/)
-* [Excel into PostgreSQL with RapidMiner]({{site.url}}/2016/06/29/excel_to_postgres/)
-* [Data Virtualization with PostgreSQL]({{site.url}}/2016/07/18/pg_data_virt/)
+* [Oracle into PostgreSQL with Talend](/2016/06/12/oracle_to_postgres/)
+* [SQL Server into PostgreSQL with SquirrelSQL](/2016/06/16/sqlserver_to_postgres/)
+* [Excel into PostgreSQL with RapidMiner](/2016/06/29/excel_to_postgres/)
+* [Data Virtualization with PostgreSQL](/2016/07/18/pg_data_virt/)

@@ -3,28 +3,28 @@ layout: post
 title: Zen2 Battlestation 
 subtitle: building a more powerful rig 
 date: 2019-07-16
-header-img: img/headers/nose_hill_south.jpg
+background: /img/headers/nose_hill_south.jpg
 comments: true
 published: true
 ---
 
-Since I built a [budget gaming PC]({{ site.url }}/2018/11/09/budget_pc_gaming) last fall, the boys and I have been enjoying gaming on Windows.  As well, playing emulated games using [Yuzu](http://yuzu-emu.org), [Cemu](http://cemu.info), and [Citra](http://citra-emu.org) among others has been a blast.  
+Since I built a [budget gaming PC](/2018/11/09/budget_pc_gaming) last fall, the boys and I have been enjoying gaming on Windows.  As well, playing emulated games using [Yuzu](http://yuzu-emu.org), [Cemu](http://cemu.info), and [Citra](http://citra-emu.org) among others has been a blast.  
 
 However, while the [AMD Ryzen 2400g chip](https://www.amd.com/en/products/apu/amd-ryzen-5-2400g) has been pretty good at most games, it lags on the latest emulated titles in Yuzu.  Luckily, as of July 7th, AMD has announced some powerful new chips for building a more capable gaming machine.
 
-![Inwin 103 Case]({{ site.url }}/img/posts/zen2_battlestation_case.jpg)
+<img src="/img/posts/zen2_battlestation_case.jpg" class="img-fluid" />
 
 # AMD Ryzen 3700x CPU
 
 I decided to double core count from the 2400g to the 8 cores (16 threads) of the new [Ryzen 3700x](https://www.amd.com/en/ryzen-7):
 
-![Ryzen CPU]({{ site.url }}/img/posts/zen2_battlestation_cpu.jpg) 
+<img src="/img/posts/zen2_battlestation_cpu.jpg" class="img-fluid" /> 
 
 # AMD Radeon 5700xt GPU
 
 Plan is to get a partner AIB card of the Radeon 5700xt once available in August.  The AMD blower card shown is just a placeholder:
 
-![Radeon GPU]({{ site.url }}/img/posts/zen2_battlestation_gpu.webp) 
+<img src="/img/posts/zen2_battlestation_gpu.webp" class="img-fluid" /> 
 
 Also with emulators such as Cemu and Yuzu moving to the Vulcan graphics engine from the legacy OpenGL library, performance with Radeon GPUs should be much better soon.
 
@@ -55,9 +55,9 @@ Type|Item
 While, the original plan had been to upgrade the APU on the MSI B450 Tomahawk board in the existing gaming PC, I decided to get a second system to reduce contention between my sons during their screen time.  Once I get the Radeon GPU, I'm looking forward to see how much better this system games.
 
 ### More in this series...
-* [A Private Media Server]({{ site.url }}/2018/01/19/private_media_server/) - covers Plex on a cheap Linux laptop.
-* [Nvidia Shield TV]({{ site.url }}/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
-* [Retro Game Emulation]({{ site.url }}/2018/12/15/retro_game_emu) - options for emulating old games on both PC and Shield TV. 
-* [Budget Gaming PC]({{ site.url }}/2018/11/09/budget_pc_gaming) - covers building an entry-level rig for PC gaming. 
-* [PC Game Stores]({{ site.url }}/2018/12/26/pc_game_stores) - where to find PC games.
-* [GPU Availability]({{ site.url }}/2021/12/12/xmas-gifts) - finding a GPU during the shortage.
+* [A Private Media Server](/2018/01/19/private_media_server/) - covers Plex on a cheap Linux laptop.
+* [Nvidia Shield TV](/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
+* [Retro Game Emulation](/2018/12/15/retro_game_emu) - options for emulating old games on both PC and Shield TV. 
+* [Budget Gaming PC](/2018/11/09/budget_pc_gaming) - covers building an entry-level rig for PC gaming. 
+* [PC Game Stores](/2018/12/26/pc_game_stores) - where to find PC games.
+* [GPU Availability](/2021/12/12/xmas-gifts) - finding a GPU during the shortage.

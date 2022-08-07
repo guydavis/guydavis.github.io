@@ -3,7 +3,7 @@ layout: post
 title: Challenges for Machine Learning 
 subtitle: motiviating problems
 date: 2016-05-03
-header-img: img/headers/solar_thermal.jpg
+background: /img/headers/solar_thermal.jpg
 comments: true
 ---
 

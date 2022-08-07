@@ -3,7 +3,7 @@ layout: post
 title: Staying Safe Online
 subtitle: digital security basics
 date: 2016-12-22
-header-img: img/headers/red_rock_canyon.jpg
+background: /img/headers/red_rock_canyon.jpg
 comments: true
 published: true
 ---
@@ -58,4 +58,4 @@ Similarly, to stay secure with a laptop or desktop you should:
 Be mindful for suspcious-looking dialog messages on your computer, as they may simply be scam sites or apps trying to get you to contact them.  **Don't!**  Talk to trusted family or friends before giving out any information to a random phone number.
  
 ### More in this series...
-* [Advanced Digital Security]({{ site.url }}/2017/01/17/opsec_advanced/)
+* [Advanced Digital Security](/2017/01/17/opsec_advanced/)

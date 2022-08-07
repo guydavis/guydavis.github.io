@@ -3,7 +3,7 @@ layout: post
 title: Optimization Algorithms 
 subtitle: a least squares example
 date: 2016-04-14
-header-img: img/headers/climbing_wall.jpg
+background: /img/headers/climbing_wall.jpg
 comments: true
 ---
 
@@ -156,7 +156,7 @@ plt.title('Data fitting with linalg.lstsq')
 plt.show()
 ```
 
-![Plotted]({{ site.url }}/img/posts/scipy_optimization_lstsq_plot.png)
+<img src="/img/posts/scipy_optimization_lstsq_plot.png" class="img-fluid" />
 
 ### Solving iteratively with scipy.optimize.leastsq
 
@@ -198,4 +198,4 @@ plt.show()
 
 [Code example above from the <a href="http://scipyscriptrepo.com/wp/?p=76">SciPy Script Repository</a>]
 
-![Plotted]({{ site.url }}/img/posts/scipy_optimization_curve_fit_plot.png)
+<img src="/img/posts/scipy_optimization_curve_fit_plot.png" class="img-fluid" />

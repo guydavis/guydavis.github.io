@@ -3,12 +3,12 @@ layout: post
 title: Chia Tools
 subtitle: open source projects
 date: 2021-09-04
-header-img: img/headers/chester_lake.jpg
+background: /img/headers/chester_lake.jpg
 comments: true
 published: true
 ---
 
-My original goal with [Machinaris]({{site.url}}/2021/05/21/unraid-chia-machinaris/) was to create a cohesive platform of Chia farming, plotting, and monitoring tools, all behind an effective WebUI.  When I first tried to get Chia farming on Unraid, I found a challenging set of tool integrations, installations, and configurations... all to run Chia on a single computer at the CLI.  
+My original goal with [Machinaris](/2021/05/21/unraid-chia-machinaris/) was to create a cohesive platform of Chia farming, plotting, and monitoring tools, all behind an effective WebUI.  When I first tried to get Chia farming on Unraid, I found a challenging set of tool integrations, installations, and configurations... all to run Chia on a single computer at the CLI.  
 
 So, once I had gone thru this process, I decided to include these utilities into pre-configured and tuned cohesive unit that could be deployed across many different operating-systems.  By deploying with a Docker image, much of this setup and configuration headache is avoided.
 
@@ -31,8 +31,8 @@ My enhanced Chiadog is [available on Github](https://github.com/guydavis/chiadog
 Both Plotman and Chiadog are excellent tools in the Chia eco-system.  Hopefully they will continue to be developed and supported in the future.  As key components of Machinaris, I will do my best to ensure they continue on.
 
 ### More in this series...
-* [Chia on Unraid]({{site.url}}/2021/04/30/unraid-chia-plotting-farming/) - Chia CLI on Unraid with Docker
-* [Machinaris]({{site.url}}/2021/05/21/unraid-chia-machinaris/) - a new WebUI for Chia on Unraid
-* [Distributed Farming]({{site.url}}/2021/06/29/machinaris-distributed/) - Machinaris on many worker systems
-* [Chia Forks]({{site.url}}/2021/10/13/chia-forks/) - running forks of Chia with Machinaris
-* [MMX Blockchain]({{site.url}}/2021/12/31/mmx-blockchain/) - MMX blockchain on Machinaris
+* [Chia on Unraid](/2021/04/30/unraid-chia-plotting-farming/) - Chia CLI on Unraid with Docker
+* [Machinaris](/2021/05/21/unraid-chia-machinaris/) - a new WebUI for Chia on Unraid
+* [Distributed Farming](/2021/06/29/machinaris-distributed/) - Machinaris on many worker systems
+* [Chia Forks](/2021/10/13/chia-forks/) - running forks of Chia with Machinaris
+* [MMX Blockchain](/2021/12/31/mmx-blockchain/) - MMX blockchain on Machinaris

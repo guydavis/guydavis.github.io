@@ -3,14 +3,14 @@ layout: post
 title: Nginx and Organizr 
 subtitle: proxying access to media server
 date: 2018-04-12
-header-img: img/headers/t-rex.jpg
+background: /img/headers/t-rex.jpg
 comments: true
 published: true
 ---
 
-Following up on my earlier post about hosting my own [private media server]({{ site.url }}/2018/01/19/private-media-server) this will cover the details of proxying web access from Nginx through to backend services.  Interfaces are managed via Organizr.
+Following up on my earlier post about hosting my own [private media server](/2018/01/19/private-media-server) this will cover the details of proxying web access from Nginx through to backend services.  Interfaces are managed via Organizr.
 
-![Organizr]({{ site.url }}/img/posts/private_media_server_organizr.png)
+<img src="/img/posts/private_media_server_organizr.png" class="img-fluid" />
 
 This uses the [cookie-based authorization](https://github.com/causefx/Organizr/wiki/Authentication-%7C-Cookie-Based) available from Organizr.
 
@@ -153,5 +153,5 @@ Overall, I've found Nginx and Organizr to work very well together. I particularl
  
 
 ### More in this series...
-* [Private Media Server]({{ site.url }}/2018/01/19/private_media_server/) - overview of my server.
-* [Nginx and Organizr v2]({{ site.url }}/2019/01/03/nginx_organizr_v2/) -  updated proxying for Organizr v2.
+* [Private Media Server](/2018/01/19/private_media_server/) - overview of my server.
+* [Nginx and Organizr v2](/2019/01/03/nginx_organizr_v2/) -  updated proxying for Organizr v2.

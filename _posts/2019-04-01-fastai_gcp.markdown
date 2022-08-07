@@ -3,16 +3,16 @@ layout: post
 title: Cloud GPUs
 subtitle: machine learning by the hour
 date: 2019-04-01
-header-img: img/headers/cactus_flower.jpg
+background: /img/headers/cactus_flower.jpg
 comments: true
 published: true
 ---
 
- After confirming that my old laptop was not a [machine-learning powerhouse]({{ site.url }}/2019/03/21/anaconda_navigator/), I decided to return to [Google Cloud Platform](https://cloud.google.com/) (GCP) to rent access to a GPU-powered server.  I also wanted to see how GCP had evolved since I'd last used [GKE in 2017]({{ site.url }}/2017/11/24/lane_detect_cloud_gke/).  For this, I followed the [Server setup](https://course.fast.ai/start_gcp.html) tutorial at [Fast AI](https://www.fast.ai/).
+ After confirming that my old laptop was not a [machine-learning powerhouse](/2019/03/21/anaconda_navigator/), I decided to return to [Google Cloud Platform](https://cloud.google.com/) (GCP) to rent access to a GPU-powered server.  I also wanted to see how GCP had evolved since I'd last used [GKE in 2017](/2017/11/24/lane_detect_cloud_gke/).  For this, I followed the [Server setup](https://course.fast.ai/start_gcp.html) tutorial at [Fast AI](https://www.fast.ai/).
 
 ## GCloud CLI on Windows
 
-Using the [WSL]({{ site.url }}/2019/02/28/windows_linux_subsystem) to run a Ubuntu Bash terminal, you can install and configure the GCloud CLI:
+Using the [WSL](/2019/02/28/windows_linux_subsystem) to run a Ubuntu Bash terminal, you can install and configure the GCloud CLI:
 
 ```
 # Create environment variable for correct distribution
@@ -35,7 +35,7 @@ gcloud init
 
 Creating project can be done via the CLI or GCP admin console as shown here:
 
-![GCP Console - New Project]({{ site.url }}/img/posts/fastai_gcp_new_project.png)
+<img src="/img/posts/fastai_gcp_new_project.png" class="img-fluid" />
 
 Once the new project is created, one can select it in `gcloud` with:
 
@@ -64,31 +64,31 @@ gcloud compute instances create my-fastai-instance \
 
 By default, GPU instances are limited to 0, so you'll probably need to increase the limit to 1:
 
-![Quota Error]({{ site.url }}/img/posts/fastai_gcp_gpu_quota.png)
+<img src="/img/posts/fastai_gcp_gpu_quota.png" class="img-fluid" />
 
 If so, you can request an increase in the [GCP Console](https://console.cloud.google.com/iam-admin/quotas) as shown by filtering for:
  
-![Quota Filter]({{ site.url }}/img/posts/fastai_gcp_gpu_quota_filter.png)
+<img src="/img/posts/fastai_gcp_gpu_quota_filter.png" class="img-fluid" />
 
 Then increasing on the right:
-![Quota Increase]({{ site.url }}/img/posts/fastai_gcp_gpu_quota_increase.png)
+<img src="/img/posts/fastai_gcp_gpu_quota_increase.png" class="img-fluid" />
 
 In my case, the request was approved via GCP Support in a few hours.  I was then 
 
-![Instance Created]({{ site.url }}/img/posts/fastai_gcp_create_instance.png)
+<img src="/img/posts/fastai_gcp_create_instance.png" class="img-fluid" />
 
 Once the instance is running, I can login (SSH keypair created if needed):
 
-![Instance Login]({{ site.url }}/img/posts/fastai_gcp_ssh_login.png)
+<img src="/img/posts/fastai_gcp_ssh_login.png" class="img-fluid" />
 
 After a few pulling a few updates via `git` and `conda`, I was able to view the Jupyter Notebook in my browser, via the port forward to the GPU instance:
 
-![Notebook Access]({{ site.url }}/img/posts/fastai_gcp_notebook_start.png)
+<img src="/img/posts/fastai_gcp_notebook_start.png" class="img-fluid" />
 
 ## Pytorch CPU/GPU Test
 
-Following my previous test on the [laptop]({{ site.url }}/2019/03/21/anaconda_navigator/), I reran the CPU/GPU Pytorch test on this cloud instance:
+Following my previous test on the [laptop](/2019/03/21/anaconda_navigator/), I reran the CPU/GPU Pytorch test on this cloud instance:
 
-![Pytorch GPU Test]({{ site.url }}/img/posts/fastai_gcp_pytorch_test.png)
+<img src="/img/posts/fastai_gcp_pytorch_test.png" class="img-fluid" />
 
 Clearly, the CPU performance of this cloud instance (389 ms) destroys my old laptop (10.3 sec).  As well, this GCP instance has does not error out when the CUDA GPU routines are tested.  Even better, I can stop the instance when not in use.  Very nice!

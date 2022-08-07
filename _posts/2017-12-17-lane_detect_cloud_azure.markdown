@@ -3,12 +3,12 @@ layout: post
 title: Lane Detection on AKS
 subtitle: deploying to azure
 date: 2017-12-17
-header-img: img/headers/prairie_view.jpg
+background: /img/headers/prairie_view.jpg
 comments: true
 published: true
 ---
 
-Similar to my [last post]({{ site.url }}/2017/11/24/lane_detect_cloud_gke/) on deploying to Kubernetes on Google Cloud Platform, this post will cover deploying [lane detection]({{ site.url }}/2017/09/25/lane_detect_video/) to Kubernetes on Microsoft's Azure.
+Similar to my [last post](/2017/11/24/lane_detect_cloud_gke/) on deploying to Kubernetes on Google Cloud Platform, this post will cover deploying [lane detection](/2017/09/25/lane_detect_video/) to Kubernetes on Microsoft's Azure.
 
 ## Create a Cluster
 First, I created an account with Microsoft Azure and installed the Azure CLI on my Ubuntu laptop.  Then, after logging in to `az`, tried to [create a Kubernetes cluster](https://github.com/guydavis/lane-detect/tree/master/k8s/azure):
@@ -19,11 +19,11 @@ az aks create –g guy-azure -n lane-detect
 
 Bang!  First error, not clear...  After checking the CLI help, the command seemed fine.  Perhaps Microsoft only likes CamelCase?
 
-![Error]({{ site.url }}/img/posts/lane_detect_azure_create_error.png)
+<img src="/img/posts/lane_detect_azure_create_error.png" class="img-fluid" />
 
 Nope, turned out I needed a ResourceGroup in an allowed Location first...
 
-![Error]({{ site.url }}/img/posts/lane_detect_azure_create_rg.png)
+<img src="/img/posts/lane_detect_azure_create_rg.png" class="img-fluid" />
 
 Trying to create the cluster again failed with another error.
 
@@ -32,11 +32,11 @@ az aks create -g guy-azure -n lane-detect --kubernetes-version 1.8.1
 ```
 Permissions?  
 
-![Error]({{ site.url }}/img/posts/lane_detect_azure_create_error2.png)
+<img src="/img/posts/lane_detect_azure_create_error2.png" class="img-fluid" />
 
 After digging around on the Microsoft Azure web console for a while, I find that despite being a full administrator, I have to register for multiple different services...
 
-![Error]({{ site.url }}/img/posts/lane_detect_azure_admin_perms.png)
+<img src="/img/posts/lane_detect_azure_admin_perms.png" class="img-fluid" />
 
 After adding Microsoft.Compute, Microsoft.Storage, Microsoft.Network, I tried again. Same error.  Using [this debug command](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services#azure-cli) I found that Microsoft.Network was still in-process of registering:
 
@@ -46,7 +46,7 @@ az provider list --query "[].{Provider:namespace, Status:registrationState}" --o
 
 Once I finally got the permissions I needed, I tried to create the cluster again.  This time success!
 
-![AKS]({{ site.url }}/img/posts/lane_detect_azure_k8s_created.png)
+<img src="/img/posts/lane_detect_azure_k8s_created.png" class="img-fluid" />
 
 Then, I used aks to get the kubectl configuration to check the connection to AKS:
 
@@ -117,7 +117,7 @@ Kubernetes pods could then mount this shared storage as [ReadWriteMany](https://
 ## Transferring Video Data
 I uploading the original dashcam footage, via my browser, in Azure Console.  An alternative would be to launch an Nginx or other container in k8s wih mounted volume and then used `kubectl cp`.  Unfortunately, you can't mount an [Azure File Share via SMB from a Linux system outside Azure](https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-linux), like my laptop.
 
-![Upload]({{ site.url }}/img/posts/lane_detect_azure_upload.png)
+<img src="/img/posts/lane_detect_azure_upload.png" class="img-fluid" />
 
 ## Creating Kubernetes Jobs
 
@@ -151,11 +151,11 @@ spec:
 ```
 The lane detection jobs ran first time to completion, rendering processed video as expected.
 
-![Overview]({{ site.url }}/img/posts/lane_detect_azure_k8s_overview.png)
+<img src="/img/posts/lane_detect_azure_k8s_overview.png" class="img-fluid" />
 
 Viewing the output footage in the Azure console:
 
-![Output]({{ site.url }}/img/posts/lane_detect_azure_output.png)
+<img src="/img/posts/lane_detect_azure_output.png" class="img-fluid" />
 
 And finally, here's a short example of processed dashcam footage:
 
@@ -173,8 +173,8 @@ Overall, I'm pretty sold on the benefits of Kubernetes over other orchestrators 
 Having given the managed Kubernetes services at both Google and Microsoft I spin, I hope to try Amazon's offering next.  Unfortunately, AKS is currently only in preview... 
 
 ### More in this series...
-* [Lane Detection in Images]({{ site.url }}/2017/05/21/py_lane_detect/) - first attempt.
-* [Improved Lane Detection]({{ site.url }}/2017/06/13/lane_detect_improved/) - improved approach.
-* [Handling Dashcam Footage]({{ site.url }}/2017/09/25/lane_detect_video/) - processing video.
-* [Deploying in Docker]({{ site.url }}/2017/10/16/lane_detect_docker/) - bundling as a Docker image.
-* [Running on Google Cloud]({{ site.url }}/2017/11/24/lane_detect_cloud_gke/) - scaling on GKE.
+* [Lane Detection in Images](/2017/05/21/py_lane_detect/) - first attempt.
+* [Improved Lane Detection](/2017/06/13/lane_detect_improved/) - improved approach.
+* [Handling Dashcam Footage](/2017/09/25/lane_detect_video/) - processing video.
+* [Deploying in Docker](/2017/10/16/lane_detect_docker/) - bundling as a Docker image.
+* [Running on Google Cloud](/2017/11/24/lane_detect_cloud_gke/) - scaling on GKE.

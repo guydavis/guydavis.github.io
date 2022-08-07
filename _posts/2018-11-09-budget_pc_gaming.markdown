@@ -3,7 +3,7 @@ layout: post
 title: Budget Gaming PC 
 subtitle: building an entry-level rig 
 date: 2018-11-09
-header-img: img/headers/vision_quest_west.jpg
+background: /img/headers/vision_quest_west.jpg
 comments: true
 published: true
 ---
@@ -41,7 +41,7 @@ Type|Item
 
 Here's a look at the Inwin case, as I went for a white theme:
 
-![Inwin]({{ site.url }}/img/posts/budget_pc_gaming_inwin_101.jpg)
+<img src="/img/posts/budget_pc_gaming_inwin_101.jpg" class="img-fluid" />
 
 Software was Windows 10.  AMD provided their [Store MI](https://www.amd.com/en/technologies/store-mi) tiered drive software, free with the motherboard.  Additional details on this gaming PC build were published by [CPU-Z](https://valid.x86.fr/da256l)
 
@@ -57,9 +57,9 @@ On the other hand, if the gaming PC gets lots of use and we want to play more ch
 Combine that uncertainty with the benefit of waiting for newer/better/cheaper technology by waiting a year, including potential AM4 CPU upgrades, gives us the best of PC gaming... upgradability.  
 
 ### More in this series...
-* [A Private Media Server]({{ site.url }}/2018/01/19/private_media_server/) - covers Plex on a cheap Linux laptop.
-* [Nvidia Shield TV]({{ site.url }}/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
-* [Retro Game Emulation]({{ site.url }}/2018/12/15/retro_game_emu) - options for emulating old games on both PC and Shield TV. 
-* [PC Game Stores]({{ site.url }}/2018/12/26/pc_game_stores) - where to find PC games.
-* [Zen2 Gaming PC]({{ site.url }}/2019/07/16/zen2_pc_gaming) - building another gaming PC. 
-* [GPU Availability]({{ site.url }}/2021/12/12/xmas-gifts) - finding a GPU during the shortage.
+* [A Private Media Server](/2018/01/19/private_media_server/) - covers Plex on a cheap Linux laptop.
+* [Nvidia Shield TV](/2018/10/08/shield_tv_gaming) - streaming media and games to your TV. 
+* [Retro Game Emulation](/2018/12/15/retro_game_emu) - options for emulating old games on both PC and Shield TV. 
+* [PC Game Stores](/2018/12/26/pc_game_stores) - where to find PC games.
+* [Zen2 Gaming PC](/2019/07/16/zen2_pc_gaming) - building another gaming PC. 
+* [GPU Availability](/2021/12/12/xmas-gifts) - finding a GPU during the shortage.

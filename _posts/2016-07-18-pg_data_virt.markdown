@@ -3,7 +3,7 @@ layout: post
 title: PostgreSQL Data Virtualization
 subtitle: with foreign data wrappers
 date: 2016-07-18
-header-img: img/headers/elephant_statue.jpg
+background: /img/headers/elephant_statue.jpg
 comments: true
 published: true
 ---
@@ -41,7 +41,7 @@ Next up is to start exposing data in Postgres, virtualized from other backend da
 
 For this example, I'll be exposing [sample data from MySQL](https://dev.mysql.com/doc/sakila/en/) as a table within our PostgreSQL database.  Here's the data, queried in MySQL Bench:
 
-![MySQL]({{ site.url }}/img/posts/data_virt_mysql_staff.png)
+<img src="/img/posts/data_virt_mysql_staff.png" class="img-fluid" />
 
 You'll need the MySQL driver for Python to allow SQLAlchemy to connect:
 
@@ -63,13 +63,13 @@ create foreign table mysql_staff (
 );
 ```
 
-![PG]({{ site.url }}/img/posts/data_virt_mysql_staff_in_pg.png)
+<img src="/img/posts/data_virt_mysql_staff_in_pg.png" class="img-fluid" />
 
 ## Exposing Oracle Data
 
 For this example, I'll be exposing [sample data from Oracle](https://docs.oracle.com/database/121/COMSC/installation.htm#COMSC001) as a table within the PostgreSQL database.  Here's the data, queried in Oracle SQL Developer:
 
-![Oracle]({{ site.url }}/img/posts/data_virt_oracle_emps.png)
+<img src="/img/posts/data_virt_oracle_emps.png" class="img-fluid" />
 
 First, we need to [install the Oracle libraries](https://gist.github.com/hangtwenty/5547377) needed to build the [cx_Oracle](http://cx-oracle.sourceforge.net/) driver for SQLAlchemy.  Once you've downloaded the [basic and devel Oracle RPMs](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html), install them:
 
@@ -129,13 +129,13 @@ create foreign table oracle_employees (
 );
 ```
 
-![PG]({{ site.url }}/img/posts/data_virt_oracle_emps_in_pg.png)
+<img src="/img/posts/data_virt_oracle_emps_in_pg.png" class="img-fluid" />
 
 ## Exposing SQL Server Data
 
 For this example, I'll be exposing [sample data from SQL Server](https://northwinddatabase.codeplex.com/) as a table within the PostgreSQL database.  Here's the data, queried in MS SQL Server Management Studio:
 
-![MSSQL]({{ site.url }}/img/posts/data_virt_mssql_emps.png)
+<img src="/img/posts/data_virt_mssql_emps.png" class="img-fluid" />
 
 First, I needed the [pymssql](http://pymssql.org/en/stable/intro.html) driver for Python:
 
@@ -180,7 +180,7 @@ create foreign table mssql_employees (
 );
 ```
 
-![PG]({{ site.url }}/img/posts/data_virt_mssql_emps_in_pg.png)
+<img src="/img/posts/data_virt_mssql_emps_in_pg.png" class="img-fluid" />
 
 ## In Conclusion
 
@@ -198,10 +198,10 @@ CREATE VIEW employees AS
 Using Postgres FDW also opens up some more interesting possibilities including master data management, identity resolution and record de-duplication. I hope to cover these and more topics in future posts.
 
 ### More in this series...
-* [Oracle into PostgreSQL with Talend]({{ site.url }}/2016/06/12/oracle_to_postgres/)
-* [SQL Server into PostgreSQL with SquirrelSQL]({{site.url}}/2016/06/16/sqlserver_to_postgres/)
-* [MySQL into PostgreSQL with Python's petl]({{site.url}}/2016/06/21/mysql_to_postgres/)
-* [Excel into PostgreSQL with RapidMiner]({{site.url}}/2016/06/29/excel_to_postgres/)
+* [Oracle into PostgreSQL with Talend](/2016/06/12/oracle_to_postgres/)
+* [SQL Server into PostgreSQL with SquirrelSQL](/2016/06/16/sqlserver_to_postgres/)
+* [MySQL into PostgreSQL with Python's petl](/2016/06/21/mysql_to_postgres/)
+* [Excel into PostgreSQL with RapidMiner](/2016/06/29/excel_to_postgres/)
 
 ### What didn't work for me...
 1. [FreeTDS + tds_fdw on Windows](https://github.com/tds-fdw/tds_fdw/issues/53)

@@ -3,7 +3,7 @@ layout: post
 title: Pipelines on Kubeflow
 subtitle: samples deployment
 date: 2020-12-13
-header-img: img/headers/maligne_lake2.jpg
+background: /img/headers/maligne_lake2.jpg
 comments: true
 published: true
 ---
@@ -20,11 +20,11 @@ microk8s.kubectl port-forward -n kubeflow service/istio-ingressgateway 8081:80 -
 
 While the Kubeflow dashboard forwarding is now working this month, unfortunately a new bug means you need to set a new password after enabling kubeflow before logging in as shown:
 
-![Login via Port Forward]({{ site.url }}/img/posts/microk8s_kubeflow_pipelines_login.png)
+<img src="/img/posts/microk8s_kubeflow_pipelines_login.png" class="img-fluid" />
 
 To get to the dashboard:
 
-![Kubeflow Dashboard]({{ site.url }}/img/posts/microk8s_kubeflow_pipelines_dashboard.png)
+<img src="/img/posts/microk8s_kubeflow_pipelines_dashboard.png" class="img-fluid" />
 
 ## Development Setup
 
@@ -52,30 +52,30 @@ The compiled pipeline is then ready for upload to the Kubeflow cluster: `./sampl
 
 ## Deploying the Pipeline
 
-![Pipeline Upload]({{ site.url }}/img/posts/microk8s_kubeflow_pipelines_upload.png)
+<img src="/img/posts/microk8s_kubeflow_pipelines_upload.png" class="img-fluid" />
 
 After upload, the pipeline is shown both as a Graph and YAML:
 
-![Pipeline Upload]({{ site.url }}/img/posts/microk8s_kubeflow_pipelines_upload_graph.png)
+<img src="/img/posts/microk8s_kubeflow_pipelines_upload_graph.png" class="img-fluid" />
 
 ## Running the Pipeline
 
 Clicking `Create Run` button allows for execution of the pipeline on the Kubeflow cluster.
 
-![Pipeline Upload]({{ site.url }}/img/posts/microk8s_kubeflow_pipelines_run_create.png)
+<img src="/img/posts/microk8s_kubeflow_pipelines_run_create.png" class="img-fluid" />
 
 Output is shown soon after for a sample pipeline such as this:
 
-![Pipeline Upload]({{ site.url }}/img/posts/microk8s_kubeflow_pipelines_run_graph.png)
+<img src="/img/posts/microk8s_kubeflow_pipelines_run_graph.png" class="img-fluid" />
 
-While this upload process worked alright, I did prefer the Jupyter [notebook interactive approach]({{ site.url }}/2020/11/14/microk8s-kubeflow-mnist) for quickly trying out new ML code.
+While this upload process worked alright, I did prefer the Jupyter [notebook interactive approach](/2020/11/14/microk8s-kubeflow-mnist) for quickly trying out new ML code.
 
 ## Conclusions
 
 While I've had some trouble getting a consistent working on-prem install of Kubeflow, once up and running it does seem to be worthwhile platform for ML deployments.  Beyond my lab experiments however, I'd probably recommend running it on a managed Kubernetes cluster such as GKE, AKS, or EKS in production.
 
 ### More in this series...
-* [microk8s on ubuntu]({{ site.url }}/2020/04/24/ubuntu-microk8s) - Single instance cluster
-* [microk8s upgraded]({{ site.url }}/2020/09/28/microk8s-upgrade) - Upgrading to k8s 1.19
-* [kubeflow setup]({{ site.url }}/2020/10/18/microk8s-kubeflow-setup) - Enabling ML workflows
-* [MNIST notebook]({{ site.url }}/2020/11/14/microk8s-kubeflow-mnist) - Using Jupyter notebooks on Kubeflow
+* [microk8s on ubuntu](/2020/04/24/ubuntu-microk8s) - Single instance cluster
+* [microk8s upgraded](/2020/09/28/microk8s-upgrade) - Upgrading to k8s 1.19
+* [kubeflow setup](/2020/10/18/microk8s-kubeflow-setup) - Enabling ML workflows
+* [MNIST notebook](/2020/11/14/microk8s-kubeflow-mnist) - Using Jupyter notebooks on Kubeflow

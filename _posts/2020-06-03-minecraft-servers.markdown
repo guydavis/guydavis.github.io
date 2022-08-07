@@ -3,7 +3,7 @@ layout: post
 title: Hosting Minecraft
 subtitle: server management with amp
 date: 2020-06-03
-header-img: img/headers/train_dance.jpg
+background: /img/headers/train_dance.jpg
 comments: true
 published: true
 ---
@@ -22,19 +22,19 @@ Looking for an alternative, I found [AMP](https://cubecoders.com/AMP) which is a
 
 ### Instances Screen
 
-![Instances]({{ site.url }}/img/posts/minecraft_servers_instances.png)
+<img src="/img/posts/minecraft_servers_instances.png" class="img-fluid" />
 
 ### Status Controls
 
-![Status]({{ site.url }}/img/posts/minecraft_servers_status.png)
+<img src="/img/posts/minecraft_servers_status.png" class="img-fluid" />
 
 ### Console Screen
 
-![Console]({{ site.url }}/img/posts/minecraft_servers_console.png)
+<img src="/img/posts/minecraft_servers_console.png" class="img-fluid" />
 
 ### Game Settings
 
-![Settings]({{ site.url }}/img/posts/minecraft_servers_game.png)
+<img src="/img/posts/minecraft_servers_game.png" class="img-fluid" />
 
 ## Conclusions
 
@@ -42,6 +42,6 @@ AMP was a big win for manageability as it let me easily configure, run, and keep
 
 As well, AMP supports many, many different types of game servers so I expect to use more as my boys outgrow Minecraft.
 
-![Types]({{ site.url }}/img/posts/minecraft_servers_game_types.png)
+<img src="/img/posts/minecraft_servers_game_types.png" class="img-fluid" />
 
 Wait... does anyone really outgrow Minecraft though?

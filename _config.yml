@@ -1,6 +1,5 @@
 # Site settings
 title: Code Recollection
-header-img: img/headers/ohara.jpg
 email: guydavis.ca@gmail.com
 copyright_name: Guy Davis
 description: "Notes from my explorations in Computer Science"
@@ -33,7 +32,7 @@ permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-prose:
-  rooturl: '_posts'
-
-plugins: [jekyll-paginate, jekyll-feed]
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site

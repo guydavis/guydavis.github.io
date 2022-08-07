@@ -3,7 +3,7 @@ layout: post
 title: Tensorflow and Scikit-learn
 subtitle: basic machine learning with python
 date: 2017-04-16
-header-img: img/headers/roman_colesium.jpg
+background: /img/headers/roman_colesium.jpg
 comments: true
 published: true
 ---
@@ -57,4 +57,4 @@ To verify basic functionality in Tensorflow, here's a [simple test program]((htt
 With these useful ML tools installed, the next step is to complete many of the useful tutorials available for each.
  
 ### More in this series...
-* [Python ML on Ubuntu 14.04]({{ site.url }}/2016/03/23/python_for_ml/)
+* [Python ML on Ubuntu 14.04](/2016/03/23/python_for_ml/)

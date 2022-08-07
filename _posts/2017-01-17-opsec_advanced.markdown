@@ -3,18 +3,18 @@ layout: post
 title: More Safety Online
 subtitle: advanced digital security
 date: 2017-01-17
-header-img: img/headers/penguins.jpg
+background: /img/headers/penguins.jpg
 comments: true
 published: true
 ---
 
-Following my [first post]({{ site.url }}/2016/12/22/opsec_basic/) on digital security basics, here are more advanced steps you can take to protect yourself from identity theft, ransomware & malware,  and hacked accounts.
+Following my [first post](/2016/12/22/opsec_basic/) on digital security basics, here are more advanced steps you can take to protect yourself from identity theft, ransomware & malware,  and hacked accounts.
 
 ## Identity Theft
-<img style="float:right; width:175px;padding-left:15px" src="{{site_url}}/img/posts/opsec_adv_theft.jpg"/>To prevent fraud being perpetrated in your name by others, you should ensure you have [strong passwords](https://1password.com/) and guard your email account with [2FA](https://www.google.ca/landing/2step/).  Always be on the [lookout for scams]({{ site.url }}/2016/12/22/opsec_basic/). [Credit watch](https://www.econsumer.equifax.ca) and [identify theft](http://www.group.tdinsurance.com/en/home/identityplus) insurance can be useful, but more for cleaning up after a theft than preventing it in the first place.
+<img style="float:right; width:175px;padding-left:15px" src="{{site_url}}/img/posts/opsec_adv_theft.jpg"/>To prevent fraud being perpetrated in your name by others, you should ensure you have [strong passwords](https://1password.com/) and guard your email account with [2FA](https://www.google.ca/landing/2step/).  Always be on the [lookout for scams](/2016/12/22/opsec_basic/). [Credit watch](https://www.econsumer.equifax.ca) and [identify theft](http://www.group.tdinsurance.com/en/home/identityplus) insurance can be useful, but more for cleaning up after a theft than preventing it in the first place.
 
 ## Ransomware
-As mentioned in my [previous post]({{ site.url }}/2016/12/22/opsec_basic/), always apply OS and app upgrades from trusted sources.  Even better is to use products that securely update themselves such as the Chrome browser or Chromebook laptops.   Do you really need a $1500 Windows laptop to surf the web or could you use a $300 [Chromebook](https://www.google.com/chromebook/) with less risk of compromise.  Consider using [virus](https://www.microsoft.com/en-us/windows/windows-defender) and [malware](https://www.malwarebytes.com/mobile/) scanners.
+As mentioned in my [previous post](/2016/12/22/opsec_basic/), always apply OS and app upgrades from trusted sources.  Even better is to use products that securely update themselves such as the Chrome browser or Chromebook laptops.   Do you really need a $1500 Windows laptop to surf the web or could you use a $300 [Chromebook](https://www.google.com/chromebook/) with less risk of compromise.  Consider using [virus](https://www.microsoft.com/en-us/windows/windows-defender) and [malware](https://www.malwarebytes.com/mobile/) scanners.
 
 ## Browser Security
 <img style="float:right; width:175px;padding-left:15px" src="{{site_url}}/img/posts/opsec_adv_incognito.png"/>Be sure to use a secure browser such as [Google Chrome](https://www.google.com/chrome/) or [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/products/) over the default Microsoft browser.  Be careful about which browser plugins you add, however some can be very helpful including:
@@ -34,7 +34,7 @@ Try to compartmentalize your browsing by using [incognito mode](https://support.
 I'd also recommend that you switch to a secure messaging platform such as [Signal](https://whispersystems.org/), which can replace the insecure texting app that comes with your phone.
 
 ## Stay Vigilant
-After applying the [basics]({{ site.url }}/2016/12/22/opsec_basic/), try some of the advanced steps here.  There is always more that can be done to ensure security online.  What other precautions do you practice regularly? 
+After applying the [basics](/2016/12/22/opsec_basic/), try some of the advanced steps here.  There is always more that can be done to ensure security online.  What other precautions do you practice regularly? 
  
 ### More in this series...
-* [Basic Digital Security]({{ site.url }}/2016/12/22/opsec_basic/)
+* [Basic Digital Security](/2016/12/22/opsec_basic/)

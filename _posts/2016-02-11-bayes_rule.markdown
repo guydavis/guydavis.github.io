@@ -3,7 +3,7 @@ layout: post
 title: Bayes' Rule
 subtitle: slayer of spam
 date: 2016-02-11
-header-img: img/headers/prince_of_wales.jpg
+background: /img/headers/prince_of_wales.jpg
 published: true
 comments: true
 ---
@@ -44,4 +44,4 @@ print(clf_pf.predict([[-0.8, -1]]))
 ```
 
 with output shown in this interactive session:
-![Python Shell]({{ site.url }}/img/posts/bayes_gaussiannb_scikit.png)
+<img src="/img/posts/bayes_gaussiannb_scikit.png" class="img-fluid" />
