@@ -1,4 +1,4 @@
-#Clean Blog for Jekyll from Start Bootstrap (enhanced by Guy Davis) 
+# Clean Blog for Jekyll from Start Bootstrap (enhanced by Guy Davis) 
 
 An enhanced Jekyll version of the Clean Blog theme from [Start Bootstrap](http://startbootstrap.com/).  Enhancements include adding LinkedIn, Google+, Slideshare, StackOverflow buttons plus support for Disqus comments and background image blending to darken.
 
