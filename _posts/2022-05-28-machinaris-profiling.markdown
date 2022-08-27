@@ -1,6 +1,6 @@
 ---
 layout: post
-title: profiling python
+title: Profiling Python
 subtitle: translating python web apps
 date: 2022-05-28
 background: /img/headers/lake_annette1.jpg
