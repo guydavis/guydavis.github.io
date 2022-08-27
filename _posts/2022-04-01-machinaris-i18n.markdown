@@ -62,3 +62,4 @@ Overall, the [Babel library](https://babel.pocoo.org/en/latest/) is the definite
 * [Machinaris](/2021/05/21/unraid-chia-machinaris/) - a new WebUI for Chia on Unraid
 * [Distributed Farming](/2021/06/29/machinaris-distributed/) - Machinaris on many worker systems
 * [Network Peer Geolocation](/2022/03/13/machinaris-geolocate/) - Mapping location of blockchain peers by IP address.
+* [Python Profiling](/2022/05/28/machinaris-profiling/) - Profiling Python with Py-Spy

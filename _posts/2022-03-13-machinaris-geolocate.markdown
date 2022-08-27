@@ -41,3 +41,4 @@ They say *"a picture is worth a thousand words"*... and clearly it's true when i
 * [Machinaris](/2021/05/21/unraid-chia-machinaris/) - a new WebUI for Chia on Unraid
 * [Distributed Farming](/2021/06/29/machinaris-distributed/) - Machinaris on many worker systems
 * [Internationalization](/2022/04/01/machinaris-i18n/) - Translating and localizing a Python web app.
+* [Python Profiling](/2022/05/28/machinaris-profiling/) - Profiling Python with Py-Spy
