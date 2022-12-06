@@ -13,7 +13,6 @@ linkedin_username: guydavis
 # facebook_username:
 email_username:  guydavis.ca@gmail.com
 slideshare_username: guy_davis
-google_plus_username: +GuyDavisCa
 stack_overflow_userpath: 3072265/guy-davis
 
 # Disqus comments
@@ -23,7 +22,7 @@ disqus_shortname: guydavis
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
 enable_ga: true
-google_tracking_id: UA-80423605-1
+google_analytics: G-275Q9942PK
 
 # Build settings
 markdown: kramdown
