@@ -5,6 +5,9 @@
 {% include head.html %}
 
 <body>
+  {% if site.enable_ga %}
+  {% include google-analytics.html %}
+  {% endif %}
 
   {% include navbar.html %}
 
@@ -14,9 +17,6 @@
 
   {% include scripts.html %}
 
-  {% if site.enable_ga %}
-  {% include google-analytics.html %}
-  {% endif %}
 </body>
 
 </html>
