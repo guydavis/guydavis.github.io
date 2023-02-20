@@ -78,3 +78,4 @@ While MMX is still months away from their mainnet launch, I'll probably just sta
 * [Chia Tools](/2021/09/04/chia-tools/) - open-source Chia projects
 * [Chia Forks](/2021/10/13/chia-forks/) - running forks of Chia with Machinaris
 * [MMX Blockchain](/2021/12/31/mmx-blockchain/) - MMX blockchain on Machinaris
+* [Gigahorse](/2023/02/20/gigahorse/) - Chia goes PoW!

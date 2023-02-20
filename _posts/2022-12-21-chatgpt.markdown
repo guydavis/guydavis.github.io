@@ -1,0 +1,25 @@
+---
+layout: post
+title: ChatGPT
+subtitle: surprisingly realistic?
+date: 2022-12-21
+background: /img/headers/lake_annette2.jpg
+comments: true
+published: true
+---
+
+So just last month, a new chatbot has burst onto the scene and gathered the collective attention of the world.  [ChatGPT](https://en.wikipedia.org/wiki/ChatGPT) (Chat Generative Pre-trained Transformer) builds upon previous efforts in the space, but seems to be more realistically responsive than other chat tools.  This is likely due to the additional supervised and re-inforcement learning that went into training the ChatGPT tool.
+
+# Real or Simulated?
+
+As users of ChatGPT have found, conversational exchanges can be quite compelling.  In particular, ChatGPT is able to respond in the style of famous people, based on their corpus that the tool injested as part of its training set.  A prominent example is asking ChatGPT to respond like ex-President Donald Trump. 
+
+However, some reviewers are questioning the depth of the reponses, resulting in [non-scensical answers](https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)).  As a predictive text tool, ChatGPT does not really understand an exchange with a human.  The tool has no context or comprehension of the subject being discussed.  Rather it is extremely good at predicting the next piece of text that will best fit with the conversation so far.  
+
+# Conclusion
+
+While a compelling development, ChatGPT's lack of true understanding of a conversation's context is its Achilles heel.  Often accurate, it can none the less lead a reader down a convincing but ultimately false path when responding.  A key question this poses for all of us, is whether we as humans will be able to tell the difference between real and simulated information.
+
+### More in this series...
+* [Handling Dashcam Footage](/2017/09/25/lane_detect_video/) - processing video.
+* [MNIST notebook](/2020/11/14/microk8s-kubeflow-mnist) - Using Jupyter notebooks on Kubeflow
