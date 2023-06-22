@@ -42,3 +42,4 @@ With a dedicated GPU now being the admission required for plotting and farming c
 * [Chia Forks](/2021/10/13/chia-forks/) - running forks of Chia with Machinaris
 * [MMX Blockchain](/2021/12/31/mmx-blockchain/) - MMX blockchain on Machinaris
 * [MMX on GPUs](/2022/02/09/mmx-gpu/) - Farming MMX with a GPU
+* [Gigahorse Fees](/2023/06/22/gigahorse-fees/) - Unexepcted Costs
