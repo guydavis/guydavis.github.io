@@ -14,7 +14,7 @@ So back at the [start of the year](/2023/02/20/gigahorse/), I added support for 
 
 My biggest concerns with Gigahorse included:
 1. The closed source binaries approach.  While understandable due to the developer fee, I always prefer open source software where I can get it.
-1. The single Gigahorse developer.  Despite Madmax coding circles around the entire "Chia Network Inc" (CNI) development group, it was clear that he was [single point of failure](https://en.wikipedia.org/wiki/Bus_factor) for Gigahorse.
+1. The single Gigahorse developer.  Despite Madmax coding circles around the entire "Chia Network Inc" (CNI) development group, it was clear that he is a [single point of failure](https://en.wikipedia.org/wiki/Bus_factor) for Gigahorse.
 
 # Dev Fees
 

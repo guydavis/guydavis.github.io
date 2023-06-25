@@ -23,3 +23,4 @@ While a compelling development, ChatGPT's lack of true understanding of a conver
 ### More in this series...
 * [Handling Dashcam Footage](/2017/09/25/lane_detect_video/) - processing video.
 * [MNIST notebook](/2020/11/14/microk8s-kubeflow-mnist) - Using Jupyter notebooks on Kubeflow
+* [ChatGPT Prompts](/2023/01/31/chatgpt-prompts) - Effective prompts for ChatGPT
