@@ -60,3 +60,4 @@ Overall, ChatGPT is really an impressive technology and will definitely give Goo
 
 ### More in this series...
 * [ChatGPT](/2022/12/21/chatgpt/) - A new generative language model
+* [ChatGPT Detection](/2023/04/27/chatgpt-detection/) - Detecting AI-generated content
