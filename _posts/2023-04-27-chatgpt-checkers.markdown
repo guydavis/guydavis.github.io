@@ -46,6 +46,15 @@ Given that plagarism exists on a spectrum, it's clear that identifying cheaters 
 
 At a higher level though, why do we write?  *To organize our thoughts and effectively communicate them with others.*  When looked at from that viewpoint, plagarism is really a means of cheating yourself out of the skills to succeed in the future.  One day, you'll be in a work place situation where an organized thought process will be needed and faking it isn't a possibility.  That's when you'll wish you hadn't cheated yourself out of much needed practice.  
 
+## Update
+
+Here's an [excellent comment from Reddit](https://www.reddit.com/r/ChatGPT/comments/1543ahv/comment/jsmjcw1) for students who wish to avoid being incorrectly fingered for plagarism:
+
+1. Work on Google Docs so that you have version histories saved and can prove your process, including all edits.
+1. If accused, request to be verbally pop-quizzed on the material.
+1. Show your prof articles from credible sources about the flaws in these AI checkers.
+1. Show your prof FAQ pages of the AI checkers themselves, *which state not to use these tools for consequential purposes*.
+
 ### More in this series...
 * [ChatGPT](/2022/12/21/chatgpt/) - A new generative language model
 * [ChatGPT Prompts](/2023/01/31/chatgpt-prompts) - Effective prompts for ChatGPT
