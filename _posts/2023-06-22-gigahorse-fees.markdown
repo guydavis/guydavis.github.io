@@ -41,3 +41,4 @@ So, clearly one needs to be mindful of the *average* keyword in the statement ab
 * [MMX Blockchain](/2021/12/31/mmx-blockchain/) - MMX blockchain on Machinaris
 * [MMX on GPUs](/2022/02/09/mmx-gpu/) - Farming MMX with a GPU
 * [Gigahorse](/2023/02/20/gigahorse/) - Farming Chia with a GPU
+* [Chia Layoffs](/2023/10/02/chia-layoffs/) - Pink slips for CNI staff. 
