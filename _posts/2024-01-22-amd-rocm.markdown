@@ -1,0 +1,26 @@
+---
+layout: post
+title: ROCm
+subtitle: ai & ml on amd?
+date: 2024-01-22
+background: /img/headers/soccer_rainbow.jpg
+comments: true
+published: true
+---
+
+In the world of GPUs, AMD is generally an also-ran, generally far behind market leader Nvidia in terms of support for artificial intelligence and machine learning workloads.  While one can make an argument this is as much the fault of Nvidia for their anti-competitive behaviors as it is of AMD for inferior driver support, the reason doesn't really matter.  If you want to start with AI and ML, the guidance has been, and continues to be, get an Nvidia GPU to avoid the headaches you'll encounter with AMD GPUs.
+
+## ROCm
+
+<img src="/img/posts/amd_rocm_logo.png" class="img-fluid" style="float: right" />
+
+This month AMD has released another [update](https://rocm.docs.amd.com/en/latest/about/release-notes.html) (v6.1.1) for their ROCm platform, which competes with Nvidia's CUDA platform.  While ROCm is open-source compared to Nvidia's preference for closed source, the numerous discussions I've followed on the matter make clear that challenges of working with ROCm.  Too bad, as I'd really like to support AMD more, being a big fan of their CPUs and even their GPUs (for gaming).
+
+### OS Support
+ 
+Interestingly the ROCm platform offers support for both Linux and Windows, however they claim to have tested this release "against a pre-release version of Ubuntu 22.04.5 (kernel: 5.15 [GA], 6.8 [HWE])".  This is because full ROCm platform support is NOT available on Windows, only a subset of functionality.  In particular, the [HIP-SDK](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html) is available for Windows.
+
+
+## Conclusions
+
+As long, as my son's gaming PC with the AMD GPU (7600xt) within it, is running Windows for gaming, I probably won't bother even trying AMD's AI and ML platform ROCm.  Unfortunately, by the time son no longer is using this PC for gaming, the card will be a few years old and, no doubt, will have likely been dropped from the supported list for ROCm platform.
