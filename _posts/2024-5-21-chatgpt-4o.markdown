@@ -1,0 +1,34 @@
+---
+layout: post
+title: ChatGPT 4o
+subtitle: familiar voice assistant
+date: 2024-05-21
+background: /img/headers/ohara.jpg
+comments: true
+published: true
+---
+
+So not to be outdone by recent competitor updates, OpenAI has [released](https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/) their latest ChatGPT dubbed "4o", or "4.0 omni".  As per this [Reddit post](https://www.reddit.com/r/ChatGPT/comments/1cr4hfd/openai_unveils_gpt4o_free_ai_for_everyone/), the new version offers:
+
+* Unified Processing Model: GPT-4o can handle audio, vision, and text inputs and outputs seamlessly.
+* GPT-4o provides GPT-4 level intelligence but is much faster and enhances text, vision, audio capabilities
+* Enables natural dialogue and real-time conversational speech recognition without lag
+* Can perceive emotion from audio and generate expressive synthesized speech
+* Integrates visual understanding to engage with images, documents, charts in conversations
+* Offers multilingual support with real-time translation across languages
+* Can detect emotions from facial expressions in visuals
+* Free users get GPT-4.0 level access; paid users get higher limits: 80 messages every 3 hours on GPT-4o and up to 40 messages every 3 hours on GPT-4 (may be reduced during peak hours)
+* GPT-4o available on API for developers to build apps at scale
+* 2x faster, 50% cheaper, 5x higher rate limits than previous Turbo model
+* A new ChatGPT desktop app for macOS launches, with features like a simple keyboard shortcut for queries and the ability to discuss screenshots directly in the app.
+* Demoed capabilities like equation solving, coding assistance, translation.
+* OpenAI is focused on iterative rollout of capabilities. The standard 4o text mode is already rolling out to Plus users. The new Voice Mode will be available in alpha in the coming weeks, initially accessible to Plus users, with plans to expand availability to Free users.
+* Progress towards the "next big thing" will be announced later.
+
+## Familiar Voice?
+
+The new voice behind the ChatGPT assistant sounds similar to the female character in the movie "Her".  The actress, Scarlett Johansson, reportedly declined to allow OpenAI to use a voice so similar to hers, but they went ahead anyone, prompting [a public rebuke](https://www.cbc.ca/kidsnews/post/scarlett-johansson-calls-out-chatgpt-for-using-a-voice-that-sounds-like-hers) from her. 
+
+## Conclusions
+
+So far, this new version seems pretty powerful and a nice improvement over previous versions.  I'll have to try it out to learn more of the improvements.
