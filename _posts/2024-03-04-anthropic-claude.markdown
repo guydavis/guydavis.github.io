@@ -25,3 +25,9 @@ Unfortunately, as a Canadian, I wasn't able to actually try it out due region lo
 ## Conclusions
 
 Again, I'm glad to see more competition in the LLM space.  Ideally they even let those outside the US try it out one day too...  
+
+### More in this series...
+* [Google Gemini](/2024/02/16/google-gemini) - Google Gemini
+* [Llama 3](/2024/04/19/llama-3) - Llama 3
+* [ChatGPT 4o](/2024/05/21/chatgpt-4o) - ChatGPT 4o
+* [Anthropic Claude in Canada](/2024/06/05/anthropic-claude-canada) - Anthropic Claude in Canada

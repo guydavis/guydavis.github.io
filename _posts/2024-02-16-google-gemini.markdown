@@ -26,3 +26,10 @@ However, those same reviews often praise the quality of Gemini's creative writin
 
 I'm glad to see further competition in the AI & ML space. While some [complain that Google released this version before it was fully baked](https://www.reddit.com/r/google/comments/1axn2gi/100_honest_take_on_google_gemini/), time will tell if it stabilizes and improves.  Happy to watch how this will play out in the future....
 
+
+### More in this series...
+* [Google Gemini](/2024/02/16/google-gemini) - Google Gemini
+* [Anthropic Claude](/2024/03/04/anthropic-claude) - Anthropic Claude
+* [Llama 3](/2024/04/19/llama-3) - Llama 3
+* [ChatGPT 4o](/2024/05/21/chatgpt-4o) - ChatGPT 4o
+* [Anthropic Claude in Canada](/2024/06/05/anthropic-claude-canada) - Anthropic Claude in Canada

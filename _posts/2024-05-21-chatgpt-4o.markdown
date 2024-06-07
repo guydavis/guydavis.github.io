@@ -32,3 +32,9 @@ The new voice behind the ChatGPT assistant sounds similar to the female characte
 ## Conclusions
 
 So far, this new version seems pretty powerful and a nice improvement over previous versions.  I'll have to try it out to learn more of the improvements.
+
+### More in this series...
+* [Google Gemini](/2024/02/16/google-gemini) - Google Gemini
+* [Anthropic Claude](/2024/03/04/anthropic-claude) - Anthropic Claude
+* [Llama 3](/2024/04/19/llama-3) - Llama 3
+* [Anthropic Claude in Canada](/2024/06/05/anthropic-claude-canada) - Anthropic Claude in Canada
