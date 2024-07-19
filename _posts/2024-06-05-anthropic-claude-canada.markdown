@@ -28,3 +28,4 @@ Seems pretty good at summarizing options, useful as a jumping off point for furt
 * [Anthropic Claude](/2024/03/04/anthropic-claude) - Anthropic Claude
 * [Llama 3](/2024/04/19/llama-3) - Llama 3
 * [ChatGPT 4o](/2024/05/21/chatgpt-4o) - ChatGPT 4o
+* [LLMs on Android](/2024/07/18/llms-on-android) - LLMs on your Phone

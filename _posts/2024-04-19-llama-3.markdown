@@ -25,3 +25,4 @@ For the enthusiat crowd, running open-sourced models will be the way forward for
 * [Anthropic Claude](/2024/03/04/anthropic-claude) - Anthropic Claude
 * [ChatGPT 4o](/2024/05/21/chatgpt-4o) - ChatGPT 4o
 * [Anthropic Claude in Canada](/2024/06/05/anthropic-claude-canada) - Anthropic Claude in Canada
+* [LLMs on Android](/2024/07/18/llms-on-android) - LLMs on your Phone

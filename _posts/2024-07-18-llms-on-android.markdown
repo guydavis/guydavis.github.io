@@ -25,3 +25,4 @@ Pretty similar.  I'll be using these during our upcoming vacation to help plan a
 * [Anthropic Claude](/2024/03/04/anthropic-claude) - Anthropic Claude
 * [Llama 3](/2024/04/19/llama-3) - Llama 3
 * [ChatGPT 4o](/2024/05/21/chatgpt-4o) - ChatGPT 4o
+* [Anthropic Claude in Canada](/2024/06/05/anthropic-claude-canada) - Anthropic Claude in Canada
