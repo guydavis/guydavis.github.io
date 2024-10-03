@@ -14,4 +14,10 @@ So this hold finally came in to my local library and I had a chance to read it. 
 
 While the ability to control and even shutdown an intelligence greater than our own seems important, I am pessimistic that humanity will get its act together as there is too much financial incentive for nations and corporations to build AGI first.  Unlike nuclear weapons, the hardware for AGI will get cheaper each year.  Just look at what hobbyists are [doing with ChatGPT alternatives](https://www.reddit.com/r/LocalLLaMA/). 
 
+Here is ChatGPT's take on this book and the author's central contention that we must solve the containment problem:
+
+<img src="/img/posts/coming_ai_wave_chatgpt.png" class="img-fluid" />
+
 Overall, I'm in the camp that nearterm problems from disinformation controlling the populace is a bigger problem today than AGI in the future. Finally, I'm more worried about climate chaos leading to serious war and refugee problems over some billionaires with a lot of GPUs.
+
+

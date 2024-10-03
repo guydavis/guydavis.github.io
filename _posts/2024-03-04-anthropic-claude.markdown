@@ -22,6 +22,10 @@ Unfortunately, as a Canadian, I wasn't able to actually try it out due region lo
 
 <img src="/img/posts/anthropic-claude-no-canada.png" class="img-fluid" />
 
+Here's what ChatGPT itself feels about the strengths of Claude:
+
+<img src="/img/posts/anthropic-claude-chatgpt.png" class="img-fluid" />
+
 ## Conclusions
 
 Again, I'm glad to see more competition in the LLM space.  Ideally they even let those outside the US try it out one day too...  

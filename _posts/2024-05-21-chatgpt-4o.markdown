@@ -29,6 +29,14 @@ So not to be outdone by recent competitor updates, OpenAI has [released](https:/
 
 The new voice behind the ChatGPT assistant sounds similar to the female character in the movie "Her".  The actress, Scarlett Johansson, reportedly declined to allow OpenAI to use a voice so similar to hers, but they went ahead anyone, prompting [a public rebuke](https://www.cbc.ca/kidsnews/post/scarlett-johansson-calls-out-chatgpt-for-using-a-voice-that-sounds-like-hers) from her. 
 
+## Claude's Take
+
+Here's Anthropic Claude's take on the latest from ChatGPT.
+
+<img src="/img/posts/chatgpt_4o_claude.png" />
+
+Unfortunately, Claude's free version is out-of-date for all current events and news.
+
 ## Conclusions
 
 So far, this new version seems pretty powerful and a nice improvement over previous versions.  I'll have to try it out to learn more of the improvements.

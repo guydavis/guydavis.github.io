@@ -20,7 +20,6 @@ Then I asked for ideas local to western Canada:
 
 <img src="/img/posts/anthropic-claude-canada-vacation2.png" class="img-fluid" />
 
-
 Seems pretty good at summarizing options, useful as a jumping off point for further research.
 
 ### More in this series...

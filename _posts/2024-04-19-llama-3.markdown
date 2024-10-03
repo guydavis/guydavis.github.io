@@ -16,6 +16,12 @@ One of the more interesting entries in the competitive large language model (LLM
 
 One of the better discussion forums for this community effort is found on the [LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/) sub-reddit. Besides the silly memes, there is suprisingly good comparison of current models along with tips and tricks for running them yourself.  This includes the hardware requirements (Nvidia GPU) and Python setup on Linux.
 
+## ChatGPT's Take
+
+Here's how easy this is to setup:
+
+<img src="/img/posts/meta_llama_chatgpt.png" />
+
 ## Conclusions
 
 For the enthusiat crowd, running open-sourced models will be the way forward for the forseeable future.  I hope that we don't end up in a spot where this technology can only be run by the largest tech companies, using their proprietary algorithms and models.
