@@ -36,7 +36,7 @@ After posting a one-star review of Gmail, their tech support replied with a set 
 
 ## <a id="sms-gateway">SMS Workaround</a>
 
-So after exhausting all avenues above to get my phone to display time email notifications, I noticed that my phone did display SMS text messages nearly instantly.  So I cooked up a workaround that involved triggering an SMS message to my phone based on an email forward rule in the Gmail service itself.
+So after exhausting all avenues above to get my phone to display timely email notifications, I noticed that my phone did display SMS text messages nearly instantly.  So I cooked up a workaround that involved triggering an SMS message to my phone based on an email forward rule in the Gmail service itself.
 
 ### Carrier SMS Gateway
 
@@ -73,3 +73,24 @@ By adding this extra hop, I was able to use my the webmail interface at @mydomai
 To be clear, the SMS message was heavily truncated so the receipt of the text simply alerted me to the need to switch to Gmail and drag from the top of my inbox to force a refresh, instantly revealing the just arrived important email.  Hilariously, the receipt of the SMS text was enough of <i>a kick in the ass for my phone<i> to wake up and... <b>simultaneously notify me of the new email's arrival</b>. 
 
 Overall, the above workaround requires both a third-party email address and a SMS email-to-text gateway provided by your cell carrier. This level of complexity is beyond the average email user, making the complete lack of a prompt email notification for Gmail on Android all the more perplexing.  
+
+
+## Update
+
+So just a few weeks after I set this forwarding up, my cell provider decided to [deprecate their SMS Gateway](https://www.freedommobile.ca/en-CA/support/about-the-text-to-email-service), effective 2024-12-01.  So, given this I needed a new way to send a notification to my phone, based on an email, that would consistently notify immediately on arrival, not hours later like the GMail app does.
+
+After searching around, I found that the Pushover app has [an email gateway](https://support.pushover.net/i29-e-mailing-notifications-to-your-devices) that allows to trigger Pushover notifications.  After testing, this new approach also works well and doesn't get "dozed" for hours like Gmail does.  
+
+<pre>
+important_sender@company.com  
+   --> (sends) -->  
+        my_email_address@gmail.com
+            -->  (forwards) --> 
+                alert_me@mydomain.ca
+                    -->  (redirects) --> 
+                        my_pushover_id@pomail.net  
+                            --> (texts) -->
+                                my Pixel phone which immediately shows notification.
+</pre>
+
+Pushover app on Android costs about $5 CAN, but seems worth it to get a workaound for Gmail's horrible notification times.
