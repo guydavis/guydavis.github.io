@@ -73,3 +73,4 @@ Overall, I'm really impressed with Unraid.  It's been on my list to try for year
 * [Unraid GPU Passthrough](/2021/02/02/unraid-gpu-passthru) - failed attempt
 * [Unraid Urbackup](/2021/03/15/unraid-urbackup) - household backups
 * [Unraid Chia](/2021/04/30/unraid-chia-plotting-farming) - plotting and farming
+* [Unraid Recovery](/2024/11/16/unraid-recovery) - recovering from an unbootable flash drive

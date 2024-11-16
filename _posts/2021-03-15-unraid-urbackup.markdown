@@ -58,3 +58,4 @@ Initially, I attempted both image and file backups, but I found that image backu
 * [Unraid Server Setup](/2021/01/30/unraid-server-setup) - media and storage
 * [Unraid GPU Passthrough](/2021/02/02/unraid-gpu-passthru) - failed attempt
 * [Unraid Chia](/2021/04/30/unraid-chia-plotting-farming) - plotting and farming
+* [Unraid Recovery](/2024/11/16/unraid-recovery) - recovering from an unbootable flash drive
