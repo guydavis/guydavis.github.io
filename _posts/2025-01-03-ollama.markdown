@@ -2,7 +2,7 @@
 layout: post
 title: Ollama
 subtitle: running LLMs on your desktop
-date: 2025-01-01
+date: 2025-01-03
 background: /img/headers/legislature.jpg
 comments: true
 published: true
