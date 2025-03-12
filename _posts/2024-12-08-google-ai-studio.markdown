@@ -54,3 +54,4 @@ P.S. For those interested, the 5-day course I took is now available as a [Learni
 * [LLMs on Android](/2024/07/18/llms-on-android) - AI in your pocket
 * [Google Imagen3](/2024/08/28/google-imgen3) - AI Image Generation
 * [Azure AI Studio](/2024/09/30/azure-ai-studio) - AI on MS Azure
+* [Google Gemma](/2025/03/12/google-gemma3) - Google Gemma v3 released.

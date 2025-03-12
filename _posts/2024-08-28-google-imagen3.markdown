@@ -39,3 +39,4 @@ Kind of fun to play with.  Bit scary as these images become more and more realis
 * [ChatGPT 4o](/2024/05/21/chatgpt-4o) - ChatGPT 4o
 * [Anthropic Claude in Canada](/2024/06/05/anthropic-claude-canada) - Anthropic Claude in Canada
 * [LLMs on Android](/2024/07/18/llms-on-android) - AI in your pocket
+* [Google Gemma](/2025/03/12/google-gemma3) - Google Gemma v3 released.

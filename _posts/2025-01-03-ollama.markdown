@@ -77,3 +77,4 @@ Overall, it's great that these "open-weight" models exist and can be run on cons
 * [Azure AI Studio](/2024/09/30/azure-ai-studio) - AI on MS Azure
 * [Google AI Studio](/2024/12/08/google-ai-studio) - AI on Google
 * [Deepseek](/2025/02/06/deepseek-distill) - Trying small distills locally.
+* [Google Gemma](/2025/03/12/google-gemma3) - Google Gemma v3 released.

@@ -47,3 +47,4 @@ This dabbling with a distilled model on old hardware is fun, but not at all refl
 * [Azure AI Studio](/2024/09/30/azure-ai-studio) - AI on MS Azure
 * [Google AI Studio](/2024/12/08/google-ai-studio) - AI on Google
 * [Ollama](/2025/01/03/ollama) - Local LLMs on your own computer.
+* [Google Gemma](/2025/03/12/google-gemma3) - Google Gemma v3 released.

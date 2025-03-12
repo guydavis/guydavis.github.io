@@ -50,3 +50,4 @@ Overall, I didn't have much time to play with this AI Studio.  Seems more intuit
 * [LLMs on Android](/2024/07/18/llms-on-android) - AI in your pocket
 * [Google Imagen3](/2024/08/28/google-imgen3) - AI Image Generation
 * [Google AI Studio](/2024/12/08/google-ai-studio) - AI on Google Cloud
+* [Google Gemma](/2025/03/12/google-gemma3) - Google Gemma v3 released.

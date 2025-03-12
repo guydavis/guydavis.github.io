@@ -36,3 +36,4 @@ Again, I'm glad to see more competition in the LLM space.  Ideally they even let
 * [ChatGPT 4o](/2024/05/21/chatgpt-4o) - ChatGPT 4o
 * [Anthropic Claude in Canada](/2024/06/05/anthropic-claude-canada) - Anthropic Claude in Canada
 * [LLMs on Android](/2024/07/18/llms-on-android) - LLMs on your Phone
+* [Google Gemma](/2025/03/12/google-gemma3) - Google Gemma v3 released.
