@@ -20,7 +20,7 @@ I wanted to write a web page scaper that would pull the scheduled events off the
 
 So, turing to [Google Gemini](https://gemini.google.com/app), I prompted as shown:
 
-<img src="/img/posts/google-gemini25-pro-calendar-python.png" class="img-fluid" /> 
+<img src="/img/posts/google-gemini25-pro-calendar.png" class="img-fluid" /> 
 
 This resulted in a useful set of code (3 Python files) along with setup instructions covering:
 1. Setting up Python and libraries on my laptop.
