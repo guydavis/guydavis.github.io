@@ -51,6 +51,14 @@ After running my script, the events are in my calendar:
 
 <img src="/img/posts/sports-event-calendar-events.png" class="img-fluid" /> 
 
+### Scheduling with Cron
+
+Adding the following to my local crontab, let's me run it daily:
+```
+30 9 * * * /usr/bin/bash -c 'if [ -f /path/to/project/cbc-sports-calendar/events_creator.py ]; then pushd /path/to/project/cbc-sports-calendar && /usr/bin/python3 /path/to/project/cbc-sports-calendar/events_creator.py && popd; fi'
+```
+Of course, if the headless cron run encounters an authentication token expiry, it won't be able to pop open a browser window, but I can run it manually every once in a while.
+
 ## Conclusions
 
 I don't feel I was "vibe coding" this entirely... to be honest, I did sneak over to StackOverflow occassionally.  However, I did find the generated code output and the problem solving, particularly with Google Cloud OAuth flow setup, done by Gemini was very helpful.  I can see how this has changed the practice and profession of programming forever. 
