@@ -18,7 +18,7 @@ I wanted to write a web page scaper that would pull the scheduled events off the
 
 ### Project Creation
 
-So, turing to [Google Gemini](https://gemini.google.com/app), I prompted as shown:
+So, turning to [Google Gemini](https://gemini.google.com/app), I prompted as shown:
 
 <img src="/img/posts/google-gemini25-pro-calendar.png" class="img-fluid" /> 
 
