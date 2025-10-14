@@ -1,0 +1,56 @@
+---
+layout: post
+title: Backrest
+subtitle: unraid backup to gdrive
+date: 2025-09-30
+background: /img/headers/whistler_waterfalls.jpg
+comments: true
+published: true
+---
+
+After recently [upgrading](/2025/04/27/google-gemini-2_5/) to a family plan for [Google One](https://one.google.com/) that included the advanced/full access to Google Gemini, I've had more space (2 TB) available in Google Drive.  With this space, I went looking for ways to backup files from my Unraid server to the Google Drive space.  This led me to a combination of:
+
+1. rclone - Used to transfer files from the Unraid server to GDrive
+1. restic - CLI for automated backups 
+1. backrest - WebUI for restic 
+
+## RClone
+
+You want this to be installed directly on the Unraid OS level, not within a separate Docker.  For this, install the rclone from Waseh, which will put the `rclone` binary directly on the Unraid OS CLI.
+
+<img src="/img/posts/backrest_rclone_app.png" class="img-fluid" /> 
+
+Then you need to configure `rclone` for access to your GDrive, using [these directions](https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone).  Basically, you need to create a new Google Cloud project (in Google Console), enable the GDrive API, then create a Service Account (named Unraid Backup or similar). The service account needs the Storage Object Admin privilege, then you create a Key for the Service Account, which will download a JSON private key.  With that info, you run `rclone config` and add a new rclone remote, which I called 'gdrive'.  To verify that rclone can access Google Drive, run `rclone lsd gdrive` which should list the folders at the top of the remote Drive.  I then created a new folder in Drive called 'Backups' to hold these backups.
+
+<img src="/img/posts/backrest_rclone_config.png" class="img-fluid" /> 
+
+## Restic and Backrest
+
+The `restic` CLI binary is included within the BackRest docker container, installed via Unraid Apps:
+
+<img src="/img/posts/backrest_app_install.png" class="img-fluid" /> 
+
+Be sure to add a new Path that will allow the Rclone config on Unraid OS to be shared into the Backrest container as well:
+
+<img src="/img/posts/backrest_install_rclone_conf.png" class="img-fluid" /> 
+
+Once Backrest is running in the Docker container, we need to add a restic repository that is backed by the configured Google Drive (via rclone):
+
+<img src="/img/posts/backrest_restic_repo.png" class="img-fluid" /> 
+
+Once the repo is created, then create a backup plan that uses it:
+
+<img src="/img/posts/backrest_restic_plan.png" class="img-fluid" /> 
+
+I chose to backup once weekly.  To validate, I started the backup manually:
+
+<img src="/img/posts/backrest_restic_status.png" class="img-fluid" /> 
+
+As this was my first backup, it took about half a day.  I immediately saw that Restic was creating files within the Backups folder I had created in Google Drive.
+
+## Conclusion
+
+This wasn't the simplest setup with three different components, but it does seem to be working.  Next month, I'll investigate the resulting backups and incrementals, to verify the recovery process.  So far, so good...
+
+### More in this series...
+* [Unraid Urbackup](/2021/03/15/unraid-urbackup/) - initial backup solution from a few years back
