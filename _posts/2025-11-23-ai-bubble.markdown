@@ -1,0 +1,57 @@
+---
+layout: post
+title: AI in a Bubble?
+subtitle: stock market vs technology
+date: 2025-11-23
+background: /img/headers/carthew_alderson_lake.jpg
+comments: true
+published: true
+---
+
+Since late 2022 when OpenAI's [ChatGPT](/2022/12/21/chatgpt/) sprang onto the scene, the progressive improvements in large-language models (LLMs) have been impressive.  This has led to an unprecedented runup in the value of the leading LLM providers, leading many to question if we are in an [AI bubble](https://en.wikipedia.org/wiki/AI_bubble).  While no one can efute that there is a gold rush on right now, the only question is whether these companies have struck real or fool's gold.
+
+## AI Investments
+
+A huge amount of capital has flowed into the AI market recently, with [OpenAI leading the charge](https://www.startupbooted.com/openai-valuation-history).  This has led to a large investment in AI data centres, in hopes of one day striking it rich on real profitability.  Even the spending plans of the so-called hyper-scalers are somewhat ludicrous:
+
+<img src="/img/posts/ai_bubble_spending.png" class="img-fluid" /> 
+
+This is despite OpenAI's [expenses far outpacing its realistic revenues for the foreseeable future](https://www.wheresyoured.at/openai400bn/). 
+
+## Google Catches Up
+
+I  was a small investor in Google's parent company, Alphabet, when the original appearance of OpenAI's ChatGPT combined with their clumsy early LLM efforts (Bard) depressed the stock price (PE ~17-20).  Many thought that OpenAI was the first real threat to Google's dominance in Web search and advertisting. However, I've been working with their rebranded LLM (Gemini) since [early 2024](/2024/02/16/google-gemini/), experiencing all the improvements they released so I stuck with them during recent stock runup (PE ~30).
+
+<img src="/img/posts/ai_bubble_goog_pe.png" class="img-fluid" /> 
+
+Beyond the technological improvements, Google also started to expose these features in their main Search interface, raising their visiblity with the general public who seem mildly positive about them, but not clamoring to pay monthly fees for these features. 
+
+But will Google's recovery after their initial stumbles doesn't imply massive future success.  With little in the way of user subscriptions for AI driving their revenue, will their infrastrucure build pay off?  Will they be able to sneak more ads in, without further annoying their users?
+
+## Massive Infrastructure Build
+
+The American tech giants are planning to spend an extraordinary amount on building large data centres with depreciating hardware.  Each week brings new announcements from Microsoft, OpenAI, Google, AWS, Oracle, and others all trying to outspend each other, often using promised funds from one deal to pay for the next deal, in a [financial game of musical chairs](https://www.calcalistech.com/ctechnews/article/z4lxiqbtw).  Their planned spend for 2026 is hundreds of billions of dollars, all of which is money not being spent on the rest of American economy, which is relatively moribund.
+
+<img src="/img/posts/ai_bubble_borrowing.png" class="img-fluid" /> 
+
+As seen above, borrowing is increasing in effort to raise more funds for this unprecedented build-out.
+
+## Where's the Demand?
+
+Interestingly, my own experience is that LLMs are novel and interesting, but they are not a magic bullet.  I have used Gemini for various tasks including writing, mathematics, image generation, and of course coding.  The LLM has acted as a slightly faster search engine in my experience.  For example, when coding I would normally find snippets from sites like [Stack Exchange](https://stackexchange.com/), that I would piece together and then test myself.  With Gemini, it generates larger snippets, but I still must test the program and fix the inevitable flaws it comes with. Yes, models are improving over time, but I don't forsee revolutionary improvements putting millions of people out of work, slaves to the billionaire class.
+
+In fact many [studies](https://www.theglobeandmail.com/business/article-return-on-generative-ai-investments-survey-2-canadian-businesses/) are showing that few businesses are getting anywhere near the expected benefit from their trial AI & LLMs to justify [any significant per-employee subscription](https://gradientflow.substack.com/p/deconstructing-openais-path-to-125). Even if an LLM saves a white-collar worker an hour a week, this time-saving rarely translates into a measurable ROI that justifies a $30-$50 per month subscription for every employee, especially in light of the continued need for human fact-checking and refinement.
+
+For a counterpoint opinions to my bearish take, the Blackrock investment firm is [confident](https://www.blackrock.com/us/financial-professionals/insights/ai-tech-bubble) that demand will materialize for the incredible spend on infrastruture however. As well, JP Morgan is [heartened by rising GPU-usage in data centers](https://am.jpmorgan.com/us/en/asset-management/adv/insights/market-insights/market-updates/on-the-minds-of-investors/does-circularity-in-ai-deals-warn-of-a-bubble/). I'm not surprised that investment peddlers are bullish on this market... time will tell I suppose.
+
+## China Rising
+
+The large American tech giants which have focused on closed-source and closed weight models, with small side projects such as Google's Gemma model.  Chinese firms, on the other hand, have targetted open-weight models, freely available for enthusiats to run at home, often on gaming PCs with a discrete GPU.  Yes, while this approach is lagging behind the current state-of-the-art closed frontier models, these Chinese models are not much **farther than a year behind**.  Most importantly, for many mundane day-to-day tasks, these free models are quite sufficient.  China is also leveraging their manufacturing base to build both humanoid and industrial robots with specialized AIs that don't need to have all of Wikipedia at their fingertips to function.
+
+As well, the short-sighted and scattershot approach to hardware controls that the US has attempted to impose on China, have been ineffective at best, simply leading the Chinese to re-double their efforts to engineer cutting-edge silicon themselves at firms such as [SMIC](https://en.wikipedia.org/wiki/Semiconductor_Manufacturing_International_Corporation).  While Nvidia and TSMC are making bank right now, selling shovels to prospectors during this gold rush, it's not clear they will maintain that lead over Chinese fabs forever.  Nor is it clear, that all these crazed prospectors will actually find real AI gold (aka enough revenue).
+
+## Conclusions
+
+Overall, LLMs are an interesting tool that will no doubt improve over time and become part of daily life for workers around the world, just like the Internet did decades ago.  However, just like the "dot Com" bubble burst around the turn of the century, I think this "AI infrastructure" bubble will also result in a large drop in stock prices of North American tech companies as the lack of true revenue growth for new AI services becomes apparent.  I don't see every white-collar worker worldwide paying hundreds of dollars in new AI subscription charges to these tech behemoths, even accounting for potential layoffs.
+
+Finally, the massive American AI infrastructure build implicitly assumes a "winner-take-all" outcome—a digital moat allowing a single champion to garner all possible revenue from huge user and API subscriptions. This isn't even close to the case today with a lot of competitors having similar offerings. In the future, I expect more competition, not less, thus preventing one champion from charging the many hundreds of dollars in monthly subscription fees per seat they'll need to recoup their infrastructure spend.
