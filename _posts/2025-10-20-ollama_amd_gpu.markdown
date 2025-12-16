@@ -52,7 +52,7 @@ Monitoring the speed of the response, I was pleasantly surprised.  Much faster t
 
 Monitoring the GPU usage via Task Manager, I was able to run queries against both Qwen and Gemma, though that is a bit too tight:
 
-<img src="/img/posts/ollama_amd_gpu_usage.png" class="img-fluid" /> 
+<img src="/img/posts/ollama_amd_gpu_usage.png" class="img-fluid" style="height: 50%; width: 50%" /> 
 
 # AMD Radeon RX 590
 
@@ -83,9 +83,52 @@ Finally, I browsed to the Ollama webui and asked the Qwen model if it thought I 
 
 <img src="/img/posts/ollama_amd_gpu_590_qwen3_8b.png" class="img-fluid" />
 
+# Network Hosting
+
+With multiple systems on my home network hosting Ollama and different models now, I decided to put a single instance of OpenWebUI on the home server running 24/7 in the basement.  This lets family members use local LLMs from anywhere on our home network, useful for comparisons against the public models like Gemini and ChatGPT.
+
+<img src="/img/posts/ollama_amd_gpu_network.png" class="img-fluid" />
+
+While the LLM frontend can expose different models on different computers, but it doesn't do a good job of labelling them, dealing with certain workers being offline, nor selecting the fastest available worker.  I am hopeful that OpenWebUI will improve handling of multiple Ollama workers in the future.
+
+# Benchmarking
+
+After forking and fixing [a simple LLM benchmarking script](https://github.com/guydavis/llm-benchmark), I deployed it to all 3 of my systems to see how well they ran the same prompts using the `gemma3:4b` as a common test.   
+
+## Setup
+
+First in Gitbash:
+```
+cd "d:/Program Files/Ollama"
+git clone https://github.com/guydavis/llm-benchmark.git
+cd llm-benchmark
+python -m venv venv
+```
+Then in Powershell:
+```
+cd "d:\Program Files\Ollama\llm-benchmark"
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+.\venv\Scripts\activate
+pip install -r requirements.txt
+ollama list
+python benchmark.py -u gemma3:4b
+```
+
+## AMD Radeon RX 590
+
+<img src="/img/posts/benchmark_gemma_amd_rx590.png" class="img-fluid" />
+
+## AMD Radeon 6700xt
+
+<img src="/img/posts/benchmark_gemma_amd_6700xt.png" class="img-fluid" />
+
+## Nvidia RTX 3070ti
+
+<img src="/img/posts/benchmark_gemma_nvidia_3070ti.png" class="img-fluid" />
+
 # Conclusions
 
-Clearly, the open-weight models are rapidly improving if they can run reasonably on such old hardware.  Soon these mid-weight LLMs will run on portable devices such as phones, improving upon the current embedded models.  
+Clearly, the open-weight models are rapidly improving if they can run reasonably on such old hardware.  Soon these mid-weight LLMs will run on portable devices such as phones, improving upon the current embedded models.  There is still clearly a serious performance penalty to run on an AMD GPU, instead of industry-standard Nvidia GPUs. Though simply being able to use AMD hardware is honestly a pleasant surprise.
 
 With such progress happening, I fail to see why the American tech giants will be able to charge premium subscription prices.  With the AI stock market boom in full swing right now, it will be interesting to see if they are still flying high in a year, in the face of open-weight model competition.
 

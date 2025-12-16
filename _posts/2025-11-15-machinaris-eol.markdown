@@ -2,7 +2,7 @@
 layout: post
 title: Machinaris
 subtitle: closing down my project
-date: 2025-10-30
+date: 2025-11-15
 background: /img/headers/grinell_glacier_hike1.jpg
 comments: true
 published: true
