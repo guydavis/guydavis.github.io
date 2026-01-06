@@ -56,7 +56,7 @@ I then disabled my computer's network connection and asked the model to tell me 
 
 ## Ollama with only a CPU
 
-You don't actually need a GPU to run Ollama, but it certainly results in a more responsive chatting experience.  My other test system was a similar gaming PC with the same CPU, but an AMD Radeon 6700xt GPU.  Unfortunately, in the world of machine-learning and artificial-intelligence, support from AMD for consumer-level GPU support is neglible compared to Nvidia.  In this case, that Radeon GPU is useless and Ollama relied exclusively upon the CPU to give responses.
+You don't actually need a GPU to run Ollama, but it certainly results in a more responsive chatting experience.  My other test system was a similar gaming PC with the same CPU, but an AMD Radeon 6750xt GPU.  Unfortunately, in the world of machine-learning and artificial-intelligence, support from AMD for consumer-level GPU support is neglible compared to Nvidia.  In this case, that Radeon GPU is useless and Ollama relied exclusively upon the CPU to give responses.
 
 <img src="/img/posts/ollama_amd_gpu.png" class="img-fluid" />
 

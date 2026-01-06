@@ -8,11 +8,13 @@ comments: true
 published: true
 ---
 
-Earlier this year, I experimented with various LLM models using [Ollama](/2025/01/03/ollama) on [our gaming PC](/2019/07/16/zen2_pc_gaming/) with a Nvidia RTX 3070ti GPU.  At the time, I had also tried with [our other gaming PC](/2018/11/09/budget_pc_gaming/) running on an AMD Radeon 6700xt GPU.  Unfortunately, I wasn't successful and the models on that PC had fallen back to the CPU, resulting in running times at least 10x slower than the Nvidia GPU system.
+Earlier this year, I experimented with various LLM models using [Ollama](/2025/01/03/ollama) on [our gaming PC](/2019/07/16/zen2_pc_gaming/) with a Nvidia RTX 3070ti GPU.  At the time, I had also tried with [our other gaming PC](/2018/11/09/budget_pc_gaming/) running on an AMD Radeon 6750xt GPU.  Unfortunately, I wasn't successful and the models on that PC had fallen back to the CPU, resulting in running times at least 10x slower than the Nvidia GPU system.
 
-Since then, enthusiasts online have filled in the support that [AMD themselves can't seem to deliver](https://www.reddit.com/r/Amd/comments/1la9yz9/comment/mxjo1nt/).  Thanks to this [Github project](https://github.com/likelovewant/ollama-for-amd), it is now possible to run recent models on the 6700xt (aka gfx1031).  Even more impressive, thanks to this [Github project](https://github.com/robertrosenbusch/gfx803_rocm), I was able to rehabilitate my old Radeon RX590 (aka gfx803).
+Since then, enthusiasts online have filled in the support that [AMD themselves can't seem to deliver](https://www.reddit.com/r/Amd/comments/1la9yz9/comment/mxjo1nt/).  Thanks to this [Github project](https://github.com/likelovewant/ollama-for-amd), it is now possible to run recent models on the 6750xt (aka gfx1031).  Even more impressive, thanks to this [Github project](https://github.com/robertrosenbusch/gfx803_rocm), I was able to rehabilitate my old Radeon RX590 (aka gfx803).
 
-# AMD Radeon 6700xt
+# AMD Radeon 6750xt
+
+This is an interesting card as it lacks the Nvidia CUDA support, but has 12 GB of VRAM rather than the 8 GB of the Nvidia card.
 
 ## Installing Ollama
 
@@ -20,7 +22,7 @@ On this PC, I install apps and data on the larger D: drive, so first download [O
 
 `.\OllamaSetup.exe /DIR="D:\Program Files\Ollama"`
 
-Then quit Ollama from system tray and download the [correct ROCM libraries](https://github.com/likelovewant/ROCmLibs-for-gfx1103-AMD780M-APU/releases/tag/v0.6.4.2) for the 6700xt which is the gfx1031 generation.
+Then quit Ollama from system tray and download the [correct ROCM libraries](https://github.com/likelovewant/ROCmLibs-for-gfx1103-AMD780M-APU/releases/tag/v0.6.4.2) for the 6750xt which is the gfx1031 generation.
 
 1. Find the rocblas.dll file and the rocblas/library folder within your Ollama installation folder (located at D:\Program Files\Ollama\lib\ollama\rocm).
 2. Delete the existing `rocblas/library` folder.
@@ -118,9 +120,9 @@ python benchmark.py -u gemma3:4b
 
 <img src="/img/posts/benchmark_gemma_amd_rx590.png" class="img-fluid" />
 
-## AMD Radeon 6700xt
+## AMD Radeon 6750xt
 
-<img src="/img/posts/benchmark_gemma_amd_6700xt.png" class="img-fluid" />
+<img src="/img/posts/benchmark_gemma_amd_6750xt.png" class="img-fluid" />
 
 ## Nvidia RTX 3070ti
 
