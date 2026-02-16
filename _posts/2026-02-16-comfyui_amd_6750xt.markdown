@@ -1,0 +1,39 @@
+---
+layout: post
+title: Image and Video Creation
+subtitle: comfyui - amd 6750xt gpu
+date: 2026-02-16
+background: /img/headers/crescent_falls.jpg
+comments: true
+published: true
+---
+
+## ComfyUI
+
+While text-based local LLMs are interested, there are also good tools for image and video generation.  On Windows, ComfyUI recently added some support for AMD GPUs.
+
+1. Install latest AMD Adrenalin Edition (drivers for AMD GPU)
+1. Install latest AMD [HIP SDK](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html) 
+1. Install ComfyUI for Windows 11: 
+
+<img src="/img/posts/comfyui_amd_launch.png" class="img-fluid" /> 
+
+1. Select AMD GPU:
+
+<img src="/img/posts/comfyui_amd_install.png" class="img-fluid" /> 
+
+1. Try a test prompt in ComfyUI:
+
+<img src="/img/posts/comfyui_amd_prompt.png" class="img-fluid" /> 
+
+1. Generate the resulting test image:
+
+<img src="/img/posts/comfyui_amd_result.png" class="img-fluid" /> 
+
+## NOTES:
+
+I also tried this on my other machine, with an Nvidia 3070ti GPU, and discovered the install was simple and troubleshooting was not needed.  Yet another example, where AMD is far behind the tool support that is available for Nvidia hardware.
+
+
+### More in this series...
+* [AMD GPUs](/2025/10/20/ollama_amd_gpu) - Running Ollama with AMD cards.
