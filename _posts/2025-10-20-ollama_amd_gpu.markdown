@@ -138,3 +138,4 @@ With such progress happening, I fail to see why the American tech giants will be
 * [Llama 3](/2024/04/19/llama-3) - Llama 3
 * [Ollama](/2025/01/03/ollama) - Ollama via OpenWebUI
 * [Deepseek](/2025/02/06/deepseek-distill) - Trying small distills locally.
+* [Old Hardware](/2026/04/97/llms_old_hardware) - Running latest LLMs using old hardware (GPU and CPU)

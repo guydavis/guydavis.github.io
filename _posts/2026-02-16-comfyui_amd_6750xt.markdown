@@ -37,3 +37,5 @@ I also tried this on my other machine, with an Nvidia 3070ti GPU, and discovered
 
 ### More in this series...
 * [AMD GPUs](/2025/10/20/ollama_amd_gpu) - Running Ollama with AMD cards.
+* [Old Hardware](/2026/04/97/llms_old_hardware) - Running latest LLMs using old hardware (GPU and CPU)
+
