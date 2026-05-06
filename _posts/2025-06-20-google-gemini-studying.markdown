@@ -45,3 +45,6 @@ Do you notice that the generated image failed to place the corners of the triang
 ## Conclusions
 
 Overall, Gemini was a really helpful tool for my son during his exam study session.  The mistake in generated image was also a good opportunity for him to realize that he needs to be able to judge the accuracy of all AI generated content.  I am trying to support my son's in their responsible use of AI as a study aid, a tool in essence. However, they still need to understand the topics themselves and make good judgements on AI's output, always with a sceptical eye.  Hopefully, this will help them avoid the current "[cheater's dilemma](https://archive.ph/qIXd0)" facing students at all levels these days.
+
+### More in this series...
+* [Vibe Coding in Dart](/2026/05/04/vibe-coding-dart) - Quickly building a flashcard memorization mobile app for my son.
