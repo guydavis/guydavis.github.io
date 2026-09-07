@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Autonomous Drone Simulation"
-subtitle: "Setting up ArduPilot SITL, Gazebo Harmonic, and MAVLink"
+title: "Drone Simulation Setup"
+subtitle: "setting up ArduPilot SITL, Gazebo Harmonic, and MAVLink"
 date: 2026-06-13
 background: /img/headers/kimberley_trickle_creek_moon.jpg                                                                        
 comments: true                                                                                                                 
@@ -165,4 +165,5 @@ Running this setup locally allows for testing waypoint navigation, custom Lua sc
 Overall, I found this simulation setup a bit tricky, particularly on old hardware.  I had a number of crashes during the process, leaving me scratching my head.  I will continue to explore this software stack however, as autonomous drone usage is only going to become more common in the future.
 
 ### More in this series...
-
+* [Drone Simulation Testing](/2026/07/18/drone_simulation_testing) - Validating the drone simulation stack.
+* [Drone Autonomy](/2026/08/22/drone_autonomy) - Exploring autonomous flying with the drone simulation.
