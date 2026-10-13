@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Coding Harnesses"
-subtitle: "Antigravity's app and CLI, plus Pi running locally with Ollama"
+subtitle: "antigravity and pi"
 date: 2026-09-19
 background: /img/headers/maui_sunrise2.jpg
 comments: true
