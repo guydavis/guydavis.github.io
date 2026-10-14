@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Unsloth Desktop"
-subtitle: "install issues"
+subtitle: "local llms made easy?"
 date: 2026-10-12
 background: /img/headers/maligne_canyon6.jpg
 comments: true
@@ -12,11 +12,13 @@ The latest hotness seems to be a slickly bundled [Local LLM offering](https://un
 
 ## Windows 11 with an Nvidia RTX 3070ti
 
-So, Itried installing Unsloth Desktop on another Windows 11 PC, this one with an Nvidia RTX 3070 Ti. The C: drive was already tight on space, and I couldn't spare the many gigabytes the full Unsloth installation would require.
+I tried installing Unsloth Desktop on another Windows 11 PC, this one with an Nvidia RTX 3070 Ti. The C: drive was already tight on space, and I couldn't spare the many gigabytes the full Unsloth installation would require.
 
 The installer didn't offer a way to put Unsloth itself, its utilities, or its caches on another drive such as D:. Since I couldn't redirect those files, I couldn't proceed with the installation. That makes the app unusable for my setup, and a significant limitation for developers who keep applications and large data on separate drives.
 
 ### Workarounds to install on D drive
+
+I used a link from C: over to D: drive in order to fool the Unsloth installer into putting all its files on D:
 
 ```
 New-Item -ItemType Directory -Path "D:\Program Files\Unsloth\dot_unsloth" -Force
