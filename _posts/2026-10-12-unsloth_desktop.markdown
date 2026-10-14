@@ -8,11 +8,11 @@ comments: true
 published: true
 ---
 
-
+The latest hotness seems to be a slickly bundled [Local LLM offering](https://unsloth.ai/) from Unsloth that offers coding, chat, and image generation all from open-weight models downloaded for free.  I gave it a try on both my son's gaming PCs with their slightly outdated GPUs.
 
 ## Windows 11 with an Nvidia RTX 3070ti
 
-I also tried installing Unsloth Desktop on another Windows 11 PC, this one with an Nvidia RTX 3070 Ti. The C: drive was already tight on space, and I couldn't spare the many gigabytes the full Unsloth installation would require.
+So, Itried installing Unsloth Desktop on another Windows 11 PC, this one with an Nvidia RTX 3070 Ti. The C: drive was already tight on space, and I couldn't spare the many gigabytes the full Unsloth installation would require.
 
 The installer didn't offer a way to put Unsloth itself, its utilities, or its caches on another drive such as D:. Since I couldn't redirect those files, I couldn't proceed with the installation. That makes the app unusable for my setup, and a significant limitation for developers who keep applications and large data on separate drives.
 
